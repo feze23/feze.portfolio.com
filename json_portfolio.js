@@ -25,6 +25,7 @@
         section2.style.display="block";
         section5.style.display = "none";
         section6.style.display = "none";
+        skill.style.display = "none";
         //console.log(section2.innerHTML);
     }, false);
 
@@ -35,6 +36,7 @@
         section3.style.display = "block";
         section5.style.display = "none";
         section6.style.display = "none";
+        skill.style.display = "none";
     }, false);
 
     comp.addEventListener('click', function(e){
