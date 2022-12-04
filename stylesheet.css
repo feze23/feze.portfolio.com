@@ -1,0 +1,528 @@
+.row{
+    margin-bottom: 15px;
+}
+/*
+.row > div{
+    border: 2px solid red;
+}
+*/
+
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* css header*/
+.name{
+    display: block;
+    color: black;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 10px;
+   display: inline-block;
+}
+
+.project, .competence, .contact, .paper, .git{
+    font-size: 18px;
+}
+.project:hover, .competence:hover, .contact:hover, .paper:hover, .git:hover{
+    text-decoration: overline;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 20px;
+    background-color: #f6b319;
+}
+.project:hover .dropdown-content{
+    display: block;
+}
+.paper:hover .dropdown-content{
+    display: block;
+}
+
+/*CSS section 1 */
+.brevepresentation{
+    
+    margin-right: 130px;
+    font-size: 24px;
+    margin-top: 120px;
+}
+.photos{
+   
+    max-width: 500px;
+    margin-top: 60px;
+    margin-right: 25px;
+    margin-left: 200px;
+}
+.menuSecond{
+    float: right;
+    margin-right: 200px;
+    padding: 20px;
+    padding-left: 20px;
+    
+}
+.menuSecond li {
+    list-style-type: none;
+    margin: 10px;
+   display: inline-block;
+   font-size: 20px;
+   text-align: center;
+}
+.oeuvre{
+    background: greenyellow;
+    padding: 20px;
+    border-radius: 60px;
+}
+.lebenslauf{
+    background-color: red;
+    padding: 20px;
+    border-radius:60px ;
+} 
+.joindre{
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 60px;
+}
+.menuSecond3{
+    display: none;
+}
+
+/*css footer */
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.panel-footer div.row{
+    margin-bottom: 35px;
+}
+#phone, #adress{
+    line-height: 2;
+}
+
+#phone > span, #adress > span{
+    font-size: 1.3em;
+}
+#adress p{
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+}
+#email{
+    font-style: italic;
+}
+
+
+/* css section 2 */
+#section2{
+    display: none;
+}
+.tutorbot, .projet1{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* css section 3 */
+
+#section3{
+    display: none;
+}
+/*CSS section 4 PHD project*/
+
+.phdimage{
+    width: 700px;
+    height: 500px;
+    margin-top: 50px;
+}
+.resume, .phd{
+    margin-top: 50px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#section4{
+    display: none;
+}
+
+/* CSS section 5 Exo Spacy*/
+
+.codeImage{
+    width: 700px;
+    height: 500px;
+}
+.pythonExo, .summary{
+    margin-top: 50px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section5, #section6{
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+/*section competence*/
+
+/*first competence*/
+
+#skill{
+    display: none;
+}
+.skill0{
+    margin-top: 60px;
+}
+.skill1{
+    display: flex;
+}
+
+
+.skill1 .LfrontEnd{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.skill1 .LfrontEnd span {
+    margin: 10px;
+    margin-right: 600px;
+    border-radius: 15px;
+    box-shadow: inset 9.91px 9.91px 15px #D9E355,
+     inset -9.91px -9.91px 15px #FFFF65;
+}
+.LfrontEnd{
+    margin-right: -590px;
+}
+.skill1 .bar{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 900px;
+
+}
+
+.bar-container .bar{
+    background-color: gainsboro;
+    float: right;
+}
+.skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
+.skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
+    height: 30px;
+    background-color: rgb(83, 108, 219);
+    border-radius: 20px;
+
+}
+
+.skill1 .bar-container .bar .progesshtml{
+    width: 275px;
+    text-align: right;
+}
+.skill1 .bar-container .bar .progessCss{
+    width: 230px;
+    text-align: right;
+}
+.skill1 .bar-container .bar .progessJS{
+    width: 160px;
+    text-align: right;
+}
+.skill1 .bar-container .bar .progessresp{
+    width: 200px;
+    text-align: right;
+}
+
+/*second competences*/
+
+.skill2{
+    display: flex;
+}
+.skill2 .Back-end{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.Back-end{
+    margin-right: -650px;
+}
+
+.skill2 .Back-end span {
+    margin: 10px;
+    margin-right: 600px;
+    border-radius: 15px;
+    box-shadow: inset 9.91px 9.91px 15px #D9E355,
+     inset -9.91px -9.91px 15px #FFFF65;
+}
+
+
+.skill2 .bar{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.skill2 .bar-container .bar{
+    background-color: gainsboro;
+    float: right;
+    margin-right: 310px;
+}
+.skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+.skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+    height: 30px;
+    background-color: rgb(83, 108, 219);
+    border-radius: 20px;
+
+}
+
+.skill2 .bar-container .bar .progessionNode{
+    width: 150px;
+    text-align: right;
+}
+.skill2 .bar-container .bar .progessionExpress{
+    width: 100px;
+    text-align: right;
+}
+.skill2 .bar-container .bar .progessionDB{
+    width: 100px;
+    text-align: right;
+}
+.skill2 .bar-container .bar .progessionVC{
+    width: 200px;
+    text-align: right;
+}
+
+/* troisieme competence*/
+
+.competence3{
+    margin-top: 100px;
+}
+.skill3{
+    display: flex;
+}
+.skill3 .soft_skill{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.skill3 .soft_skill span {
+    margin: 10px;
+    margin-right: -550px;
+    border-radius: 15px;
+    box-shadow: inset 9.91px 9.91px 15px #D9E355,
+     inset -9.91px -9.91px 15px #FFFF65;
+     margin-left: 300px;
+}
+
+.skill3 .bar{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+.skill3 .bar-container .bar{
+    background-color: gainsboro;
+    float: right;
+    margin-right: 610px;
+}
+.skill3 .bar-container .bar .progessAA, .skill3 .bar-container .bar .progessTW,
+.skill3 .bar-container .bar .progessAU, .skill3 .bar-container .bar .progessCT{
+    height: 30px;
+    background-color: rgb(83, 108, 219);
+    border-radius: 20px;
+
+}
+
+
+.skill3 .bar-container .bar .progessAA{
+    width: 290px;
+    text-align: right;
+}
+.skill3 .bar-container .bar .progessTW{
+    width: 230px;
+    text-align: right;
+}
+.skill3 .bar-container .bar .progessAU{
+    width: 200px;
+    text-align: right;
+}
+.skill3 .bar-container .bar .progessCT{
+    width: 250px;
+    text-align: right;
+}
+
+
+/* css responsive */
+
+
+@media all and (max-width: 1350px){
+    .photos{
+        margin-left: 66px;
+    }
+    .menuSecond{
+        display: none;
+    }
+    .menuSecond3{
+        display: block;
+    }
+    .menuSecond3 li {
+        list-style-type: none;
+        margin: 10px;
+        margin-right: 50px;
+       font-size: 24px;
+       text-align: center; 
+    }
+    .acte{
+        background: greenyellow;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+    .cv{
+        background-color: red;
+        padding: 10px;
+        border-radius:60px ;
+        display: flex;
+    } 
+    .appel{
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+
+}
+@media all and (max-width: 750px){
+    .menuPrincipal{
+        margin-right: 40px;
+    }
+    .project, .competence, .contact{
+        display: block;
+        font-size: 12px;
+       
+    }
+    
+    .photos{
+        width: 300px;
+        margin-top: -11px;
+        margin-left: 20px; 
+    }
+    .brevepresentation{
+        margin: auto;
+        font-size: 20px;
+        text-align: justify;
+        
+    }
+    .menuSecond{
+        display: none;
+    }
+    .menuSecond3{
+        display: block;
+    }
+    .menuSecond3 li {
+        list-style-type: none;
+        margin: 10px;
+        margin-right: 50px;
+       font-size: 17px;
+       text-align: center; 
+    }
+    .acte{
+        background: greenyellow;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+    .cv{
+        background-color: red;
+        padding: 10px;
+        border-radius:60px ;
+        display: flex;
+    } 
+    .appel{
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+    
+}
+
+#header-nav{
+    background-color: #f6b319;;
+    border-radius: 0;
+    border: 0;
+}
+
+#nav-list{
+    margin-top: 10px;
+}
+#nav-list a{
+    color: #951c49;
+    text-align: center;
+}
+#nav-list a:hover{
+    background-color: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon.bar{
+    border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+
+    clear: both;
+    margin-top: -30px;
+}
+
+.skill2 .bar-container {
+    margin-left: 90px;
+}
+/*large devices only */
+@media (min-width:1200px){
+
+}
+
+/* Medium devices only */
+@media (min-width:992px) and (max-width:1999px) {
+    
+}
+
+/*small devices only */
+@media (min-width:768px) and (max-width:991px) {
+    
+}
+
+/* extra small devices */
+@media (max-width:767px){
+    #collapsable-nav a{
+        font-size: 1.2em;
+    }
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    embed{
+        width: 300px;
+        height: 100px;
+    }
+}
