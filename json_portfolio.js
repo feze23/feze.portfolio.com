@@ -15,6 +15,7 @@
     var section6 = document.getElementById('section6');
     var formulaire = document.getElementById('formular');
     var competence = document.getElementById('comp');
+    var fahigkeit = document.getElementById('fahigkeit')
 
 
     tutorbot.addEventListener('click', function(e){
@@ -26,6 +27,7 @@
         section5.style.display = "none";
         section6.style.display = "none";
         skill.style.display = "none";
+        skill.style.display = "none";
         //console.log(section2.innerHTML);
     }, false);
 
@@ -36,6 +38,7 @@
         section3.style.display = "block";
         section5.style.display = "none";
         section6.style.display = "none";
+         fahigkeit.style.display = "none"
         skill.style.display = "none";
     }, false);
 
@@ -44,9 +47,10 @@
         section1.style.display="none";
         section2.style.display = "none";
         section3.style.display = "none";
-        skill.style.display = "block";
         section5.style.display = "none";
         section6.style.display = "none";
+        skill.style.display = "block";
+        fahigkeit.style.display = "block"
     })
 
     competence.addEventListener('click', function(e){
@@ -57,6 +61,7 @@
         section5.style.display = "none";
         section6.style.display = "none";
         skill.style.display = "block";
+         fahigkeit.style.display = "block"
     })
 
 
@@ -68,6 +73,7 @@
         skill.style.display = "none";
         section4.style.display = "block";
         section6.style.display = "none";
+         fahigkeit.style.display = "none"
         
     })
 
@@ -79,6 +85,7 @@
         section4.style.display = "none";
         section5.style.display = "block";
         section6.style.display = "none";
+         fahigkeit.style.display = "none"
     })
     formulaire.addEventListener('click', function(e){
         section1.style.display="none";
@@ -88,4 +95,5 @@
         section4.style.display = "none";
         section5.style.display = "none";
         section6.style.display = "block";
+         fahigkeit.style.display = "none"
     })
