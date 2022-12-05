@@ -674,3 +674,153 @@ body{
         font-size: 15px;
     }
 }
+
+@media (max-width:640px){
+    #collapsable-nav a{
+        font-size: 1.2em;
+    }
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    embed{
+        width: 300px;
+        height: 100px;
+    }
+    .phdimage{
+        width: 340px;
+        height: 300px;
+    }
+
+    .skill1 .LfrontEnd{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill1 .bar-container .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+
+    .skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
+    .skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+
+
+    .skill1 .bar-container .bar .progesshtml{
+        width: 187px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessCss{
+        width: 142px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessJS{
+        width: 80px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessresp{
+        width: 112px;
+        text-align: right;
+    }
+
+    .skill2 .Back-end{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: left;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill1 .LfrontEnd1{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill2 .Back-end2{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: right;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
+    .skill2 .bar-container .bar .progessionDB3{
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+    .skill2 .bar-container .bar .progessionDB3{
+        width: 182px;
+        text-align: right;
+    }
+
+    .paper, .dropdown-content{
+        font-size: 15px;
+    }
+}
