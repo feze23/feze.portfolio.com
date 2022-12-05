@@ -1,5 +1,4 @@
-p{ color: white;
-}
+
 #page1, #page2, #page3, #page4, #page5, #page6, #page7 {
 	display: block;
 	float: right;
@@ -26,3 +25,34 @@ form{
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 }
+ @media all and (max-width:1200px){
+	#exo {
+        background-color: aquamarine;
+        margin-right: 288px;
+        margin-left: 290px;
+        padding-bottom: 20px;
+    }
+ }
+
+ @media all and (max-width:1300px){
+	#exo {
+		background-color: aquamarine;
+		margin-right: -8px;
+		margin-left: -12px;
+		padding-bottom: 20px;
+		}
+ }
+
+ @media (max-width: 620px){
+	#exo {
+    background-color: aquamarine;
+    margin-right: -8px;
+    margin-left: -12px;
+    padding-bottom: 20px;
+	}
+
+	input{
+		width: 330px;
+	}
+ }
+
