@@ -177,6 +177,7 @@ body{
 
 #skill{
     display: none;
+
 }
 .skill0{
     margin-top: 60px;
@@ -412,6 +413,7 @@ body{
         display: flex;
     }
 
+
 }
 @media all and (max-width: 750px){
     .menuPrincipal{
@@ -499,11 +501,13 @@ body{
 }
 /*large devices only */
 @media (min-width:1200px){
+  
 
 }
 
 /* Medium devices only */
 @media (min-width:992px) and (max-width:1999px) {
+  
     
 }
 
@@ -525,4 +529,41 @@ body{
         width: 300px;
         height: 100px;
     }
+    .phdimage{
+        width: 340px;
+        height: 300px;
+    }
+
+   .skill0 .bar{
+    width: 240px;
+   }
+   .skill1 .bar-container .bar .progesshtml {
+    width: 187px;
+    text-align: right;
+    }
+    .skill1 .bar-container .bar .progessCss {
+        width: 142px;
+        text-align: right;  
+    }
+    .skill1 .bar-container .bar .progessJS {
+        width: 90px;
+        text-align: right;  
+    }
+    .skill1 .bar-container .bar .progessresp {
+        width: 112px;
+        text-align: right;  
+    }
+    .Back-end {
+        margin-right: -679px;
+    }
+    .skill2{
+        margin-top: 20px;
+    }
+
+    .skill3 {
+        display: block;
+        float: left;
+    }
+    
+    
 }
