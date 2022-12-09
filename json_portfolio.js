@@ -30,7 +30,7 @@
         section5.style.display = "none";
         section6.style.display = "none";
         //console.log(section2.innerHTML);
-    }, false);
+    }, false); 
 
     faqbot.addEventListener('click', function(e){
         section4.style.display = "none";
