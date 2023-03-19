@@ -29,8 +29,9 @@
         section2.style.display="block";
         section5.style.display = "none";
         section6.style.display = "none";
+        skill.style.display = "none"; 
         //console.log(section2.innerHTML);
-    }, false); 
+    }, false);
 
     faqbot.addEventListener('click', function(e){
         section4.style.display = "none";
@@ -39,6 +40,7 @@
         section3.style.display = "block";
         section5.style.display = "none";
         section6.style.display = "none";
+        skill.style.display = "none"; 
     }, false);
 
 
@@ -50,7 +52,7 @@
         section5.style.display = "none";
         section6.style.display = "none";
         skill.style.display = "block";
-        fahigkeit.style.display = "block";
+        skill.style.display = "block";
     })
 
     competence.addEventListener('click', function(e){
