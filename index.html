@@ -20,8 +20,8 @@
         <nav id="header-nav" class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                        <h3 ><a class="name" href="index.html">Steve Edgar Feze Feugang</a> </h3>
-                        <p><a class="profession" href="index.html"> Web developper</a></p>       
+                        <h3 ><a class="name" href="index.html.htm">Steve Edgar Feze Feugang</a> </h3>
+                        <p><a class="profession" href="index.html.htm"> Web developper</a></p>       
                 </div>
 
                 <button type="button" class="navbar-toggle collapsed"
@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>    
+                </button> 
                         
 
                 <div id="collapsable-nav" class="collapse navbar-collapse">
@@ -43,7 +43,7 @@
                                 <a id="phdproject" href="#">PHD Project</a><br>
                                 <a id="nlp" href="#">NLP with Spacy</a><br>
                                 <a id="formular" href="#">Form</a><br>
-                                <a id="resto" href="restaurant_index.htm">Restaurant</a><br>
+                                <a id="resto" href="restaurant_index.htm" target="_blank">Restaurant</a><br>
                             </div>
                     </li>
                     <li id="comp" class="competence">
@@ -63,11 +63,14 @@
                             target="_blank">2016b</a><br>
                         </div>
                     </li>
-                    <li>
-                        <a href="https://github.com/Rute23" target="_blank">
-                            <i  id="git_contact" class="fa-brands fa-github "></i>
-                        </a>
+
+                    <li class="webChallenge">
+                        <a href="#">Web challenge</a>
+                        <div class="dropdown-content">
+                            <a id="#" href="challenge_1.html" target="_blank">Multi-step form</a><br>
+                        </div>
                     </li>
+                    
                         
                 </ul><!-- #nav-list -->
                 </div><!-- .collapse .navbar-collapse -->
@@ -85,29 +88,29 @@
                 </div>
                  <div class="col-md-6" >
                        <p class="brevepresentation">
-                        Hello! <br>after a double training in computer science and linguistics, 
-                        I taught computer science for five years in high school. 
-                        Eager to combine my two fields of training, I conducted a doctoral research in computational linguistics, 
-                        specifically in machine translation based on deep learning. Today,
-                        I am able to develop computer programs for automatic text processing, 
-                        to develop chatbots and to participate in technological innovation projects in AI
+                        Hallo, <br>After a dual training in computer science and linguistics, 
+                        I taught computer science for five years in high school. Wanting to combine 
+                        my two fields of training, I conducted a doctoral research in computational linguistics,
+                         more precisely in machine translation based on deep learning. Today, I am able to develop
+                          computer programs for automatic text processing, to develop chatbots and to participate in 
+                          web and AI development projects.
                        </p>
                         <ul class="menuSecond">
                             <li>
-                                <a class="oeuvre" id = "ouvrage" href="#">Projects</a>
+                                <a class="oeuvre" id="ouvrage" href="#">Projects</a>
                             </li>
                             <li>
                                 <a id="com" class="lebenslauf" href="#">Competences</a>
                             </li>
                             <li>
-                                <a class="joindre" href="#media">Contact</a>
+                                <a id="mecontacter" class="joindre" href="#media">Contact</a>
                             </li>
                         </ul>
                 </div>
             </div>
            </div>
-    </section> 
-      
+    </section>
+       
     <section id="section2">
         <div class="container-fluid">
             <div class="row">
@@ -118,7 +121,7 @@
                         Dialogflow and deployed on Telegram in order to be closer to the students.</p>
                 </div>
                 <div class="col-md-6">
-                    <embed src="video1_OfQTiVww.mp4"
+                    <embed src="Vidéo2.mp4"
                         width="640" height="380" title="Title of my video" />
                 </div>
             </div>
@@ -129,7 +132,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <embed src="video2_t4A3tlmB.mp4"
+                    <embed src="Vidéo1.mp4"
                     width="640" height="380" title="Title of my video" />
                 </div>
                 <div class="col-md-6">
@@ -154,10 +157,7 @@
                 </div>
                 <div class="col-md-6">
                     <p class="phd">PHD project</p>
-                    <p class="resume">
-                        <p>My research was about machine translation based on neural networks. 
-                        The goal was to design a model capable of improving the performance of a classical neural machine translation model.<p> 
-                        The proposed model uses Spacy to extract grammatical data from the source text words, 
+                    <p class="resume">The proposed model uses Spacy to extract grammatical data from the source text words, 
                         then it performs word embedding of this data and concatenates it with the corresponding source word 
                         vectors to obtain deep vectors, and finally these vectors are passed to the Neural machine translation model
                     </p>
@@ -170,8 +170,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <embed class="codeImage" src="spacyvideo_uvnPRbpu.mp4"
-                     title="code" alt="codeImage" />
+                    <embed src="spacyVideo.mp4"
+                    width="640" height="380" alt="codeImage" />
                 </div>
                 <div class="col-md-6">
                     <p class="pythonExo">Linguistics data extraction</p>
@@ -189,10 +189,9 @@
     <section id="section6">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" class="for">
                     <div id = 'exo'>
                         <form name="RegForm" id = 'formulaire'>
-                            <div><p>Interactive form developed with HTML, CSS and Javascript</p></div><br>
                             <fieldset id="fiedl">
                                 <legend>Quel est votre sexe? </a><abbr title="obligatoire">* <a id="page"></abbr></legend>
                             <label><input id = 'masculin' type="radio" name="check"  value="1"  /> Masculin </label>
@@ -236,7 +235,7 @@
     </section>
 
 
-    
+
     <section id="skill">
         <div  class="container-fluid" class="skill0">
             <div class="row">
@@ -323,13 +322,13 @@
             </div>
         </div>
     </section>
-
-    <footer id="media" class="panel-footer"> 
+    
+    <footer id="media" class="panel-footer">
         <div class="container">
             <div class="row">
                     <section id="phone" class="col-sm-4">
                         <i class="fa-sharp fa-solid fa-phone"></i>
-                        <span>Telefon</span><br>                     
+                        <span>Telephon</span><br>                     
                         +49 176 23574264
                         <hr class="visible-xs">
                     </section>
@@ -343,13 +342,42 @@
                         <span>Email and Social network</span><br>
                         <a href="mailto:adress@server.com">
                             <i class="fa-solid fa-envelope"></i>
-                            www.stevefeze@outlook.com</a><br>
+                            www.stevefeze@outlook.com</a><br><br>
                         <a href="https://linkedin.com/in/stevefeze" target="_blank">linkedin</a><br><br>
+                        <a href="https://github.com/Rute23" target="_blank">
+                                <i  id="git_contact" class="fa-brands fa-github "></i>
+                                github
+                        </a>
+                        
                     </section>
             </div>
         </div>
                 <div class="text-center">&copy; Copyright Steve Feze 2022</div>
+                <div id="date"></div>
     </footer>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> 
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+        function tick() {
+            const element = (
+                <div>
+                <p>Hallo !</p>
+                <p>{new Date().toLocaleTimeString()}.</p>
+                <p> {new Date().toLocaleDateString()}.</p>
+                </div>
+                );
+                ReactDOM.render(
+                    element,
+                    document.getElementById('date')
+                );
+                }   
+
+                setInterval(tick, 1000);
+        
+    </script>
 </body>
 </script>
 </html>
