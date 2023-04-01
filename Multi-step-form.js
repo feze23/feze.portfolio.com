@@ -12,14 +12,14 @@ const payPlan= document.querySelector(".payPlan");
 const formularErray = [formularName, formularEmailAdress, formularPhoneNumber];
 
 // tag element, attribut and text html vreation
-const tagErrorName = document.createElement('p');
+const tagErrorName = document.createElement('div');
 let attributeTagErrorName = document.createAttribute('class'); 
 let attributeTagErrorNameValue = attributeTagErrorName.value = 'messageError'; 
-const tagErrorEmail = document.createElement('p');
+const tagErrorEmail = document.createElement('div');
 let attributeTagErrorEmail = document.createAttribute('class'); 
 let attributeTagErrorEmailValue = attributeTagErrorEmail.value = 'messageError';
 
-const tagErrorPhone = document.createElement('p');
+const tagErrorPhone = document.createElement('div');
 let attributeTagErrorPhone = document.createAttribute('class'); 
 let attributeTagErrorPhoneValue = attributeTagErrorPhone.value = 'messageError';
 
@@ -63,6 +63,7 @@ const buttonStep2 = document.querySelector(".Btn2")
 
 // function to go to form container
 function goToFormularContainer (){
+    thankYou.style.display= "none";
     payPlan.style.display = "none";
     formularContainer.style.display = "block"; 
     addOns.style.display = "none";
@@ -159,6 +160,7 @@ const addOnsBtnnext = document.querySelector('.Btnnext');
 const addOnsGoback = document.querySelector('.AddOnsgoBack');  
 const addOns = document.querySelector('.addOns'); 
 function gotoAddOns (){
+    thankYou.style.display= "none";
     addOns.style.display = "flex"; 
     payPlan.style.display = "none"; 
     btn3.style.backgroundColor= "rgb(186, 235, 219)"; 
@@ -174,6 +176,7 @@ function gotoAddOns (){
 }
 addOnsBtnnext.addEventListener("click", gotoAddOns);
 function goToPayplan (){
+    thankYou.style.display= "none";
     addOns.style.display = "none"; 
     payPlan.style.display = "flex";
     btn3.style.backgroundColor= "rgb(76, 76, 225)";
@@ -217,7 +220,7 @@ function inputCheckbox (){
 function inputCheckbox1 (){
     inputChec1.checked = true;
     summaryAddOnsChoose2.style.display = "flex"; 
-    valueLargerStorage.textContent = '1'; 
+    valueLargerStorage.textContent = '2'; 
 }
 
 function inputCheckbox2 (){
@@ -254,6 +257,7 @@ const valueCustomiseProfil = document.querySelector('.valueCustomiseProfil');
 summaryLien.addEventListener("click", goToPayplan ); 
 
 function goToSummary (){
+    thankYou.style.display= "none";
     Summary.style.display = "flex"; 
     addOns.style.display = "none"; 
     payPlan.style.display = "none";
@@ -275,3 +279,27 @@ summuryBtn.addEventListener("click", goToSummary);
 step4.addEventListener("click", goToSummary); 
 btn4.addEventListener("click", goToSummary);
 summaryGoBack.addEventListener("click", gotoAddOns);
+
+////////////////////////////JS thaks page////////////////////////
+const thankYou = document.querySelector('.thankYou'); 
+const summaryBtnnext = document.querySelector('.summaryBtnnext'); 
+function goTothanksYou (){
+    payPlan.style.display = "none";
+    formularContainer.style.display = "none"; 
+    addOns.style.display = "none";
+    buttonStep1.style.backgroundColor = "rgb(76, 76, 225)";
+    buttonStep1.style.color = "black"; 
+    buttonStep2.style.backgroundColor = "rgb(76, 76, 225)";
+    buttonStep2.style.color = "white";
+    btn3.style.backgroundColor= "rgb(76, 76, 225)";
+    btn3.style.color= "white";
+    btn4.style.backgroundColor = "rgb(186, 235, 219)"; 
+    btn4.style.color = "white"; 
+    Summary.style.display= "none";
+    thankYou.style.display= "flex"; 
+}
+
+  summaryBtnnext.addEventListener("click", goTothanksYou);   
+
+
+
