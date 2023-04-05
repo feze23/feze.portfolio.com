@@ -189,8 +189,8 @@ body{
 }
 
 video{
-     width: 50%;
-    height: 380px
+     width: 85%;
+    height: 380px;
 }
 /* css section 3 */
 
@@ -629,8 +629,8 @@ video{
         text-align: center;
     }
     video{
-        width: 300px;
-        height: 100px;
+        width: 350px;
+        height: 250px;
     }
     .phdimage{
         width: 340px;
@@ -779,8 +779,8 @@ video{
         text-align: center;
     }
     video{
-        width: 300px;
-        height: 100px;
+        width: 350px;
+        height: 250px;
     }
     .phdimage{
         width: 340px;
