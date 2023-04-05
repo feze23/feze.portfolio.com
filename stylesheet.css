@@ -152,6 +152,8 @@ body{
     margin-right: 30px;
 }
 
+
+
 /*css footer */
 .panel-footer{
     margin-top: 140px;
@@ -579,10 +581,8 @@ body{
 }
 
 /* extra small devices */
-
-
 @media (max-width:767px){
-    qualities {
+    .qualities {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -597,6 +597,8 @@ body{
         width: 84%;
         margin-left: 30px;
     }
+
+    
 
     .myWeaknesses {
         display: flex;
@@ -614,7 +616,6 @@ body{
         margin-right: 30px;
         margin-top: 20px;
     }
-    
     #collapsable-nav a{
         font-size: 1.2em;
     }
