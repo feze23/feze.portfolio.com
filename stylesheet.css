@@ -101,7 +101,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: 590px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .myStrengths{
     display: flex;
