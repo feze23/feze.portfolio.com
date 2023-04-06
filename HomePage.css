@@ -1,0 +1,185 @@
+.horizontalMenu{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+
+.horizontalMenuLogo{
+    border: 2px solid red;
+}
+
+.horizontalMenuItems{
+    border: 2px solid green;
+    align-content: end;
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    margin-right: 70px;
+}
+
+.horizontalMenuItem1, .horizontalMenuItem2, .horizontalMenuItem3,.horizontalMenuItem4,.horizontalMenuItem5{
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 60px;
+    height: 450px;
+    justify-content: space-between;
+}
+
+.PresentationBanner{
+    border:2px solid red;
+    width: 60%;
+}
+.PresentationBannerFlex{
+    display: flex;
+}
+.bannerImage{
+    border: 2px solid yellow;
+    height: 235px;
+}
+.bannerAbout{
+    border: 2px solid pink;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.namebanner{
+    border: 2px solid black;
+    width: 45%;
+
+}
+
+.namebanner h1{
+    font-size: 300%;
+}
+.bannerText{
+    border: 2px solid red;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.bannerText .link .ReadMe{
+    background-color: rgb(159, 46, 46);
+    width: 40%;
+    height: 40px;
+    font-size: 24px;
+    margin-top: 15px;
+    color: white;
+}
+.text{
+    border: 2px solid black; 
+    height: 130px;
+}
+.link{
+    border: 2px solid green; 
+    height: 80px;
+}
+.BannerMenu{
+    border: 2px solid green;
+    width: 25%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerMenuTitel{
+    border: 2px solid rebeccapurple;
+    height: 40px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.bannerMenuTitel .titel{
+    margin-bottom: 10px;
+    background-color: aquamarine;
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.bannerMenuItem1{
+    border: 2px solid red;
+    height: 110px;
+    margin-top: 15px;
+}
+
+.bannerMenuItem2{
+    border: 2px solid greenyellow;
+    height: 110px;
+    margin-top: 15px;
+
+}
+
+.bannerMenuItem3{
+    border: 2px solid yellow;
+    height: 110px;
+    margin-top: 15px;
+
+}
+
+.bannerImage img{
+    height: 235px;
+    width: 100%;
+}
+
+.publication{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    width: 96%;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.publication1, .publication2, .publication3{
+    border: 2px solid red;
+    height: 150px;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.publication3{
+    margin-right: 110px;
+}
+
+.publication1Image, .publication2Image, .publication3Image{
+    border: 2px solid black;
+    width: 45%;
+}
+.publication1Text, .publication2Text, .publication3Text{
+    border: 2px solid green;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.publication1Textnumero, .publication2Textnumero, .publication3Textnumero {
+    border: 2px solid black;
+    height: 40px;
+}
+.publication1textTitle, .publication2textTitle, .publication3textTitle{
+    border: 2px solid black;
+    margin-top: 10px;
+    height: 20px;
+}
+.publication1textContent, .publication2textContent, .publication3textContent{
+    border: 2px solid black;
+    margin-top: 10px;
+    height: 60px;
+}
