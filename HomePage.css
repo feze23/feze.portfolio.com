@@ -2,11 +2,20 @@
 body{
    font-family: Arial, Helvetica, sans-serif;
 }
+
 .horizontalMenu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 60px;
+}
+
+.hotDogMenu{
+    display: none;
+    cursor: pointer;
+    margin-top: 15px;
+    z-index: 1;
+    margin-right: 20px;
 }
 
 .horizontalMenuItems{
@@ -15,6 +24,10 @@ body{
     width: 30%;
     flex-direction: row;
     margin-right: 70px;
+}
+
+.nav-link, h3 a, .bannerText .link .ReadMe {
+    transition: 0.7s ease;
 }
 
 .horizontalMenuItem1, .horizontalMenuItem2, .horizontalMenuItem3,.horizontalMenuItem4,.horizontalMenuItem5{
@@ -80,7 +93,7 @@ body{
 }
 .bannerText .link .ReadMe:hover{
     cursor: pointer;
-    background-color:rgb(2, 2, 35); 
+    background-color:rgb(2, 2, 35);
 }
 .text{
     height: 130px;
@@ -122,6 +135,7 @@ body{
     height: 40px;
     margin-top: 15px;
     display: flex;
+    margin-left: 15px;
 }
 
 .bannerMenuTitel .titel{
@@ -132,23 +146,28 @@ body{
     font-size: 30px;
     font-weight: bold;
     color: gold;
-    margin-left: 20px;
 }
 
 .bannerMenuItem1{
     height: 110px;
     margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
 }
 
 .bannerMenuItem2{
     height: 110px;
     margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
 
 }
 
 .bannerMenuItem3{
     height: 110px;
     margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
 
 }
 
@@ -211,4 +230,315 @@ body{
     margin-top: 10px;
     height: 60px;
     color: grey;
+}  
+
+.ResponsiveContainer{
+    display: none;
+}
+
+
+
+/* /////////////////////// Media Queries //////////////////////////////////*/
+
+@media all and (max-width: 1222px){
+
+    .ResponsiveContainer{
+        display: none;
+    }
+    .horizontalMenuItems{
+        margin-right: 177px;
+    }
+
+    .BannerMenu {
+        width: 30%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(1, 1, 30);
+        color: white;
+    }
+    .link {
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .bannerText .link .ReadMe {
+        background-color: rgb(211, 59, 59);
+        width: 44%;
+        height: 40px;
+        font-size: 17px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    .publication1textContent, .publication2textContent, .publication3textContent {
+        margin-top: 31px;
+        height: 60px;
+        color: grey;
+    }
+
+    .publication1Image, .publication2Image, .publication3Image {
+        width: 57%;
+    }
+
+    .publication1Text, .publication2Text, .publication3Text {
+        width: 73%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+
+}
+
+
+@media (min-width:641px) and (max-width:1222px) {
+
+    .ResponsiveContainer{
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 60px;
+        height: 898px;
+        justify-content: space-between;
+    }
+
+    .bannerImage {
+        height: 235px;
+        width: 160%;
+    }
+
+    .bannerAbout {
+        height: 210px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 148%;
+        margin-top: 15px;
+    }
+
+    .BannerMenu {
+        width: 94%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(1, 1, 30);
+        color: white;
+    }
+
+    .publication {
+        display: flex;
+        flex-direction: row;
+        width: 107%;
+        height: 199px;
+        margin-left: 60px;
+        margin-top: 26px;
+        justify-content: space-between;
+    }
+
+    .publication1, .publication2, .publication3 {
+        height: 170px;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .publication1Image, .publication2Image, .publication3Image {
+        width: 73%;
+    }
+
+     .publication2textContent, .publication3textContent {
+        margin-top: 41px;
+        height: 60px;
+        color: grey;
+    }
+
+    .horizontalMenuItems {
+        margin-right: 209px;
+    }
+    
+
+}
+
+@media all and  (max-width:640px){
+
+    .hotDogMenu{
+        display: block;
+        cursor: pointer;
+        margin-top: 15px;
+        z-index: 1;
+        margin-left: 219px;
+        
+        
+    }
+
+    .hotDogMenu:active{
+        transition: 0.7s ease;
+    }
+
+    .shaddowContainer {
+        width: 100%;
+        height: 2397px;
+        opacity: 0.5;
+        background-color: rgb(36, 35, 35);
+        position: absolute;
+        z-index: 2;
+        margin-left: -7px;
+        margin-top: -7px;
+        display: none;
+    }
+    .ResponsiveContainer {
+        background-color: white;
+        z-index: 3;
+        width: 69%;
+        height: 546px;
+        position: absolute;
+        margin-left: 108px;
+        margin-top: -7px;
+        display: none;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .ResponsiveContainer .close {
+        margin-top: 15px;
+        margin-left: 210px;
+    }
+
+  .ResponsiveContainer .horizontalMenuItem21, .ResponsiveContainer .horizontalMenuItem31, .ResponsiveContainer .horizontalMenuItem41, .ResponsiveContainer .horizontalMenuItem51{
+        margin-top: 22px;
+        margin-left: 20px;
+    }
+
+    .ResponsiveContainer .horizontalMenuItem11{
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    .mainContianer{
+        z-index: 1;
+        position: relative;
+        
+    }
+
+    .horizontalMenuItem1, .horizontalMenuItem2, .horizontalMenuItem3,.horizontalMenuItem4,.horizontalMenuItem5{
+        margin: 10px;
+        margin-left: 15px;
+        display: none;
+    }
+
+    .horizontalMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 10px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .horizontalMenu.active{
+        left: 0;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 15px;
+        height: 1091px;
+        justify-content: space-between;
+    }
+
+    .BannerMenu {
+        width: 94%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(1, 1, 30);
+        color: white;
+        margin-top: 204px;
+    }
+
+    .PresentationBanner {
+        width: 95%;
+    }
+
+    .namebanner {
+        width: 87%;
+    }
+
+    .bannerAbout {
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .bannerText {
+        width: 109%;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .bannerText .text .presentation {
+        width: 80%;
+        margin-top: -3px;
+        color: grey;
+        font-size: 18px;
+    }
+
+    .link {
+        height: 80px;
+        margin-top: -20px;
+    }
+
+    .publication1, .publication2, .publication3 {
+        height: 170px;
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .publication1textTitle, .publication2textTitle, .publication3textTitle {
+        margin-top: 6px;
+        height: 20px;
+        font-weight: bold;
+    }
+
+    .publication1textContent{
+        margin-top: 20px;
+    }
+
+    .publication2textContent, .publication3textContent {
+        margin-top: 42px;
+        height: 60px;
+        color: grey;
+    }
+
+    .publication1Text, .publication2Text, .publication3Text {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .publication {
+        display: flex;
+        flex-direction: column;
+        width: 369%;
+        height: 170px;
+        margin-left: 15px;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
 }
