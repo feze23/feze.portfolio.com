@@ -80,6 +80,7 @@ body{
 }
 .bannerText .link .ReadMe:hover{
     cursor: pointer;
+   backgroun-color: navy; 
 }
 .text{
     height: 130px;
