@@ -1,0 +1,1071 @@
+body{
+    background-color: rgb(207, 227, 228);
+}
+.main-container{
+    background-color: white;
+    width: 55%;
+    height: 620px;
+    position: absolute;
+    top: 30px; 
+    left:350px; 
+    border-radius: 10px;
+    display: flex;
+}
+
+/* CSS side bar*/
+
+.imgSidebar{
+    position: absolute;
+    top: 20px;
+    left: 20px; 
+}
+.step{
+    position: absolute;
+    z-index: 1;
+    top: 50px; 
+    left: 30px;
+}
+button{
+    border-radius: 100px;
+    border: 1px solid white;
+    width: 30%;
+    height: 30px;
+    background-color: rgb(76, 76, 225);
+    color: white;
+}
+.Btn1, button:hover, button:focus {
+  background-color: rgb(186, 235, 219);
+  color: black;
+}
+
+
+.step-1, .step-2, .step-3, .step-4{
+    width: 200%;
+    display: flex;
+    margin: 10px;
+}
+.step-1:hover, .step-2:hover, .step-3:hover, .step-4:hover{
+  cursor: pointer;
+}
+
+.Btn-1, .Btn-2, .Btn-3, .Btn-4{
+    width: 98px;
+    margin-right: -50px;
+}
+
+
+p{
+    line-height: 1px;
+    margin-top: 8px;
+    font-size: 0.8em;
+    color: white;
+}
+.title{
+ font-weight: bold ;
+}
+.span-step{
+    opacity: 0.33;
+}
+.sidbar-container{
+    width: 45%;
+    height: 600px;
+}
+
+
+/* CSS formular*/
+.formular-container{
+    position: absolute;
+    width: 60%;
+    height: 600px;
+    left: 370px;
+    display: block;
+}
+.formular{
+  position: absolute;
+  width:67%;
+  height: 200px;
+  margin-top:15px;
+}
+.formular input{
+    width: 90%
+}
+.formular-text{
+    margin-top: 60px;
+}
+.formular-text p{
+    color: grey;
+}
+.formular-text h2{
+    color: rgb(2, 2, 32)
+}
+
+.Btn-next{
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    left: 120px;
+    text-align: end;
+    margin-top: 80px;
+}
+
+.Btn-next button{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: blue;
+}
+
+.messageError{
+    color: red;
+    margin-left: 10px;
+    width: 190%;
+}
+
+
+/* CSS select your plan layout*/
+
+.payPlan{
+    position: absolute;
+    width: 59%;
+    height: 600px;
+    left: 300px;
+    display: none;
+    flex-direction: column;
+    
+}
+.payPlanTitle{
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.payPlanTitle p{
+    color: gray;
+}
+.payModalities{
+    width: 100%;
+    height: 400px;
+    margin-bottom: -30px;
+}
+.payModalitiesFlex{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.arcade, .advances, .pro{
+    width: 120px;
+    height: 150px;
+    background-color: beige;
+    margin-top: -40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.arcade p, .advances p, .pro p{
+    color: black;
+    margin-left: 10px;
+}
+.arcade p span, .advances p span, .pro p span {
+    opacity: 0.33;
+}
+.imgArcade{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 57px;
+}
+
+.arcade:hover,.advances:hover, .pro:hover{
+    cursor: pointer;
+    background-color: rgb(216, 216, 209);
+}
+.paymentmodalitychoose{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.chooseBar{
+    width: 70%; 
+    height: 36px;
+    background-color: rgb(216, 216, 209);
+    border-radius: 5px;
+}
+.chooseBarFlex{
+    width: 70%; 
+    height: 36px;
+    background-color: rgb(216, 216, 209);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(221, 88, 166);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: navy;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(208, 208, 214);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+ 
+  .ChooseBarMonthly{
+    font-weight: bold;
+    color: navy;
+  }
+
+  /* CSS Add ons layout */
+
+  .addOns{
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    width: 59%;
+    height: 500px;
+    left: 300px;
+  }
+
+  .addOnsTitle{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top:30px;
+    left: 80px;
+  }
+  .addOnsTitle h2{
+    margin-top: 30px;
+    color: navy;
+    border-radius: 5px;
+    border: 3px;
+  }
+  .addOnsTitle p{
+    color: gray;
+  }
+
+  .AddOnsOnlineService{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    top:150px;
+    left: 80px;
+    border-radius: 5px;
+    border: 1px solid navy;
+  }
+  .AddOnsOnlineService:hover, .AddOnsCustomiseProfile:hover, .AddOnsLargerStorage:hover{
+    background-color: rgb(193, 189, 189); 
+    cursor: pointer;
+  }
+  .AddOnsOnlineServiceFlex{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+  }
+  .form{
+    width: 20%;
+    height: 68px;
+  }
+  .form input{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    transform: scale(2);
+  }
+  .form input[type='checkbox'] {
+    accent-color: rgb(124, 33, 90);
+}
+  
+  
+  .text{
+    width: 65%;
+    height: 68px;
+  }
+  .text .online{
+    font-weight: 700;
+    color: navy;
+    margin-top: 24px;
+  }
+  .text p{
+    color: gray;
+  }
+  .price{
+    width: 20%;
+    height: 68px;
+    flex-grow: 1;
+  }
+  .price p{
+    color: rgb(132, 91, 170);
+    position: absolute;
+    top: 25px;
+  }
+
+  .AddOnsLargerStorage{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    top:260px;
+    left: 80px;
+    border-radius: 5px;
+    border: 1px solid navy;
+  }
+  .AddOnsLargerStorageFlex{
+    display: flex;
+  }
+
+  .AddOnsCustomiseProfile{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    left: 80px;
+    top:370px;
+    border-radius: 5px;
+    border: 1px solid navy;
+  }
+  .AddOnsCustomiseProfileFlex{
+    display: flex;
+  }
+
+  .AddOnsNavigation, .navigation{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    top:490px;
+    left: 80px;
+  }
+  .AddOnsNavigationFlex, .navigationFlex {
+    display: flex;
+  }
+ 
+.AddOnsgoBack, .goBack{
+    width: 30%px;
+    height:100px;
+    position: absolute;
+  }
+  .AddOnsBtnnext, .Btnnext{
+    width: 30%px;
+    height:100px;
+    position: absolute;
+    left: 230px;
+  }
+  
+  .AddOnsNavigation button, .navigation button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: blue;
+  }
+
+
+  /* Css SUMMARY LAYOUT*/
+
+  .Summary{
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    width: 59%;
+    height: 500px;
+    left: 300px;
+  }
+
+  .summaryTitle{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top:30px;
+    left: 80px;
+  }
+  .summaryTitle h2{
+    margin-top: 30px;
+    color: navy;
+    border-radius: 5px;
+    border: 3px;
+  }
+  .summaryTitle p{
+    color: gray;
+  }
+
+  .summaryContent{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 190px;
+    position: absolute;
+    top:150px;
+    left: 80px;
+    border-radius: 5px;
+  }
+
+  .summaryPayPlan{
+    width: 100%;
+    height: 70px;
+    background-color: gray; 
+  }
+
+  .summaryPayPlanFlex{
+    display: flex;
+  }
+
+
+  .summaryPayPlanModele{
+    width: 20%;
+    height: 68px;
+    flex-grow: 1;
+  }
+  .summaryPayPlanModele .summaryPayPlanModeleChoose{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: blue;
+  }
+  .summaryPayPlanModele .lien{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  
+
+  .summaryPrice{
+    width: 20%;
+    height: 68px;
+    flex-grow: 1;
+  }
+  .summaryPrice p{
+    color: navy;
+    position: absolute;
+    top: 25px;
+    margin-left: 85px;
+    font-weight: bolder;
+    font-size: 17px;
+  }
+
+  .summaryAddOns{
+    width: 100%;
+    height: 120px;
+  }
+  .summaryAddOnsFlex{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summaryAddOnsChoose1{
+    width: 100%;
+    height: 40px;
+    background-color: gray; 
+  }
+  .summaryAddOnsChoose2{
+    width: 100%;
+    height: 40px;
+    background-color: gray; 
+  }
+  .summaryAddOnsChoose3{
+    width: 100%;
+    height: 40px;
+    background-color: gray; 
+  }
+  .summaryAddOnsChoose1Flex{
+    display: none; 
+  }
+
+  .summaryAddOnsChoose2Flex{
+    display: none; 
+  }
+  .summaryAddOnsChoose3Flex {
+    display: none; 
+  }
+ .summaryAddOnsChoose1Text1, .summaryAddOnsChoose1Text2, .summaryAddOnsChoose1Text3 {
+    width:50%;
+    height: 40px;
+  }
+  .summaryAddOnsChoose1Text1 p,  .summaryAddOnsChoose2Flex p, .summaryAddOnsChoose3Flex p {
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+
+  .summaryAddOnsChoose1Value1 p, .summaryAddOnsChoose1Value2 p, .summaryAddOnsChoose1Value3 p{
+    margin-top: 25px;
+    margin-left: 85px;
+  }
+ 
+  
+  .summaryAddOnsChoose1Value1, .summaryAddOnsChoose1Value2, .summaryAddOnsChoose1Value3 {
+    width:50%;
+    height: 40px;
+  }
+
+  .total{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    left: 80px;
+    top:370px;
+    border-radius: 5px;
+  }
+  .totalFlex{
+    display: flex;
+  }
+  .totalText{
+    width: 30%;
+    height: 70px;
+    flex-grow: 1;
+  }
+  .totalText p{
+    position: absolute;    
+    left: 20px;
+    top: 25px; 
+    font-size: 17px;
+    color: rgb(225, 217, 233); 
+  }
+
+  .totalprice{
+    width: 30%;
+    height: 70px;
+    flex-grow: 1;   
+  }
+  .totalprice p{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 17px;
+    color: rgb(170, 125, 211);
+    font-weight: bolder;
+  }
+
+  .summaryNavigation{
+    width: 70%;
+    height: 70px;
+    position: absolute;
+    top:490px;
+    left: 80px;
+  }
+  .summaryNavigationFlex {
+    display: flex;
+  }
+
+  .summaryGoBack{
+    width: 200px;
+    height:100px;
+    position: absolute;
+  }
+  .summaryBtnnext{
+    width: 200px;
+    height:100px;
+    position: absolute;
+    left: 240px;
+  }
+ 
+  
+  .summaryNavigation button{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: blue;
+  }
+
+  /* /////////////////////////// thank you page ////////////////////*/
+  .thankYou{
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    width: 59%;
+    height: 500px;
+    left: 310px;
+  }
+
+
+  .thanksImage{
+    margin-top: 190px;
+  }
+
+  .imagethanks{
+    margin-left: 200px;
+  }
+
+  .ThanksText{
+    margin-top: 20px;
+    height: 200px;
+    text-align: center;
+    color: rgba(192, 177, 177, 0.942);
+  }
+
+  .ThanksText h2{
+    color: navy;
+    font-weight: bold;
+  }
+  .ThanksText a{
+    text-decoration-style: none;
+  }
+
+
+
+  /* /////////////////////// Media Queries //////////////////////////////////*/
+
+  @media all and (max-width: 1350px){
+    .main-container {
+      background-color: white;
+      width: 97%;
+      height: 638px;
+      position: absolute;
+      top: 232px;
+      left: 13px;
+      border-radius: 10px;
+      display: flex;
+  }
+    .formular input {
+      width: 198%;
+    }
+    .Btn-next button {
+      width: 93%;
+      height: 40px;
+      border-radius: 5px;
+      border: blue;
+    }
+    .Btn-next {
+      width: 67%;
+      height: 100px;
+      position: absolute;
+      left: 216px;
+      text-align: end;
+      margin-top: 80px;
+    }
+
+    .formular {
+      position: absolute;
+      width: 34%;
+      height: 200px;
+      margin-top: 15px;
+  }
+
+    .messageError{
+      color: red;
+      margin-left: 10px;
+      width: 190%;
+    
+    }
+    
+  }
+
+ 
+ @media (max-width:767px){
+  
+
+ }
+
+ @media (max-width:640px){
+
+  .formular-container {
+    position: absolute;
+    width: 97%;
+    height: 511px;
+    left: 4px;
+    display: block;
+    margin-top: 170px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.formular-text {
+  width: 93%;
+  height: 53px;
+  margin-top: 60px;
+  margin-left: 17px;
+  line-height: 1px;
+  margin-top: 8px;
+  font-size: 15px;
+  color: white;
+  margin-right: 12px;
+}
+
+.formular .form-group{
+  width: 91px;
+  margin-left: -3px;
+}
+
+.form-group .labelPhoneNumber, .form-group .labelName, .form-group .labelEmail{
+  font-size: 13px;
+}
+
+
+
+    .imgSidebar {
+      position: absolute;
+      display: none;
+  }
+
+  .main-container {
+    background-color:#afccf7;
+    width: 100%;
+    height: 897px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.sidbar-container {
+  width: 100%;
+  height: 237px;
+}
+
+  .step {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 30px;
+    display: flex;
+    flex-direction: raw; 
+    }
+
+    .step-1-Para, .step-2-Para, .step-3-Para, .step-4-Para{
+      display: none;
+    }
+
+    .step-1, .step-2, .step-3, .step-4 {
+      width: 200%;
+      display: flex;
+      margin: 15px;
+  }
+
+  button {
+    border-radius: 100px;
+    border: 1px solid white;
+    width: 46%;
+    height: 46px;
+    background-color: rgb(76, 76, 225);
+    color: white;
+  }
+  .formular-text {
+    margin-top: 60px;
+    margin-left: 25px;
+  }
+
+  .formular-text h2 {
+    color: rgb(11 11 108);
+    font-weight: bold;
+  }
+
+  .formular {
+    position: absolute;
+    width: 20%;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+
+.formular input {
+  width: 363%;
+}
+
+.messageError{
+  color: red;
+  margin-left: 10px;
+  width: 190%;
+
+}
+
+.Btn-next button {
+  width: 189%;
+  height: 40px;
+  border-radius: 5px;
+  border: blue;
+}
+
+.Btn-next {
+  width: 77%;
+  height: 100px;
+  position: absolute;
+  left: 220px;
+  text-align: end;
+  margin-top: 166px;
+}
+
+
+
+.payModalitiesFlex {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.arcade, .advances, .pro {
+  width: 340px;
+  height: 94px;
+  background-color: beige;
+  margin-top: 16px;
+  margin-left: 8px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+span .spanPay{
+  margin-top: 12px;
+}
+.arcade p, .advances p, .pro p {
+  color: black;
+  margin-left: 59px;
+  margin-top: -45px;
+}
+
+ .payModalitiesFlex {
+  width: 100%;
+  height: 678px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payPlan {
+  position: absolute;
+  width: 97%;
+  height: 600px;
+  left: 7px;
+  margin-top: 164px;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+b, strong {
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.spanText{
+  color: yellow;
+}
+
+.paymentmodalitychoose {
+  width: 109%;
+  height: 217px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.chooseBarFlex {
+  width: 89%;
+  height: 62px;
+  background-color: rgb(216, 216, 209);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3px;
+  margin-right: 32px;
+}
+
+.AddOnsNavigation button, .navigation button {
+  width: 155%;
+  height: 40px;
+  border-radius: 5px;
+  border: blue;
+  margin-right: 4px;
+}
+
+.ChooseBarMonthly {
+  font-weight: bold;
+  color: navy;
+  margin-left: 41px;
+  font-size: 15px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-right: 0px;
+}
+p {
+  line-height: 1px;
+  margin-top: 8px;
+  font-size: 0.8em;
+  color: white;
+  margin-right: 12px;
+}
+.Planyearly{
+  margin-right: 52px;
+}
+
+.addOns {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 93%;
+  height: 500px;
+  margin-left: -286px;
+  top: 161px;
+  background-color: white;
+  margin-right: 11px;
+  border-radius: 12px;
+}
+
+.addOnsTitle {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 39px;
+}
+
+.AddOnsOnlineService {
+  width: 83%;
+  height: 70px;
+  position: absolute;
+  top: 150px;
+  left: 37px;
+  border-radius: 5px;
+  border: 1px solid navy;
+}
+
+.AddOnsLargerStorage {
+  width: 83%;
+  height: 70px;
+  position: absolute;
+  top: 260px;
+  left: 37px;
+  border-radius: 5px;
+  border: 1px solid navy;
+}
+.AddOnsCustomiseProfile {
+  width: 83%;
+  height: 70px;
+  position: absolute;
+  left: 37px;
+  top: 370px;
+  border-radius: 5px;
+  border: 1px solid navy;
+}
+
+.AddOnsNavigation, .navigation {
+  width: 83%;
+  height: 70px;
+  position: absolute;
+  top: 620px;
+  left: 9px;
+}
+
+.Summary {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 97%;
+  height: 500px;
+  left: -41px;
+  margin-left: 46px;
+  top: 166px;
+  background-color: white;
+  border-radius: 10px;
+}
+.summaryTitle {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 190px;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  border-radius: 5px;
+}
+
+.summaryPayPlan {
+  width: 100%;
+  height: 70px;
+  background-color: gray;
+}
+.summaryAddOns {
+  width: 100%;
+  height: 120px;
+}
+
+.summaryNavigation {
+  width: 70%;
+  height: 70px;
+  position: absolute;
+  top: 547px;
+  left: 12px;
+}
+
+.thankYou {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 98%;
+  height: 500px;
+  left: 4px;
+  background-color: white;
+  border-radius: 10px;
+  top: 186px;
+}
+.thanksImage {
+  margin-top: 147px;
+}
+
+.imagethanks {
+  margin-left: 165px;
+}
+}
+  
+  
+
+
+ 
+  
+ 
