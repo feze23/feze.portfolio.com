@@ -605,6 +605,58 @@ video{
         display: flex;
     }
 
+    .FrontEndWebChallengeTitel {
+        width: 69%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 80px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    .multiSepForm, .homePage, .multiHomePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 24%;
+    }
+
+    a .multiSepFomTitel, a .homePageTitel, a .multiHomePageTitel {
+        height: 50px;
+        margin-top: 15px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-decoration-line: none;
+    }
+    h3 {
+        font-size: 17px;
+    }
+.homePage {
+        display: flex;
+        flex-direction: column;
+        height: 610px;
+        width: 23%;
+    }
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 870Px;
+    }
+
+    .qualitiesMySkill {
+        width: 69%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 76px;
+        height: 80px;
+        text-align: center;
+        margin-left: 120px;
+    }
+
 
 }
 @media all and (max-width: 750px){
@@ -710,6 +762,8 @@ video{
 
 /* extra small devices */
 @media (max-width:767px){
+
+    
     .qualities {
         display: flex;
         flex-direction: column;
@@ -891,6 +945,8 @@ video{
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
     }
+
+    
 }
 
 @media (max-width:640px){
@@ -1040,5 +1096,58 @@ video{
 
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
-    } 
+    }
+
+    .FrontEndWebChallengeTitel {
+        width: 76%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 80px;
+        text-align: center;
+        margin-left: 45px;
+    }
+
+    .FrontProjets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 787px;
+        margin-top: 30px;
+    }
+    .multiSepFormImage {
+        
+        width: 100%;
+        height: 100%;
+    }
+    .multiSepForm, .homePage, .multiHomePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 72%;
+        margin-left: 50px;
+    }
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 2083Px;
+    }
+    .homePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 72%;
+        margin-left: 50px;
+        margin-top: 74px;
+    }
+    .qualitiesMySkill {
+        width: 71%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 96px;
+        height: 80px;
+        text-align: center;
+        margin-left: 51px;
+    }
 }
