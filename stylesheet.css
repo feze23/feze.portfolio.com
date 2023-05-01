@@ -569,7 +569,7 @@ video{
 /* css responsive */
 
 
-@media all and (max-width: 1350px){
+@media all and (max-width: 1232px){
     .photos{
         margin-left: 66px;
     }
@@ -658,6 +658,11 @@ video{
     }
 
 
+}
+@media all and (max-width: 1147px){
+    .col-md-6 {
+        width: 72%;
+    }
 }
 @media all and (max-width: 750px){
     .menuPrincipal{
