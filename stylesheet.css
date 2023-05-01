@@ -104,6 +104,99 @@ body{
 .menuSecond3{
     display: none;
 }
+/*//////////////////////////////////////////////////////////////////*/
+.FrontEndWebChallenge{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750Px;
+}
+.FrontEndWebChallengeTitel{
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+    height: 80px;
+    text-align: center;
+    margin-left: 380px;
+}
+.qualitiesMySkill{
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 76px;
+    height: 80px;
+    text-align: center;
+    margin-left: 380px;
+}
+.FrontEndWebChallengeTitel p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.qualitiesMySkill p{
+    margin-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.FrontProjets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 787px;
+    margin-top: 30px;
+}
+.multiSepForm, .homePage, .multiHomePage{
+    display: flex;
+    flex-direction: column;
+    height: 644px;
+    width: 30%;
+}
+.multiHomePage{
+    margin-right: 35px;
+}
+.multiSepForm{
+    margin-left: 35px;
+}
+.multiSepFormImage{
+    height: 300px;
+}
+.homePageImage, .multiHomePageImage{
+    height: 400px;
+}
+.multiSepFormImage img, .homePageImage img, .multiHomePageImage img{
+    width: 100%;
+    height:100%;
+}
+.multiSepFormImage img:hover, .homePageImage img:hover, .multiHomePageImage img:hover{
+    cursor: pointer;
+}
+a .multiSepFomTitel , a .homePageTitel ,  a .multiHomePageTitel{
+    height: 50px;
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+     text-decoration-line: none;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.5;
+}
+.multiSepFomTitel:hover, .homePageTitel.hover, .multiHomePageTitel:hover{
+   cursor: pointer;
+}
+.multiSepFormDescription, .homePageDescription, .multiHomePageDescription{
+    margin-top: 10px;
+    color: white;
+    height: 359px;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
 
 
 .qualities{
@@ -124,10 +217,14 @@ body{
 .myStrengths .title, .myWeaknesses .title, .myAmbitions .title{
     height: 50px;
     text-align: center;
+    cursor: pointer;
 }
 
-.myStrengths .image, .myWeaknesses .image, .myAmbitions .image{
-    height: 240px;
+
+
+.myStrengths .image:hover, .myWeaknesses .image:hover,.myAmbitions .image:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 @keyframes imageAnimation{
     fom{transform: scale(1,1);}
@@ -150,7 +247,14 @@ body{
 .myStrengths .text ul, .myWeaknesses .text ul, .myAmbitions .text ul {
     list-style-type: none;
     margin-right: 50px;
-    margin-top: 10px;
+  }
+
+  .myStrengths .text ul li, .myWeaknesses .text ul li, .myAmbitions .text ul li {
+    margin-top: -13px;
+  }
+
+  .myAmbitions .text ul li {
+    margin-right: -17px;
   }
   
 
@@ -936,5 +1040,5 @@ video{
 
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
-    }
+    } 
 }
