@@ -195,6 +195,9 @@ a:hover{
     color: white;
     height: 359px;
 }
+.multiSepFormDescription h3, .homePageDescription h3, .multiHomePageDescription h3{
+    font-size: 18px;
+}
 
 /*////////////////////////////////////////////////////////////////////////////*/
 
