@@ -1155,4 +1155,17 @@ video{
         text-align: center;
         margin-left: 51px;
     }
+
+    .col-md-6 {
+        width: 99%;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+        font-size: 12px;
+    }
+    #collapsable-nav a {
+        font-size: 10px;
+    }
+
 }
