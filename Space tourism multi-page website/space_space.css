@@ -3,6 +3,38 @@ body{
     font-family: 'Lora', serif;
     font-family: 'Oxygen', sans-serif;   
 }
+.responsiveMenu {
+    width: 100%;
+    height: 630px;
+    background-image: url(background-home-mobile.jpg);
+    background-size: 98% 506px;
+    background-repeat: no-repeat;
+    z-index: 3;
+    position: fixed;
+    display: none;
+}
+
+
+.responsiveMenu img {
+    width: 9%;
+    height: 8%;
+    margin-left: 80%;
+    margin-top: 34px;
+}
+.menuresponsive{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    color: white;
+}
+.homeResponsive, .destinationResponsive, .crewResponsive, .technologieResponsive{
+    margin: 20px;
+}
+.mainContain{
+    display: block;
+    position: absolute;
+    
+}
 
 .menubar{
     display: flex;
@@ -19,6 +51,20 @@ body{
     width: 55%;
     height: 80px;
     margin-right: -7px;
+    z-index: 0;
+}
+
+.hamburger{
+    width: 10%;
+    height: 60px; 
+    z-index: 1;
+    margin-top: 21px;
+    display: none;
+}
+.menubar img{
+    
+    width: 100%;
+    height: 30px;
 }
 .home{
     margin-left: 60px;
@@ -43,6 +89,7 @@ body{
     margin-top: 25px;
     display: flex;
     flex-direction: column;
+
 }
 .home:hover, .destination:hover, .crew:hover, .technologie:hover{
     cursor: pointer;
@@ -387,4 +434,99 @@ body{
     margin-right: 135px;
     font-size: 15px;
    text-align: justify;
+}
+
+/*////////////////////////////responsive design//////////////////*/
+
+@media all and (max-width: 1222px){
+
+}
+
+@media (min-width:641px) and (max-width:1222px) {
+
+}
+
+@media all and  (max-width:640px){
+      body {
+    background-image: url("background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 966px;
+    font-family: 'Oxygen', sans-serif;
+    }
+
+    .menuNavigation {
+        display: none;
+        
+    }
+
+    .hamburger {
+        width: 10%;
+        height: 60px;
+        z-index: 1;
+        margin-top: 15px;
+        display: block;
+        margin-right: 31px;
+    }
+    .menuLogo {
+        margin-top: 20px;
+        margin-left: 26px;
+    }
+    .firstPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: -187px;
+    }
+    .textContent {
+        width: 82%;
+        color: white;
+        margin-top: 260px;
+        margin-left: 36px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spaceTitel {
+        font-stretch: extra-expanded;
+        letter-spacing: 5px;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    .spacetext {
+        font-size: 82px;
+        font-stretch: extra-expanded;
+        letter-spacing: 10px;
+        height: 170px;
+        margin-top: 15px;
+    }
+
+    .spacetext {
+        font-size: 82px;
+        font-stretch: extra-expanded;
+        letter-spacing: 10px;
+        height: 170px;
+        margin-top: 15px;
+    }
+
+    .textContentText {
+        font-size: 14px;
+        margin-top: -35px;
+        margin-right: 27px;
+        padding-right: 20px;
+        height: 130px;
+        letter-spacing: 1px;
+        width: 92%;
+        text-align: center;
+    }
+
+    .imageContent .buttonExplore {
+        width: 105%;
+        height: 193px;
+        background-color: white;
+        color: navy;
+        border-radius: 50%;
+        font-size: 24px;
+        margin-left: 88px;
+        margin-top: -130px;
+    }
 }
