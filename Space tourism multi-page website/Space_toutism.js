@@ -412,7 +412,53 @@ technologiecontainMenuNumber3.addEventListener("click", function(){
     imageLaunchVehiclePortrait.alt ="image of spaca capsule"
 })
 
+////7////////////////// responsive design////////////////////////////
+const responsiveMenu = document.querySelector(".responsiveMenu");
+const responsiveButtonClose = document.querySelector(".responsiveButtonClose"); 
+const hamburger = document.querySelector(".hamburger"); 
+const homeResponsive = document.querySelector(".homeResponsive"); 
+const destinationResponsive = document.querySelector(".destinationResponsive"); 
+const crewResponsive = document.querySelector(".crewResponsive"); 
+const technologieResponsive = document.querySelector(".technologieResponsive"); 
+
+hamburger.addEventListener("click", function(){
+    responsiveMenu.style.display = "block"; 
+})
+responsiveButtonClose.addEventListener("click", function (){
+    responsiveMenu.style.display = "none";
+})
+
+homeResponsive.addEventListener("click", function(){
+    firstPage.style.display = "flex";
+    secondPage.style.display = "none"; 
+    thirdPage.style.display = "none", 
+    fourPage.style.display = "none"; 
+    responsiveMenu.style.display = "none";
+})
+destinationResponsive.addEventListener("click", function(){
+    firstPage.style.display = "none";
+    secondPage.style.display = "flex"; 
+    thirdPage.style.display = "none", 
+    fourPage.style.display = "none"; 
+    responsiveMenu.style.display = "none";
+})
+crewResponsive.addEventListener("click", function(){
+    firstPage.style.display = "none";
+    secondPage.style.display = "none"; 
+    thirdPage.style.display = "flex", 
+    fourPage.style.display = "none"; 
+    responsiveMenu.style.display = "none";
+})
+technologieResponsive.addEventListener("click", function(){
+    firstPage.style.display = "none";
+    secondPage.style.display = "none"; 
+    thirdPage.style.display = "none", 
+    fourPage.style.display = "flex"; 
+    responsiveMenu.style.display = "none";
+})
+
   
 
     
     
+
