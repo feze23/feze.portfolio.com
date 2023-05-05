@@ -434,6 +434,11 @@ homeResponsive.addEventListener("click", function(){
     thirdPage.style.display = "none", 
     fourPage.style.display = "none"; 
     responsiveMenu.style.display = "none";
+    body.style.backgroundImage = "url('background-home-mobile.jpg')";
+    responsiveMenu.style.backgroundImage = "url('background-home-mobile.jpg')";
+    responsiveMenu.style.backgroundRepeat = "no-repeat"; 
+    responsiveMenu.style.backgroundSize ="98% 506px";
+    responsiveMenu.style.width ="100%";
 })
 destinationResponsive.addEventListener("click", function(){
     firstPage.style.display = "none";
@@ -441,6 +446,20 @@ destinationResponsive.addEventListener("click", function(){
     thirdPage.style.display = "none", 
     fourPage.style.display = "none"; 
     responsiveMenu.style.display = "none";
+    body.style.backgroundImage = "url('background-destination-mobile.jpg')";
+    body.style.backgroundRepeat= "no-repeat";
+    body.style.backgroundSize= "100% 1467px";
+    responsiveMenu.style.backgroundImage = "url('background-destination-mobile.jpg')";
+    responsiveMenu.style.backgroundRepeat = "no-repeat"; 
+    responsiveMenu.style.backgroundSize ="98% 506px";
+    responsiveMenu.style.width ="63%"; 
+    if(screen.width >= 641 && screen.width <= 1222){
+        body.style.backgroundImage = "url('background-destination-tablet.jpg')";
+        body.style.backgroundRepeat= "no-repeat";
+        body.style.backgroundSize= "100% 2467px";
+        responsiveMenu.style.width ="90%"; 
+        responsiveMenu.style.backgroundSize ="98% 706px";
+    }
 })
 crewResponsive.addEventListener("click", function(){
     firstPage.style.display = "none";
@@ -448,6 +467,20 @@ crewResponsive.addEventListener("click", function(){
     thirdPage.style.display = "flex", 
     fourPage.style.display = "none"; 
     responsiveMenu.style.display = "none";
+    body.style.backgroundImage = "url('background-crew-mobile.jpg')"; 
+    responsiveMenu.style.backgroundImage = "url('background-crew-mobile.jpg')";
+    responsiveMenu.style.backgroundRepeat = "no-repeat"; 
+    responsiveMenu.style.backgroundSize ="98% 506px";
+    responsiveMenu.style.width ="100%";
+    if(screen.width >= 641 && screen.width <= 1222){
+        body.style.backgroundImage = "url('background-crew-tablet.jpg')";
+        body.style.backgroundRepeat= "no-repeat";
+        body.style.backgroundSize= "100% 2467px";
+        responsiveMenu.style.width ="100%"; 
+        responsiveMenu.style.backgroundSize ="98% 706px";
+        
+    }
+
 })
 technologieResponsive.addEventListener("click", function(){
     firstPage.style.display = "none";
@@ -455,6 +488,59 @@ technologieResponsive.addEventListener("click", function(){
     thirdPage.style.display = "none", 
     fourPage.style.display = "flex"; 
     responsiveMenu.style.display = "none";
+    body.style.backgroundImage = "url('background-technology-mobile.jpg')"; 
+    responsiveMenu.style.backgroundImage = "url('background-technology-mobile.jpg')";
+    responsiveMenu.style.backgroundRepeat = "no-repeat"; 
+    responsiveMenu.style.backgroundSize ="98% 506px";
+    responsiveMenu.style.width ="100%";
+    technologiecontainMenuNumber1.style.width ="250%";
+    technologiecontainMenuNumber2.style.width ="250%";
+    technologiecontainMenuNumber3.style.width ="250%";
+    technologiecontainMenuNumber1.style.backgroundColor = "white";
+    technologiecontainMenuNumber1.style.color = "rgb(1, 2, 24)"; 
+    technologiecontainMenuNumber3.addEventListener("click", function(){
+        technologiecontainMenuNumber3.style.width ="250%";
+    })
+
+    technologiecontainMenuNumber1.addEventListener("click", function(){
+        technologiecontainMenuNumber1.style.width ="250%";
+    technologiecontainMenuNumber2.style.width ="250%";
+    technologiecontainMenuNumber3.style.width ="250%";
+    })
+
+    
+    if(screen.width >= 641 && screen.width <= 1222){
+        body.style.backgroundImage = "url('background-technology-tablet.jpg')";
+        body.style.backgroundRepeat= "no-repeat";
+        body.style.backgroundSize= "100% 4767px";
+        responsiveMenu.style.width ="100%"; 
+        responsiveMenu.style.backgroundSize ="98% 706px";
+        technologiecontainMenuNumber1.style.width ="40%";
+        technologiecontainMenuNumber2.style.width ="40%";
+        technologiecontainMenuNumber3.style.width ="40%";
+        technologiecontainMenuNumber1.style.backgroundColor = "white";
+        technologiecontainMenuNumber1.style.color = "rgb(1, 2, 24)"; 
+        technologiecontainMenuNumber3.addEventListener("click", function(){
+        technologiecontainMenuNumber3.style.width ="40%";
+        })
+
+        technologiecontainMenuNumber1.addEventListener("click", function(){
+            technologiecontainMenuNumber1.style.width ="40%";
+            technologiecontainMenuNumber2.style.width ="40%";
+            technologiecontainMenuNumber3.style.width ="40%";
+        })
+        technologiecontainMenuNumber2.addEventListener("click", function(){
+            technologiecontainMenuNumber1.style.width ="450%";
+            technologiecontainMenuNumber2.style.width ="450%";
+            technologiecontainMenuNumber3.style.width ="450%";
+        })
+        technologiecontainMenuNumber3.addEventListener("click", function(){
+            technologiecontainMenuNumber1.style.width ="40%";
+            technologiecontainMenuNumber2.style.width ="40%";
+            technologiecontainMenuNumber3.style.width ="40%";
+        })
+        
+    }
 })
 
   
