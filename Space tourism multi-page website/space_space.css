@@ -402,9 +402,11 @@ body{
     margin-top: 35px;
     border-radius: 90px;
 }
+
 .technologiecontainMenuNumber1:hover, .technologiecontainMenuNumber2:hover, .technologiecontainMenuNumber3:hover{
     cursor: pointer;
 }
+
 .technologiecontainMenuNumberButton{
     margin-left: 40%;
     margin-top: 15px;
@@ -435,6 +437,9 @@ body{
     font-size: 15px;
    text-align: justify;
 }
+.technologieImage{
+    margin-right: 30px;
+}
 
 /*////////////////////////////responsive design//////////////////*/
 
@@ -443,8 +448,295 @@ body{
 }
 
 @media (min-width:641px) and (max-width:1222px) {
+    body {
+        background-image: url(background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 120%, 100%;
+    }
+    .menuLogo {
+        margin-top: 43px;
+        margin-left: 84px;
+    }
+    .hamburger {
+        width: 10%;
+        height: 26px;
+        z-index: 1;
+        margin-top: 21px;
+        display: block;
+        margin-right: 70px;
+    }
 
+    .imageContent {
+        width: 100%;
+        color: white;
+        margin-top: 278px;
+        height: 440px;
+    }
+    .responsiveMenu {
+        width: 100%;
+        height: 719px;
+        background-image: url(background-home-mobile.jpg);
+        background-size: 99% 696px;
+        background-repeat: no-repeat;
+        z-index: 3;
+        position: fixed;
+        display: none;
+    }
+    .homeResponsive, .destinationResponsive, .crewResponsive, .technologieResponsive {
+        margin: 31px;
+        font-size: 30px;
+    }
+    .responsiveMenu img {
+        width: 9%;
+        height: 11%;
+        margin-left: 81%;
+        margin-top: 40px;
+    }
+    .secondPage {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 158px;
+    }
+    .planet {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 615px;
+    }
+
+    .planetText {
+        width: 80%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        margin-left: 179px;
+    }
+    .planetTitel {
+        width: 100%;
+        height: 70px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 123px;
+        font-size: 37px;
+    }
+    .planetImage {
+        width: 70%;
+        height: 421px;
+        margin-left: 191px;
+        margin-top: 91px;
+    }
+    
+
+    .planetText .text {
+        width: 68%;
+        height: 20%;
+        color: white;
+        margin-top: 76px;
+        font-size: 22px;
+    }
+
+    .planetText .additions {
+        width: 60%;
+        height: 13%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        margin-top: 79px;
+        text-align: center;
+    }
+    .subMenu {
+        width: 66%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: 30px;
+    }
+
+    .mainTitel {
+        width: 60%;
+        height: 15%;
+        color: white;
+        font-size: 137px;
+    }
+    .imageContent .buttonExplore {
+        width: 30%;
+        height: 244px;
+        background-color: white;
+        color: navy;
+        border-radius: 50%;
+        font-size: 24px;
+    }
+    .menuNavigation {
+        display: none;
+    }
+
+    .menubar img {
+        width: 100%;
+        height: 68px;
+    }
+
+    .firstPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .textContent {
+        width: 54%;
+        color: white;
+        margin-top: 206px;
+        margin-left: 162px;
+        display: flex;
+        flex-direction: column;
+    }
+    .spaceTitel {
+        font-stretch: extra-expanded;
+        letter-spacing: 6px;
+        font-size: 34px;
+        margin-top: 30px;
+        width: 119%;
+    }
+
+    .spacetext {
+        font-size: 159px;
+        font-stretch: extra-expanded;
+        letter-spacing: 15px;
+        height: 170px;
+        margin-top: -1px;
+    }
+
+    .textContentText {
+        font-size: 29px;
+        margin-top: 47px;
+        margin-right: 27px;
+        padding-right: 20px;
+        height: 130px;
+        letter-spacing: 1px;
+        width: 125%;
+    }
+    .thirdPage {
+        display: none;
+        flex-direction: column;
+        margin-top: 169px;
+        color: white;
+    }
+    .crewDescription {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .crewTitel {
+        width: 85%;
+        height: 70px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 130px;
+        font-size: 41px;
+    }
+    .crewDescription {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 30px;
+    }
+    .flight_ingenieur {
+        font-size: 38px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .Anousheh_Ansari {
+        margin-top: 20px;
+        font-size: 54px;
+        text-transform: uppercase;
+        font-stretch: extra-expanded;
+        letter-spacing: 2px;
+        height: 50px;
+    }
+    .crewtext .text {
+        margin-top: 101px;
+        width: 75%;
+        font-size: 21px;
+    }
+    .radioManu {
+        display: flex;
+        flex-direction: row;
+        margin-top: 110px;
+        height: 80px;
+        margin-left: 335px;
+    }
+    .imagActor {
+        margin-top: 10px;
+        margin-left: 118px;
+    }
+
+    .fourPage {
+        display: none;
+        flex-direction: column;
+        color: white;
+        justify-content: space-between;
+        margin-top: 169px;
+    }
+    .technololgieDescription, .technologieImage {
+        display: flex;
+        width: 66%;
+        height: 650px;
+        margin-top: 45px;
+        font-size: 35px;
+    }
+
+    .technologieTitel {
+        margin-left: 194px;
+    }
+    .technologiecontainMenu {
+        width: 255%;
+        margin-left: 104px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technologiecontainText {
+        margin-top: 35px;
+        margin-right: 50px;
+        margin-left: 14px;
+    }
+    .technologiecontainTextTechnologie {
+        letter-spacing: 2px;
+        width: 136%;
+        margin-left: 40px;
+    }
+
+    .technologiecontainTextTitel {
+        letter-spacing: 5px;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        width: 196%;
+        margin-left: 40px;
+    }
+    .technologiecontainTextTitelText {
+        margin-right: 0px;
+        font-size: 21px;
+        text-align: justify;
+        width: 141%;
+        margin-left: 40px;
+    }
+    .image-launch-vehicle-portrait {
+        width: 100%;
+        height: 70%;
+        margin-top: -68px;
+        margin-left: 169px;
+        margin-right: -136px;
+    }
+   
 }
+
 
 @media all and  (max-width:640px){
       body {
@@ -465,7 +757,7 @@ body{
         z-index: 1;
         margin-top: 15px;
         display: block;
-        margin-right: 31px;
+        margin-right: 26px;
     }
     .menuLogo {
         margin-top: 20px;
@@ -529,4 +821,215 @@ body{
         margin-left: 88px;
         margin-top: -130px;
     }
+
+    .mainContain {
+        display: block;
+        position: absolute;
+        width: 95%;
+    }
+
+    .secondPage {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 108px;
+        width: 102%;
+    }
+    .planetText {
+        width: 162%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        text-align: center;
+    }
+    .subMenu {
+        width: 60%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: center;
+    }
+
+    .planetText .additions {
+        width: 60%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        margin-top: 31px;
+        margin-left: 13px;
+    }
+    .planetTitel {
+        width: 112%;
+        height: 70px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 26px;
+    }
+    .planetImage {
+        width: 95%;
+        height: 253px;
+        margin-left: 69px;
+        margin-top: 72px;
+    }
+
+    .planetImage img {
+        width: 74%;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .planet {
+        display: flex;
+        flex-direction: column;
+    }
+    .planetText {
+        width: 162%;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        text-align: center;
+    }
+
+    .thirdPage {
+        flex-direction: column;
+        margin-top: 50px;
+        color: white;
+    }
+    .crewDescription {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .crewTitel {
+        width: 80%;
+        height: 70px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 67px;
+    }
+
+    .crewtext {
+        display: flex;
+        flex-direction: column;
+        margin-top: 61px;
+        margin-left: 34px;
+    }
+
+    .crewtext .text {
+        margin-top: 40px;
+        width: 87%;
+        text-align: center;
+    }
+
+    .Anousheh_Ansari {
+        margin-top: 26px;
+        font-size: 33px;
+        text-transform: uppercase;
+        font-stretch: extra-expanded;
+        letter-spacing: 1px;
+        height: 50px;
+    }
+    .flight_ingenieur {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .radioManu {
+        display: flex;
+        flex-direction: row;
+        margin-top: 66px;
+        height: -12px;
+        margin-left: 145px;
+    }
+    .imagActor {
+        margin-top: -36px;
+        margin-left: 81px;
+    }
+    .imagActor img {
+        width: 72%;
+        height: 50%;
+    }
+    .fourPage {
+        flex-direction: column;
+        color: white;
+        justify-content: space-between;
+        margin-top: -235px;
+    }
+    .technololgieDescription{
+        display: flex;
+        width: 103%;
+        height: 558px;
+        margin-top: 287px;
+    }
+    .technologieImage {
+        display: flex;
+        width: 100%;
+        height: 485px;
+        margin-top: -261px;
+    }
+    .image-launch-vehicle-portrait {
+        width: 100%;
+        height: 60%;
+        margin-top: 157px;
+    }
+    .technologieTitel {
+        width: 80%;
+        height: 17px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 54px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .technologiecontain {
+        margin-top: 74px;
+    }
+
+    .technologiecontainMenu {
+        margin-left: 26px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -57px;
+    }
+    .technologiecontainMenuNumber1, .technologiecontainMenuNumber2, .technologiecontainMenuNumber3 {
+        
+        height: 56px;
+        border: 1px solid white;
+        color: white;
+        margin-top: 32px;
+        border-radius: 90px;
+    }
+    .technologiecontainMenuNumber2{
+        margin-top: 32px;
+    }
+
+    
+    .technologiecontainTextTitel {
+        letter-spacing: 3px;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        width: 116%;
+    }
+
+    .technologiecontainTextTitelText {
+        margin-right: -16px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .technologiecontainText {
+        margin-top: -5px;
+        margin-right: 50px;
+        margin-left: 60px;
+    }
+    
+    
 }
