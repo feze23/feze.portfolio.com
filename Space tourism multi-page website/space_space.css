@@ -105,7 +105,7 @@ body{
 /* home page*/
 
 .firstPage{
-    display: flex;
+    display: none;
     flex-direction:row;
     justify-content: space-between;
 }
@@ -346,26 +346,20 @@ body{
 /*///////////////////////////////Fourpage//////////////////////////*/
 
 .fourPage{
-    display: none;
+    display: flex;
     flex-direction: row;
     color: white;
     justify-content: space-between;
 }
-.technololgieDescription, .technologieImage{
-    display: flex;
-    width: 65%;
-    height: 650px;
-    margin-top: 45px;
-}
-.technologieImage{
-    display: flex;
-    width: 35%;
-    margin-top: 45px;
-}
 .technololgieDescription{
     display: flex;
+    width: 100%;
+    height: 650px;
+    margin-top: 45px;
     flex-direction: column;
 }
+
+
 .technologieTitel{
     width: 80%;
     height: 70px;
@@ -376,49 +370,62 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-.technologieTitel .titel{
-    margin-left: 20px;
-    
-}
 .technologiecontain{
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 450px;
-    margin-top: 60px;
+    margin-top: 10px;
 }
 .technologiecontainMenu{
-    width: 55%; 
-    margin-left: 70px;
+    width: 5%; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 150px;
+    
 }
+.technologiecontainText{
+    width: 35%;
+    margin-left: 45px;
+}
+.technologieImage{
+    display: flex;
+    width: 35%;
+    height: 500px;
+}
+.technologieTitel .titel{
+    margin-left: 20px;
+    
+}
+
+
 .technologiecontainMenuNumber1, .technologiecontainMenuNumber2, .technologiecontainMenuNumber3 {
-    width:40%;
-    height: 60px;
+    height: 80px;
     border: 1px solid white;
-    color: white;
     margin-top: 35px;
-    border-radius: 90px;
+    border-radius: 120px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
 }
 
 .technologiecontainMenuNumber1:hover, .technologiecontainMenuNumber2:hover, .technologiecontainMenuNumber3:hover{
     cursor: pointer;
+    background-color: white;
+    color: rgb(1, 1, 16);
 }
 
-.technologiecontainMenuNumberButton{
-    margin-left: 40%;
+/*.technologiecontainMenuNumberButton{
     margin-top: 15px;
     font-size: 20px;
-}
-.technologiecontainText{
-    margin-top: 35px;
-    margin-right: 50px;
-    margin-left: 60px;
-}
+    background-color: red;
+    width: 50%;
+    height: 60px;
+}*/
+
 .technologiecontainTextTechnologie{
     letter-spacing: 2px;
+    margin-top: 35px;
 }
 .technologiecontainTextTitel{
     letter-spacing: 5px;
@@ -437,14 +444,12 @@ body{
     font-size: 15px;
    text-align: justify;
 }
-.technologieImage{
-    margin-right: 30px;
-}
+
 
 /*////////////////////////////responsive design//////////////////*/
 
 @media all and (max-width: 1222px){
-    
+
     body {
         background-image: url(background-home-mobile.jpg);
         background-repeat: no-repeat;
@@ -730,15 +735,16 @@ body{
         margin-top: -68px;
         margin-left: 169px;
         margin-right: -136px;
-    } 
+    }
 
 }
+
 
 @media (min-width:641px) and (max-width:1222px) {
     body {
         background-image: url(background-home-mobile.jpg);
         background-repeat: no-repeat;
-        background-size: 120%, 100%;
+        background-size: 120%, 1901%;
     }
     .menuLogo {
         margin-top: 43px;
@@ -762,7 +768,7 @@ body{
     .responsiveMenu {
         width: 100%;
         height: 719px;
-        background-image: url(background-home-mobile.jpg);
+        background-image: url(background-home-tablet.jpg);
         background-size: 99% 696px;
         background-repeat: no-repeat;
         z-index: 3;
@@ -773,6 +779,7 @@ body{
         margin: 31px;
         font-size: 30px;
     }
+    
     .responsiveMenu img {
         width: 9%;
         height: 11%;
@@ -794,7 +801,7 @@ body{
 
     .planetText {
         width: 80%;
-        height: 650px;
+        height: 759px;
         display: flex;
         flex-direction: column;
         margin-top: 80px;
@@ -849,13 +856,16 @@ body{
         color: white;
         font-size: 137px;
     }
+    
     .imageContent .buttonExplore {
-        width: 30%;
-        height: 244px;
+        width: 40%;
+        height: 307px;
         background-color: white;
         color: navy;
+        margin-top: -99px;
         border-radius: 50%;
         font-size: 24px;
+        margin-left: 206px;
     }
     .menuNavigation {
         display: none;
@@ -870,15 +880,10 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 1618px;
     }
-    .textContent {
-        width: 54%;
-        color: white;
-        margin-top: 206px;
-        margin-left: 162px;
-        display: flex;
-        flex-direction: column;
-    }
+  
+
     .spaceTitel {
         font-stretch: extra-expanded;
         letter-spacing: 6px;
@@ -909,6 +914,7 @@ body{
         flex-direction: column;
         margin-top: 169px;
         color: white;
+        height: 1695px;
     }
     .crewDescription {
         display: flex;
@@ -967,6 +973,7 @@ body{
         color: white;
         justify-content: space-between;
         margin-top: 169px;
+        height: 1403px;
     }
     .technololgieDescription, .technologieImage {
         display: flex;
@@ -977,20 +984,56 @@ body{
     }
 
     .technologieTitel {
+        width: 107%;
+        height: 70px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 130px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
         margin-left: 194px;
     }
-    .technologiecontainMenu {
-        width: 255%;
-        margin-left: 104px;
+
+    .technologiecontain {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        height: 450px;
+        margin-top: 10px;
+    }
+    .technologiecontainMenu {
+        width: 88%;
+        margin-left: 151px;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .technologiecontainMenuNumber1 {
+        height: 80px;
+        border: 1px solid white;
+        margin: 35px;
+        border-radius: 120px;
+        font-size: 20px;
+        color: rgb(1, 1, 16);
+        background-color: white;
+    }
+    .technologiecontainMenuNumber2, .technologiecontainMenuNumber3 {
+        height: 80px;
+        border: 1px solid white;
+        margin: 35px;
+        border-radius: 120px;
+        font-size: 20px;
+        color: white;
+        background-color: transparent;
     }
 
     .technologiecontainText {
         margin-top: 35px;
         margin-right: 50px;
-        margin-left: 14px;
+        margin-left: 94px;
+        width: 71%;
     }
     .technologiecontainTextTechnologie {
         letter-spacing: 2px;
@@ -1015,9 +1058,9 @@ body{
         margin-left: 40px;
     }
     .image-launch-vehicle-portrait {
-        width: 100%;
-        height: 70%;
-        margin-top: -68px;
+        width: 120%;
+        height: 102%;
+        margin-top: 7px;
         margin-left: 169px;
         margin-right: -136px;
     }
@@ -1026,11 +1069,11 @@ body{
 
 
 @media all and  (max-width:640px){
-      body {
-    background-image: url("background-home-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 966px;
-    font-family: 'Oxygen', sans-serif;
+    body {
+        background-image: url(background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 1245px;
+        font-family: 'Oxygen', sans-serif;
     }
 
     .menuNavigation {
@@ -1046,6 +1089,12 @@ body{
         display: block;
         margin-right: 26px;
     }
+
+
+    .menubar img {
+        width: 100%;
+        height: 36px;
+    }
     .menuLogo {
         margin-top: 20px;
         margin-left: 26px;
@@ -1055,6 +1104,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         margin-top: -187px;
+        height: 1245px;
     }
     .textContent {
         width: 82%;
@@ -1098,21 +1148,28 @@ body{
         text-align: center;
     }
 
+    .imageContent {
+        width: 100%;
+        color: white;
+        margin-top: 482px;
+        height: 453px;
+    }
+
     .imageContent .buttonExplore {
-        width: 105%;
-        height: 193px;
+        width: 69%;
+        height: 232px;
         background-color: white;
         color: navy;
         border-radius: 50%;
         font-size: 24px;
-        margin-left: 88px;
+        margin-left: 58px;
         margin-top: -130px;
     }
 
     .mainContain {
         display: block;
         position: absolute;
-        width: 95%;
+        width: 100%;
     }
 
     .secondPage {
@@ -1120,15 +1177,15 @@ body{
         flex-direction: column;
         justify-content: space-between;
         margin-top: 108px;
-        width: 102%;
+        width: 100%;
     }
-    .planetText {
-        width: 162%;
-        height: 650px;
-        display: flex;
-        flex-direction: column;
-        margin-top: -100px;
-        text-align: center;
+    .planetText .text {
+        width: 48%;
+        height: 20%;
+        color: white;
+        margin-top: 53px;
+        font-size: 16px;
+        margin-left: -131px;
     }
     .subMenu {
         width: 60%;
@@ -1137,6 +1194,16 @@ body{
         flex-direction: row;
         color: white;
         justify-content: center;
+        font-size: 18px;
+        margin-left: -172px;
+    }
+
+    .mainTitel {
+        width: 60%;
+        height: 15%;
+        color: white;
+        font-size: 92px;
+        margin-left: -167px;
     }
 
     .planetText .additions {
@@ -1145,21 +1212,22 @@ body{
         display: flex;
         flex-direction: row;
         color: white;
-        margin-top: 31px;
-        margin-left: 13px;
+        margin-top: 50px;
+        margin-left: -168px;
     }
     .planetTitel {
-        width: 112%;
+        width: 100%;
         height: 70px;
         color: white;
         display: flex;
         flex-direction: row;
         margin-left: 26px;
+        font-size: 15px;
     }
     .planetImage {
         width: 95%;
         height: 253px;
-        margin-left: 69px;
+        margin-left: 28px;
         margin-top: 72px;
     }
 
@@ -1198,14 +1266,15 @@ body{
         color: white;
         display: flex;
         flex-direction: row;
-        margin-left: 67px;
+        margin-left: 32px;
+        font-size: 15px;
     }
 
     .crewtext {
         display: flex;
         flex-direction: column;
-        margin-top: 61px;
-        margin-left: 34px;
+        margin-top: 3px;
+        margin-left: -9px;
     }
 
     .crewtext .text {
@@ -1282,16 +1351,19 @@ body{
     .technologiecontainMenu {
         margin-left: 26px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: -57px;
+        width: 64%;
     }
     .technologiecontainMenuNumber1, .technologiecontainMenuNumber2, .technologiecontainMenuNumber3 {
-        
-        height: 56px;
+        height: 80px;
+        margin-left: 20px;
         border: 1px solid white;
+        margin-top: 35px;
+        border-radius: 120px;
+        font-size: 20px;
         color: white;
-        margin-top: 32px;
-        border-radius: 90px;
+        background-color: transparent;
     }
     .technologiecontainMenuNumber2{
         margin-top: 32px;
@@ -1308,15 +1380,70 @@ body{
     }
 
     .technologiecontainTextTitelText {
-        margin-right: -16px;
+        margin-right: 7px;
         font-size: 15px;
         text-align: justify;
-    }
-    .technologiecontainText {
-        margin-top: -5px;
-        margin-right: 50px;
-        margin-left: 60px;
+        width: 79%;
     }
     
+
+    .homeResponsive, .destinationResponsive, .crewResponsive, .technologieResponsive {
+        margin: 16px;
+        font-size: 18px;
+    }
+
+    .technologieTitel {
+        width: 80%;
+        height: 89px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        margin-left: 47px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+
+    
+
+    .technologiecontain {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .technologiecontainText {
+        margin-left: 5px;
+        width: 80%;
+        height: 344px;
+    }
+    .technologiecontainTextTechnologie {
+        letter-spacing: 2px;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    .technologieImage {
+        display: flex;
+        width: 63%;
+        height: 485px;
+        margin-top: -103px;
+        margin-left: -104px;
+    }
+
+    .responsiveMenu{
+        width: 88%;
+        height: 400px;
+        background-size:  100% 400px;
+    }
+    
+
+    .responsiveMenu img {
+        width: 9%;
+        height: 11%;
+        margin-left: 86%;
+        margin-top: 40px;
+    }
     
 }
