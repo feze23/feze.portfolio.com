@@ -1,0 +1,158 @@
+body{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+.FontColorDarkMode{
+    color: white;
+}
+
+.headerCountrie{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 2px #eeeaea;
+}
+.AppTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+.DarkMode{
+    cursor: pointer;
+}
+.blackDarkMode{
+    background-color: hsl(207, 26%, 17%);
+}
+
+
+
+.countries{
+    width: 1240px;
+    margin: 20px auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    cursor: pointer;
+    
+}
+.countryDivs{
+    padding: 15px;
+    border-radius: 6px;
+   
+ }
+
+img{
+  width: 100%;
+  height: 150px;  
+}
+
+.countrySearch{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.inputSearch{
+    width: 15%;
+    padding: 15px;
+    height: 25px;
+    box-shadow: 2px 3px rgb(232, 235, 235);
+    border-radius: 6px;
+    display: flex;
+}
+.back{
+    width: 5%;
+    height: 20px;
+    padding: 15px;
+    box-shadow: 2px 3px rgb(232, 235, 235);
+    border-radius: 6px;
+    display: none;
+    cursor: pointer;
+}
+.inputSearch input{
+    width: 100%;
+    height: 25px;
+    border: 0;
+}
+.iconSearch{
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.filterDiv{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+   
+}
+.filterBar{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 3px rgb(232, 235, 235);
+    position: relative;
+}
+.filterOption{
+    display: none;
+   margin-top: 10px;
+   width: 45%;
+   padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 3px rgb(232, 235, 235);
+    position: relative;
+}
+.filterOption p{
+    cursor: pointer;
+}
+.show {
+    display: block;
+  }
+
+.country-details-div{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 20%;
+    margin-top: 80px;
+    margin-left: 30px;
+    
+}
+.countryFlagDetails{
+    margin-top: 15px;
+    width: 46%;
+}
+.countryFlagDetails img{
+    margin-top: 15px;
+    height: 70%;
+}
+
+.description{
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+}
+.descriptionCountryName{
+    font-weight: bolder;
+    padding-left: 120px;
+}
+.descriptionBorder{
+    padding-left: 130px;
+}
+.descriptionOthers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttonBoders{
+    margin: 10px;
+}
