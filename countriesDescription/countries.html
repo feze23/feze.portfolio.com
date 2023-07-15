@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest countries API using html, css and Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TpRestApi.css">
+</head>
+<body>
+    <header class="headerCountrie">
+        <div class="AppTitle"><strong>Where in the world?</strong></div>
+        <div class="DarkMode"><ion-icon name="moon-outline"></ion-icon>Dark Mode</div>
+    </header>
+    <div class="countrySearch">
+        <div class="inputSearch">
+            <ion-icon class="iconSearch" name="search-outline"></ion-icon>
+            <input type="search" class="search" placeholder="Enter the name of a country" oninput="setupSearch()">
+        </div>
+        <div class="filterDiv" >
+           
+            <div class="filterBar">
+                <div class="filterBarTitle">
+                    <strong>Select a region</strong>
+                    <hr>
+                </div>
+                <div class="filterBarIcon">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                
+            </div>
+
+            <div class="filterOption">
+            
+            </div>
+        </div>
+
+        <div class="back" >
+            <ion-icon name="arrow-back-outline"></ion-icon> <strong>Back</strong>
+        </div>
+    </div>
+    <!-- loading countries-->
+    <div class="countries" id="countries">
+       
+        
+    </div>
+
+    <div class="country-details" id="country-details">
+            
+    </div>
+
+
+    <script src="countries.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
