@@ -135,6 +135,9 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.qualitiesMySkill{
+    margin-top: -30px;
+}
 .qualitiesMySkill p{
     margin-top: 20px;
     font-size: 25px;
