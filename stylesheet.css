@@ -124,7 +124,7 @@ body{
     width: 50%;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    margin-top: 86px;
+    margin-top: 106px;
     height: 80px;
     text-align: center;
     margin-left: 380px;
@@ -229,6 +229,9 @@ a:hover{
             padding: 8px 12px;
             font-family: Verdana, sans-serif;
         }
+         .textSlide a{
+             color: white; 
+         }
         .dot {
             height: 15px;
             width: 15px;
