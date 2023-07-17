@@ -199,6 +199,52 @@ a:hover{
     font-size: 18px;
 }
 
+/*//////// Slides//////////////////////////*/
+ .slide{
+            width: 80%;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            position: relative;
+            transform: translateX(130px);
+        }
+        
+        .numberSlide{
+            margin-right: 15px;
+            position: absolute;
+        }
+        .imageSlide{
+            width: 50%;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .textSlide{
+            width: 50%;
+            font-size: 15px;
+            padding: 8px 12px;
+            font-family: Verdana, sans-serif;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            margin-top: 20px;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
 /*////////////////////////////////////////////////////////////////////////////*/
 
 
