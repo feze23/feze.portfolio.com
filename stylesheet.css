@@ -135,9 +135,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-.qualitiesMySkill{
-    margin-top: -30px;
-}
+
 .qualitiesMySkill p{
     margin-top: 20px;
     font-size: 25px;
@@ -212,6 +210,7 @@ a:hover{
             animation-duration: 1.5s;
             position: relative;
             transform: translateX(130px);
+             margin-top: 20px; 
         }
         
         .numberSlide{
@@ -226,6 +225,7 @@ a:hover{
         .textSlide{
             width: 50%;
             font-size: 15px;
+            color: white; 
             padding: 8px 12px;
             font-family: Verdana, sans-serif;
         }
