@@ -276,6 +276,7 @@ a:hover{
     flex-direction: column;
     width: 25%;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 .myStrengths .title, .myWeaknesses .title, .myAmbitions .title{
@@ -329,6 +330,7 @@ a:hover{
     flex-direction: column;
     width: 25%;
     margin-left: 20px;
+    margin-top: 30px;
 }
 
 .myAmbitions{
@@ -337,6 +339,7 @@ a:hover{
     width: 25%;
     margin-left: 20px;
     margin-right: 30px;
+    margin-top: 30px;
 }
 
 
