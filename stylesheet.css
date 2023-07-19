@@ -1044,8 +1044,8 @@ video{
 
 @media (max-width:640px){
 
-     .imageSlide img{
-        height: 100px;
+     .imageSlide a img{
+        height: 30px;
     }
     #collapsable-nav a{
         font-size: 1.2em;
