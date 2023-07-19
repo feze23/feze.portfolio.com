@@ -1044,8 +1044,8 @@ video{
 
 @media (max-width:640px){
 
-     .imageSlide a img{
-        height: 30px;
+     .imageSlide a .spaceHome, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
+        height: 150px;
     }
     #collapsable-nav a{
         font-size: 1.2em;
