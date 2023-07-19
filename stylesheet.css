@@ -1043,6 +1043,10 @@ video{
 }
 
 @media (max-width:640px){
+
+     .imageSlide img{
+        height: 100px;
+    }
     #collapsable-nav a{
         font-size: 1.2em;
     }
@@ -1222,6 +1226,10 @@ video{
     width: 159%;
     margin-left: -222px;
 }
+
+    .imageSlide img{
+        height: 100px;
+    }
     .FrontEndWebChallenge {
         display: flex;
         flex-direction: column;
