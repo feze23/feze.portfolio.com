@@ -321,8 +321,6 @@ a:hover{
   .myAmbitions .text ul li {
     margin-right: -17px;
   }
-  
-
 
 
 .myWeaknesses{
@@ -1215,13 +1213,15 @@ video{
         width: 100%;
         height: 100%;
     }
+  
+
     .slide {
-        display: flex;
-        flex-direction: column;
-        height: 644px;
-        width: 72%;
-        margin-left: 50px;
-    }
+    display: flex;
+    flex-direction: column;
+    height: 647px;
+    width: 159%;
+    margin-left: -222px;
+}
     .FrontEndWebChallenge {
         display: flex;
         flex-direction: column;
