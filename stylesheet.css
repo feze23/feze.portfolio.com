@@ -1264,14 +1264,13 @@ video{
         height: 100%;
     }
   
-
     .slide {
     display: flex;
     flex-direction: column;
     height: 647px;
-    width: 159%;
-    margin-left: -245px;
-    }
+    width: 137%;
+    margin-left: -179px;
+}
 
     .imageSlide img{
         height: 100px;
