@@ -201,6 +201,10 @@ a:hover{
 }
 
 /*//////// Slides//////////////////////////*/
+
+    .slideConterner{
+        height: 1000px;
+    }
  .slide{
             width: 80%;
             display: none;
@@ -210,7 +214,8 @@ a:hover{
             animation-duration: 1.5s;
             position: relative;
             transform: translateX(130px);
-             margin-top: 20px; 
+             margin-top: 20px;
+             margin-left: 20px; 
         }
         
         .numberSlide{
@@ -221,6 +226,12 @@ a:hover{
             width: 50%;
             margin-right: 15px;
             margin-top: 15px;
+        }
+        .whereInTheWorld{
+            height: 300px;
+        }
+        .imgMultistep{
+            height: 300px;
         }
         .textSlide{
             width: 50%;
@@ -252,6 +263,10 @@ a:hover{
             }
 
 /*////////////////////////////////////////////////////////////////////////////*/
+.qualitiesMySkill{
+    margin-top: 40px;
+}
+
 .reveal{
             position: relative;
             transform: translateY(150px);
@@ -269,7 +284,7 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     height: 590px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .myStrengths{
     display: flex;
@@ -635,6 +650,11 @@ video{
 
 
 @media all and (max-width: 1232px){
+    .slideConterner {
+        width: 132%;
+        margin-left: -102px;
+        height: 663px;
+    }
     .photos{
         margin-left: 66px;
     }
@@ -709,7 +729,7 @@ video{
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 870Px;
+        height: 805Px;
     }
 
     .qualitiesMySkill {
@@ -720,6 +740,29 @@ video{
         height: 80px;
         text-align: center;
         margin-left: 120px;
+    }
+
+    .myAmbitions {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 20px;
+        margin-right: 13px;
+        margin-top: 30px;
+    }
+    .myWeaknesses {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .myStrengths {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 14px;
+        margin-top: 30px;
     }
 
 
@@ -822,6 +865,7 @@ video{
 /* Medium devices only */
 @media (min-width:992px) and (max-width:1999px) {
   
+   
     .photos {
         max-width: 500px;
         margin-top: 107px;
@@ -857,7 +901,6 @@ video{
 /* extra small devices */
 @media (max-width:767px){
 
-    
     .qualities {
         display: flex;
         flex-direction: column;
@@ -1044,8 +1087,11 @@ video{
 
 @media (max-width:640px){
 
-     .imageSlide a .spaceHome, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
-        height: 80px;
+    .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
+        height: 230px;
+    }
+    .imageSlide a .spaceHome{
+        height: 100px;
     }
     #collapsable-nav a{
         font-size: 1.2em;
@@ -1224,17 +1270,18 @@ video{
     flex-direction: column;
     height: 647px;
     width: 159%;
-    margin-left: -222px;
-}
+    margin-left: -245px;
+    }
 
     .imageSlide img{
         height: 100px;
     }
+
     .FrontEndWebChallenge {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 2083Px;
+        height: 867Px;
     }
     .homePage {
         display: flex;
@@ -1272,6 +1319,13 @@ video{
     width: 84%;
     margin-left: 35px;
     margin-top: 26px;
+}
+
+.panel-footer {
+    margin-top: 276px;
+    padding-top: 35px;
+    background-color: #222;
+    border-top: 0;
 }
 
 }
