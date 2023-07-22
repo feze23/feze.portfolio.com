@@ -90,16 +90,24 @@ body{
     background: greenyellow;
     padding: 20px;
     border-radius: 60px;
+    transition: 0.7s;
+}
+.oeuvre:hover, .lebenslauf:hover, .joindre:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+    cursor: pointer;
 }
 .lebenslauf{
     background-color: red;
     padding: 20px;
     border-radius:60px ;
+    transition: 1s;
 } 
 .joindre{
     background-color: aquamarine;
     padding: 20px;
     border-radius: 60px;
+    transition: 1s;
 }
 .menuSecond3{
     display: none;
@@ -184,10 +192,10 @@ a .multiSepFomTitel , a .homePageTitel ,  a .multiHomePageTitel{
     font-size: 25px;
      text-decoration-line: none;
 }
-a:hover{
+/*a:hover{
     text-decoration: none;
     opacity: 0.5;
-}
+}*/
 .multiSepFomTitel:hover, .homePageTitel.hover, .multiHomePageTitel:hover{
    cursor: pointer;
 }
@@ -1264,13 +1272,14 @@ video{
         height: 100%;
     }
   
+
     .slide {
     display: flex;
     flex-direction: column;
     height: 647px;
-    width: 137%;
-    margin-left: -179px;
-}
+    width: 159%;
+    margin-left: -245px;
+    }
 
     .imageSlide img{
         height: 100px;
