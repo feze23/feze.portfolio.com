@@ -54,23 +54,23 @@ body{
 /*CSS section 1 */
 .brevepresentation{
     
-    margin-right: 130px;
+    margin-right: 150px;
     font-size: 24px;
     margin-top: 120px;
 }
 
 @keyframes photoProfil {
-    from{transform: scale(0,0);}
-    to{transform: scale(1, 1)}
+    from{margin-left: -30px;}
+    to{margin-left: 80px}
 }
 .photos{
    
-    max-width: 500px;
+    width: 500px;
     margin-top: 60px;
-    margin-right: 25px;
-    margin-left: 200px;
+    margin-left: -30px;
     animation-name: photoProfil;
-    animation-duration: 3s;
+    animation-duration: 0s;
+    animation-timing-function: ease;
 }
 .menuSecond{
     float: right;
@@ -536,7 +536,7 @@ video{
     text-align: right;
 }
 .skill1 .bar-container .bar .progessCss{
-    width: 230px;
+    width: 250px;
     text-align: right;
 }
 .skill1 .bar-container .bar .progessJS{
@@ -544,7 +544,7 @@ video{
     text-align: right;
 }
 .skill1 .bar-container .bar .progessresp{
-    width: 200px;
+    width: 250px;
     text-align: right;
 }
 
@@ -604,7 +604,7 @@ video{
     background-color: gainsboro;
 }
 .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-.skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+.skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
     height: 38px;
     background-color: rgb(83, 108, 219);
     border-radius: 20px;
@@ -651,6 +651,10 @@ video{
 
 .skill2 .bar-container .bar .progessionVC{
     width: 200px;
+    text-align: right;
+}
+.skill2 .bar-container .bar .progessionPHP{
+    width: 250px;
     text-align: right;
 }
 
@@ -1193,7 +1197,7 @@ video{
         background-color: gainsboro;
     }
     .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
         height: 30px;
         background-color: rgb(83, 108, 219);
         border-radius: 20px;
@@ -1233,7 +1237,7 @@ video{
         background-color: gainsboro;
     }
     .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
         height: 30px;
         background-color: rgb(83, 108, 219);
         border-radius: 20px;
@@ -1252,6 +1256,7 @@ video{
         width: 182px;
         text-align: right;
     }
+ 
 
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
