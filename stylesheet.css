@@ -203,7 +203,7 @@ body{
 
         .btnLinkedin{
             font-size: 15px;
-            width: 25%;
+            width: 75%;
             border: 2px solid #e3e2db;
             height: 45px;
             border-radius: 15px;
@@ -214,6 +214,10 @@ body{
             background-color: white;
             color: rgb(84, 84, 218);
             border: 2px solid rgb(84, 84, 218);
+        }
+        .btnLink{
+            width: 100%;
+            color: white;
         }
 /*//////////////////////////////////////////////////////////////////*/
 .FrontEndWebChallenge{
