@@ -29,8 +29,9 @@ body{
 
 .project, .competence, .contact, .paper, .webChallenge, .git{
     font-size: 18px;
-    
-}
+    margin-left: 10px; 
+    height: 100px; 
+    }
 .project:hover, .competence:hover, .contact:hover, .paper:hover, .git:hover, .webChallenge:hover{
     text-decoration: overline;
     
@@ -86,32 +87,134 @@ body{
    font-size: 20px;
    text-align: center;
 }
-.oeuvre{
-    background: greenyellow;
-    padding: 20px;
-    border-radius: 60px;
-    transition: 0.7s;
-}
-.oeuvre:hover, .lebenslauf:hover, .joindre:hover {
-    transform: scale(1.05);
-    opacity: 0.5;
-    cursor: pointer;
-}
-.lebenslauf{
-    background-color: red;
-    padding: 20px;
-    border-radius:60px ;
-    transition: 1s;
-} 
-.joindre{
-    background-color: aquamarine;
-    padding: 20px;
-    border-radius: 60px;
-    transition: 1s;
-}
+
 .menuSecond3{
     display: none;
 }
+
+.menuSlideDropDown{
+     display: none;
+     animation-name: displayMenu;
+     animation-duration: 300ms;
+     animation-fill-mode: forwards;
+     animation-timing-function: ease-in-out;
+     flex-direction: row;
+     position: absolute;
+     left: 368px;
+     z-index: 3;
+     width: 75%;
+     height: 179px;
+     background-color: #F6B319;
+     margin-top: -20px;
+     border: 2px solid #61122F;
+     border-radius: 15px;
+    }
+    
+    @keyframes displayMenu{
+     from{transform: scale(0, 0);}
+     to{transform: scale(74%, 179px);}
+    }
+    
+    .BtnFormMultiStep{
+        width: 218px;
+        height: 131px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #61122F;
+        border-radius: 15px;
+        box-shadow: #e793b2 10px 10px 15px;
+    }
+    
+    .BtnFormMultiStep:hover{
+    cursor: pointer;
+    animation-name: aminationMenuItem;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    }
+
+
+    @keyframes aminationMenuItem{
+     from{width: 218px;}
+     to{width: 228px;}
+     from{height: 131px;}
+     to{height: 141px;}
+    }
+
+    .profil{
+         display: flex;
+         margin-top: 80px;
+         flex-direction: row;
+         justify-content: space-between;
+         height: 470px;
+        }
+        
+        #brevepresentation{
+         position: relative;
+         font-size: 24px;
+         width: 40%;
+         padding: 10px;
+         left: 580px;
+         animation-name: presentationreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+        }
+        
+        .socialMedia{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         position: relative;
+         top:30px;
+        }
+        
+        #photoProfil{
+         position: relative; 
+         width: 40%;
+         left: -600px;
+         animation-name: photoreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+        }
+         
+        
+        .photos{
+         position: relative; 
+         width: 70%; 
+         left: 70px;
+         top: -100px;
+         background: #D9E355;
+         border-radius: 45px;
+        }
+        
+        @keyframes photoreveal {
+         from{left: -660px;}
+         to{left: 150px}
+        }
+        
+        @keyframes presentationreveal {
+         from{left: 580px;}
+         to{left: -140px}
+        }
+
+        .btnLinkedin{
+            font-size: 15px;
+            width: 25%;
+            border: 2px solid #e3e2db;
+            height: 45px;
+            border-radius: 15px;
+            background-color: rgb(84, 84, 218);
+        }
+
+        .btnLinkedin:hover{
+            background-color: white;
+            color: rgb(84, 84, 218);
+            border: 2px solid rgb(84, 84, 218);
+        }
 /*//////////////////////////////////////////////////////////////////*/
 .FrontEndWebChallenge{
     display: flex;
@@ -123,7 +226,7 @@ body{
     width: 50%;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-    margin-top: 20px;
+    margin-top: 40px;
     height: 80px;
     text-align: center;
     margin-left: 380px;
