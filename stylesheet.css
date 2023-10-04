@@ -154,12 +154,12 @@ body{
          font-size: 24px;
          width: 40%;
          padding: 10px;
-         left: 580px;
+         left: 680px;
          animation-name: presentationreveal;
          animation-duration: 300ms;
          animation-timing-function: ease-in-out;
          animation-fill-mode: forwards;
-         animation-delay: 1000ms;
+         animation-delay: 500ms;
         }
         
         .socialMedia{
@@ -178,7 +178,7 @@ body{
          animation-duration: 300ms;
          animation-timing-function: ease-in-out;
          animation-fill-mode: forwards;
-         animation-delay: 1000ms;
+         animation-delay: 500ms;
         }
          
         
