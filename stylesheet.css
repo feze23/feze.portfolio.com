@@ -1,3 +1,5 @@
+
+@media only screen and (min-width: 992px) {
 .row{
     margin-bottom: 15px;
 }
@@ -15,6 +17,14 @@ body{
 }
 
 /* css header*/
+
+#header-nav {
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+}
+
 .name{
     display: block;
     color: black;
@@ -62,12 +72,12 @@ body{
 
 @keyframes photoProfil {
     from{margin-left: -30px;}
-    to{margin-left: 80px}
+    to{margin-left: 100px}
 }
 .photos{
    
     width: 500px;
-    margin-top: 60px;
+    margin-top: 110px;
     margin-left: -30px;
     animation-name: photoProfil;
     animation-duration: 0s;
@@ -140,26 +150,18 @@ body{
      from{height: 131px;}
      to{height: 141px;}
     }
-
-    .profil{
-         display: flex;
-         margin-top: 80px;
-         flex-direction: row;
-         justify-content: space-between;
-         height: 470px;
-        }
         
         #brevepresentation{
          position: relative;
          font-size: 24px;
          width: 40%;
          padding: 10px;
-         left: 780px;
+         left: 580px;
          animation-name: presentationreveal;
          animation-duration: 300ms;
          animation-timing-function: ease-in-out;
          animation-fill-mode: forwards;
-         animation-delay: 500ms;
+         animation-delay: 300ms;
         }
         
         .socialMedia{
@@ -171,28 +173,29 @@ body{
         }
         
         #photoProfil{
-         position: relative; 
+        position: relative;
          width: 40%;
          left: -600px;
          animation-name: photoreveal;
          animation-duration: 300ms;
          animation-timing-function: ease-in-out;
          animation-fill-mode: forwards;
-         animation-delay: 500ms;
+         animation-delay: 300ms;
         }
          
         
         .photos{
          position: relative; 
-         width: 70%; 
+         width: 50%; 
          left: 70px;
          top: -100px;
+         background: #D9E355;
          border-radius: 45px;
         }
         
         @keyframes photoreveal {
          from{left: -660px;}
-         to{left: 150px}
+         to{left: 190px}
         }
         
         @keyframes presentationreveal {
@@ -768,6 +771,8 @@ video{
     display: none;
 }
 
+}
+
 /* troisieme competence*/
 
 
@@ -775,15 +780,114 @@ video{
 /* css responsive */
 
 
-@media all and (max-width: 1232px){
+@media only screen and (min-width: 768px){
+
+    .menuSlideDropDown {
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: row;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+        width: 100%;
+        height: 179px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+    }
+
+    .BtnFormMultiStep {
+        width: 151px;
+        height: 120px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #61122F;
+        border-radius: 15px;
+        box-shadow: #e793b2 10px 10px 15px;
+    }
+
+    
+    .profil {
+        display: flex;
+        margin-top: 80px;
+        flex-direction: row;
+        height: 535px;
+    }
+   
+    #photoProfil {
+        width: 40%;
+        animation-name: photoreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+    }
+    .photos {
+        width: 81%;
+        position: relative;
+        left: -119px;
+    }
+
+    #brevepresentation {
+        font-size: 24px;
+        width: 50%;
+        padding: 10px;
+        animation-name: presentationreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+    }
+
+    #brevepresentation div {
+        position: relative;
+        top: 0px;
+        left: 150px;
+        text-align: justify;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 30px;
+        margin-top: 20px;
+    }
+   
     .slideConterner {
-        width: 132%;
-        margin-left: -102px;
+        width: 96%;
+        margin-left: 15px;
         height: 663px;
+        margin-top: 30px;
     }
-    .photos{
-        margin-left: 66px;
+
+    .slide {
+        width: 80%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        position: relative;
+        transform: translateX(130px);
+        margin-top: 20px;
+        margin-left: -42px;
     }
+
+    .textSlide {
+        width: 70%;
+        font-size: 15px;
+        color: white;
+        padding: 8px 12px;
+        font-family: Verdana, sans-serif;
+        margin-top: 10px;
+    }
+   
     .menuSecond{
         display: none;
     }
@@ -862,7 +966,7 @@ video{
         width: 69%;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
-        margin-top: 76px;
+        margin-top: -65px;
         height: 80px;
         text-align: center;
         margin-left: 120px;
@@ -890,29 +994,33 @@ video{
         margin-left: 14px;
         margin-top: 30px;
     }
-
-
-}
-@media all and (max-width: 1147px){
-    .col-md-6 {
-        width: 72%;
+    #header-nav{
+        background-color: #f6b319;;
+        border-radius: 0;
+        border: 0;
     }
+
 }
-@media all and (max-width: 750px){
+
+
+/*@media all and (max-width: 750px){
     .menuPrincipal{
         margin-right: 40px;
     }
+
     .project, .competence, .contact{
         display: block;
         font-size: 12px;
        
     }
     
-    .photos{
-        width: 300px;
-        margin-top: -11px;
-        margin-left: 20px; 
-    }
+    .photos {
+    width: 300px;
+    position: relative;
+    top: -117px;
+    margin-left: 215px;
+    position: relative;
+}
     .brevepresentation{
         margin: auto;
         font-size: 20px;
@@ -977,55 +1085,26 @@ video{
 
     clear: both;
     margin-top: -30px;
-}
-
-/*.skill2 .bar-container {
-    margin-left: 90px;
 }*/
-/*large devices only */
-@media (min-width:1200px){
-  
 
-}
 
-/* Medium devices only */
-@media (min-width:992px) and (max-width:1999px) {
-  
-   
-    .photos {
-        max-width: 500px;
-        margin-top: 107px;
-        margin-right: 25px;
-        margin-left: 80px;
-        animation-name: photoProfil;
-        animation-duration: 3s;
-    }
-
-    .menuSecond {
-        float: right;
-        margin-right: 100px;
-        padding: 20px;
-        padding-left: 85px;
-        width: 100%;
-    }
-}
 
 /*small devices only */
-@media (min-width:768px) and (max-width:991px) {
-    .brevepresentation {
-        margin-right: -155px;
-        font-size: 24px;
-        margin-top: 82px;
-        margin-left: 64px;
-    }
-    .photos {
-        margin-left: 148px;
+/*@media (min-width:768px) and (max-width:991px) {
+
+    
+    #photoProfil {
+        width: 100%;
+        margin-left: -166px;
+        margin-top: 25px;
     }
     
-}
+    
+}*/
 
 /* extra small devices */
-@media (max-width:767px){
+/*@media (max-width:767px){
+  
 
     .qualities {
         display: flex;
@@ -1207,12 +1286,106 @@ video{
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
     }
+    
+}*/
+
+
+
+/*@media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for screens between 768px and 1023px wide (typically tablets) 
+    
+  }*/
+
+/*@media (max-width:640px){
+
+   
+}*/
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 767px wide (typically mobile phones) */
+    
+    #header-nav {
+        background-color: #f6b319;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        right: -12px;
+        top: -66px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    #section1{
+        width: 100%;
+        margin-top: -122px;
+    
+    }
+    .profil {
+        display: flex;
+        margin-top: 122px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1071px;
+        width: 100%;
+    }
+    #photoProfil {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #brevepresentation {
+        width: 100%;
+        margin-top: -74px;
+        margin-left: 359px;
+        text-align: justify;
+    }
+    
+
+    #brevepresentation div {
+        width: 75%;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-left: -25px;
+    }
+
+    .photos {
+        width: 75%;
+        position: relative;
+        left: -109px;
+    }
 
     
-}
 
-@media (max-width:640px){
-
+    .btnLinkedin {
+        font-size: 15px;
+        width: 128%;
+        border: 2px solid #e3e2db;
+        height: 45px;
+        border-radius: 15px;
+        background-color: rgb(84, 84, 218);
+    }
+    .btnLink {
+        width: 100%;
+        color: white;
+        margin-left: 23px;
+    }
     .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
         height: 230px;
     }
@@ -1388,16 +1561,22 @@ video{
     .multiSepFormImage {
         
         width: 100%;
-        height: 100%;
+    }
+
+    .slideConterner {
+        width: 100%;
+        margin-left: 0px;
+        height: 663px;
+        margin-top: 36px;
     }
   
 
     .slide {
-    display: flex;
-    flex-direction: column;
-    height: 647px;
-    width: 159%;
-    margin-left: -245px;
+        display: flex;
+        flex-direction: column;
+        height: 647px;
+        width: 155%;
+        margin-left: -226px;
     }
 
     .imageSlide img{
@@ -1409,6 +1588,7 @@ video{
         flex-direction: column;
         width: 100%;
         height: 867Px;
+        margin-top: 58px;
     }
     .homePage {
         display: flex;
@@ -1448,11 +1628,68 @@ video{
     margin-top: 26px;
 }
 
-.panel-footer {
-    margin-top: 276px;
-    padding-top: 35px;
-    background-color: #222;
-    border-top: 0;
+    .panel-footer {
+        margin-top: 276px;
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+    }
+
+    .menuSlideDropDown {
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+        width: 100%;
+        height: 627px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .menuSlideDropDown div{
+        margin-left: -40px;
+    }
+
+    
+    .qualities {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        height: 1555px;
+        margin-top: 20px;
+    }
+
+    .myStrengths  {
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin-left: 30px;
+    }
+
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
 }
 
+    .myAmbitions {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 38px;
+    margin-right: 30px;
+    margin-top: 20px;
 }
+
+  }
