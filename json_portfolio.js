@@ -1,26 +1,27 @@
 
-var tutorbot = document.getElementById('tutorbot');
-var faqbot = document.getElementById('faqbot');
-var phdproject = document.getElementById('phdproject');
-var nlp = document.getElementById('nlp');
-var section1 = document.getElementById('section1');
-var section2 = document.getElementById('section2');
-var section3 = document.getElementById('section3');
+const tutorbot = document.getElementById('tutorbot');
+const faqbot = document.getElementById('faqbot');
+const phdproject = document.getElementById('phdproject');
+const nlp = document.getElementById('nlp');
+const section1 = document.getElementById('section1');
+const section2 = document.getElementById('section2');
+const section3 = document.getElementById('section3');
 
-var skill = document.getElementById('skill');
-var phdmenu = document.getElementById('phdproject');
-var section4 = document.getElementById('section4');
-var section5 =document.getElementById('section5');
-var spacyMenu = document.getElementById('nlp')
-var section6 = document.getElementById('section6');
-var formulaire = document.getElementById('formular');
-var competence = document.getElementById('comp');
-var fahigkeit = document.getElementById('fahigkeit');
+const skill = document.getElementById('skill');
+const phdmenu = document.getElementById('phdproject');
+const section4 = document.getElementById('section4');
+const section5 =document.getElementById('section5');
+const spacyMenu = document.getElementById('nlp')
+const section6 = document.getElementById('section6');
+const formulaire = document.getElementById('formular');
+const competence = document.getElementById('comp');
+const fahigkeit = document.getElementById('fahigkeit');
 
 
-var media = document.getElementById('media');
+const media = document.getElementById('media');
 
-tutorbot.addEventListener('click', function(e){
+
+/*tutorbot.addEventListener('click', function(e){
     //alert("bonjour");
     section4.style.display = "none";
     section1.style.display = "none";
@@ -30,9 +31,9 @@ tutorbot.addEventListener('click', function(e){
     section6.style.display = "none";
     skill.style.display = "none"; 
     //console.log(section2.innerHTML);
-}, false);
+}, false);*/
 
-faqbot.addEventListener('click', function(e){
+/*faqbot.addEventListener('click', function(e){
     section4.style.display = "none";
     section1.style.display="none";
     section2.style.display = "none";
@@ -40,7 +41,7 @@ faqbot.addEventListener('click', function(e){
     section5.style.display = "none";
     section6.style.display = "none";
     skill.style.display = "none"; 
-}, false);
+}, false);*/
 
 
 
@@ -56,7 +57,7 @@ competence.addEventListener('click', function(e){
 })
 
 
-phdmenu.addEventListener('click', function(e){
+/*phdmenu.addEventListener('click', function(e){
     section5.style.display = "none";
     section1.style.display="none";
     section2.style.display = "none";
@@ -65,9 +66,9 @@ phdmenu.addEventListener('click', function(e){
     section4.style.display = "block";
     section6.style.display = "none";
     
-})
+})*/
 
-spacyMenu.addEventListener('click', function(e){
+/*spacyMenu.addEventListener('click', function(e){
     section1.style.display="none";
     section2.style.display = "none";
     section3.style.display = "none";
@@ -84,7 +85,7 @@ formulaire.addEventListener('click', function(e){
     section4.style.display = "none";
     section5.style.display = "none";
     section6.style.display = "block";
-})
+})*/
 
 let slideIndex = 0;
     showSlides();
