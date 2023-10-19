@@ -2001,6 +2001,11 @@ animation-fill-mode: forwards;
         animation-timing-function: ease;
     }
 
+    .photos:hover{
+        transform: rotate3d(0, 1, 0, 180deg);
+        
+    }
+
     .menuSecond{
         float: right;
         margin-right: 200px;
@@ -2093,10 +2098,10 @@ animation-fill-mode: forwards;
     }
     
 
-    .panel-footer section {
+   /* .panel-footer section {
         margin-bottom: 30px;
         text-align: center;
-    }
+    }*/
     video{
         width: 350px;
         height: 250px;
