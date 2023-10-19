@@ -1,1144 +1,133 @@
-.row{
-    margin-bottom: 15px;
-}
-/*
-.row > div{
-    border: 2px solid red;
-}
-*/
 
-body{
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* css responsive mobile first */
 
-/* css header*/
 
-#header-nav {
-    background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
-    width: 100%;
-}
 
-.name{
-    display: block;
-    color: black;
-}
-
-.menu li{
-    list-style-type: none;
-    margin: 10px;
-   display: inline-block;
-   
-}
-
-.project, .competence, .contact, .paper, .webChallenge, .git{
-    font-size: 18px;
-    margin-left: 10px; 
-    height: 100px; 
-    }
-.project:hover, .competence:hover, .contact:hover, .paper:hover, .git:hover, .webChallenge:hover{
-    text-decoration: overline;
-    
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-size: 20px;
-    background-color: #f6b319;
-}
-.project:hover .dropdown-content{
-    display: block;
-}
-.paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
-    display: block;
-}
-
-/*CSS section 1 */
-.brevepresentation{
-    
-    margin-right: 150px;
-    font-size: 24px;
-    margin-top: 120px;
-}
-
-@keyframes photoProfil {
-    from{margin-left: -30px;}
-    to{margin-left: 100px}
-}
-.photos{
-   
-    width: 500px;
-    margin-top: 110px;
-    margin-left: -30px;
-    animation-name: photoProfil;
-    animation-duration: 0s;
-    animation-timing-function: ease;
-}
-.menuSecond{
-    float: right;
-    margin-right: 200px;
-    padding: 20px;
-    padding-left: 20px;
-    
-}
-.menuSecond li {
-    list-style-type: none;
-    margin: 10px;
-   display: inline-block;
-   font-size: 20px;
-   text-align: center;
-}
-
-.menuSecond3{
-    display: none;
-}
-
-.menuSlideDropDown{
-     display: none;
-     animation-name: displayMenu;
-     animation-duration: 300ms;
-     animation-fill-mode: forwards;
-     animation-timing-function: ease-in-out;
-     flex-direction: row;
-     position: absolute;
-     left: 368px;
-     z-index: 3;
-     width: 75%;
-     height: 179px;
-     background-color: #F6B319;
-     margin-top: -20px;
-     border: 2px solid #61122F;
-     border-radius: 15px;
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 767px wide (typically mobile phones) */
+    .row{
+        margin-bottom: 15px;
+        box-sizing: border-box;
     }
     
-    @keyframes displayMenu{
-     from{transform: scale(0, 0);}
-     to{transform: scale(74%, 179px);}
+    
+    body{
+        font-size: 16px;
+        color: #fff;
+        background-color: #61122f;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    
-    .BtnFormMultiStep{
-        width: 218px;
-        height: 131px;
-        margin-top: 20px;
-        margin-left: 45px;
-        border: 1px solid #61122F;
-        border-radius: 15px;
-        box-shadow: #e793b2 10px 10px 15px;
-    }
-    
-    .BtnFormMultiStep:hover{
-    cursor: pointer;
-    animation-name: aminationMenuItem;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    }
-
-
-    @keyframes aminationMenuItem{
-     from{width: 218px;}
-     to{width: 228px;}
-     from{height: 131px;}
-     to{height: 141px;}
-    }
-        
-        #brevepresentation{
-         position: relative;
-         font-size: 24px;
-         width: 40%;
-         padding: 10px;
-         left: 580px;
-         animation-name: presentationreveal;
-         animation-duration: 300ms;
-         animation-timing-function: ease-in-out;
-         animation-fill-mode: forwards;
-         animation-delay: 300ms;
-        }
-        
-        .socialMedia{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         position: relative;
-         top:30px;
-        }
-        
-        #photoProfil{
-        position: relative;
-         width: 40%;
-         left: -600px;
-         animation-name: photoreveal;
-         animation-duration: 300ms;
-         animation-timing-function: ease-in-out;
-         animation-fill-mode: forwards;
-         animation-delay: 300ms;
-        }
-         
-        
-        .photos{
-         position: relative; 
-         width: 50%; 
-         left: 70px;
-         top: -100px;
-         background: #D9E355;
-         border-radius: 45px;
-        }
-        
-        @keyframes photoreveal {
-         from{left: -660px;}
-         to{left: 190px}
-        }
-        
-        @keyframes presentationreveal {
-         from{left: 580px;}
-         to{left: -140px}
-        }
-
-        .btnLinkedin{
-            font-size: 15px;
-            width: 75%;
-            border: 2px solid #e3e2db;
-            height: 45px;
-            border-radius: 15px;
-            background-color: rgb(84, 84, 218);
-        }
-
-        .btnLinkedin:hover{
-            background-color: white;
-            color: rgb(84, 84, 218);
-            border: 2px solid rgb(84, 84, 218);
-        }
-        .btnLink{
-            width: 100%;
-            color: white;
-        }
-/*//////////////////////////////////////////////////////////////////*/
-.FrontEndWebChallenge{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 750Px;
-}
-.FrontEndWebChallengeTitel{
-    width: 50%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    margin-top: 40px;
-    height: 80px;
-    text-align: center;
-    margin-left: 380px;
-}
-.qualitiesMySkill{
-    width: 50%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    margin-top: 106px;
-    height: 80px;
-    text-align: center;
-    margin-left: 380px;
-}
-.FrontEndWebChallengeTitel p{
-    margin-top: 20px;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.qualitiesMySkill p{
-    margin-top: 20px;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.FrontProjets{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 787px;
-    margin-top: 30px;
-}
-.multiSepForm, .homePage, .multiHomePage{
-    display: flex;
-    flex-direction: column;
-    height: 644px;
-    width: 30%;
-}
-.multiHomePage{
-    margin-right: 35px;
-}
-.multiSepForm{
-    margin-left: 35px;
-}
-.multiSepFormImage{
-    height: 300px;
-}
-.homePageImage, .multiHomePageImage{
-    height: 400px;
-}
-.multiSepFormImage img, .homePageImage img, .multiHomePageImage img{
-    width: 100%;
-    height:100%;
-}
-.multiSepFormImage img:hover, .homePageImage img:hover, .multiHomePageImage img:hover{
-    cursor: pointer;
-}
-a .multiSepFomTitel , a .homePageTitel ,  a .multiHomePageTitel{
-    height: 50px;
-    margin-top: 15px;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 25px;
-     text-decoration-line: none;
-}
-/*a:hover{
-    text-decoration: none;
-    opacity: 0.5;
-}*/
-.multiSepFomTitel:hover, .homePageTitel.hover, .multiHomePageTitel:hover{
-   cursor: pointer;
-}
-.multiSepFormDescription, .homePageDescription, .multiHomePageDescription{
-    margin-top: 10px;
-    color: white;
-    height: 359px;
-}
-.multiSepFormDescription h3, .homePageDescription h3, .multiHomePageDescription h3{
-    font-size: 18px;
-}
-
-/*//////// Slides//////////////////////////*/
-
-    .slideConterner{
-        height: 0;
-    }
- .slide{
-            width: 80%;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            animation-name: fade;
-            animation-duration: 1.5s;
-            position: relative;
-            transform: translateX(130px);
-             margin-top: 20px;
-             margin-left: 20px; 
-        }
-        
-        .numberSlide{
-            margin-right: 15px;
-            position: absolute;
-        }
-        .imageSlide{
-            width: 50%;
-            margin-right: 15px;
-            margin-top: 15px;
-            transition: 0.5s;
-        }
-        .imageSlide:hover{
-            cursor: pointer;
-            transform: scale(1.05);
-        }
-        .whereInTheWorld{
-            height: 300px;
-        }
-        .imgMultistep{
-            height: 300px;
-        }
-        .textSlide{
-            width: 50%;
-            font-size: 15px;
-            color: white; 
-            padding: 8px 12px;
-            font-family: Verdana, sans-serif;
-            margin-top: 10px;
-        }
-         .textSlide a{
-             color: white;
-             text-decoration: none; 
-         }
-        .dot {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            margin-top: 600px;
-            
-        }
-
-        .active {
-            background-color: #717171;
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-            }
-
-/*////////////////////////////////////////////////////////////////////////////*/
-.qualitiesMySkill{
-    margin-top: 40px;
-}
-
-.reveal{
-            position: relative;
-            transform: translateY(150px);
-            
-            transition: 2s all ease;
-        }
-        .reveal.active{
-            transform: translateY(0);
-           
-        }
-
-.qualities{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 590px;
-    margin-top: 40px;
-}
-.myStrengths{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-.myStrengths .title, .myWeaknesses .title, .myAmbitions .title{
-    height: 50px;
-    text-align: center;
-    cursor: pointer;
-}
-
-
-
-.myStrengths .image:hover, .myWeaknesses .image:hover,.myAmbitions .image:hover{
-    opacity: 0.6;
-    cursor: pointer;
-}
-@keyframes imageAnimation{
-    fom{transform: scale(1,1);}
-    to {transform: scale(0.5,0.5);}
-}
-
-.myStrengths .image img, .myWeaknesses .image img, .myAmbitions .image img{
-    width: 100%;
-    height: 240px;
-    animation: imageAnimation; 
-    animation-duration: 3s;
-    animation-direction: reverse;
-}
-.myStrengths .text, .myWeaknesses .text, .myAmbitions .text{
-    height: 270px;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 100%;
-}
-.myStrengths .text ul, .myWeaknesses .text ul, .myAmbitions .text ul {
-    list-style-type: none;
-    margin-right: 50px;
-  }
-
-  .myStrengths .text ul li, .myWeaknesses .text ul li, .myAmbitions .text ul li {
-    margin-top: -13px;
-  }
-
-  .myAmbitions .text ul li {
-    margin-right: -17px;
-  }
-
-
-.myWeaknesses{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.myAmbitions{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-left: 20px;
-    margin-right: 30px;
-    margin-top: 30px;
-}
-
-
-
-/*css footer */
-.panel-footer{
-    margin-top: 140px;
-    padding-top: 35px;
-    background-color: #222;
-    border-top: 0;
-}
-
-#phone, #adress{
-    line-height: 2;
-}
-
-#phone > span, #adress > span{
-    font-size: 1.3em;
-}
-#adress p{
-    color: #557c3e;
-    font-size: .8em;
-    line-height: 1.8;
-}
-#email{
-    font-style: italic;
-}
-
-
-/* css section 2 */
-#section2{
-    display: none;
-}
-.tutorbot, .projet1{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-video{
-    width: 83%; 
-    height: 360px; 
-}
-/* css section 3 */
-
-#section3{
-    display: none;
-}
-/*CSS section 4 PHD project*/
-
-.phdimage{
-    width: 700px;
-    height: 500px;
-    margin-top: 50px;
-}
-.resume, .phd{
-    margin-top: 50px;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#section4{
-    display: none;
-}
-
-/* CSS section 5 Exo Spacy*/
-
-.codeImage{
-    width: 700px;
-    height: 500px;
-}
-.pythonExo, .summary{
-    margin-top: 50px;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#section5, #section6{
-    margin-top: 50px;
-    display: none;
-}
-
-
-
-/*section competence*/
-
-/*first competence*/
-
-#skill{
-    display: none;
-
-}
-.skill0{
-    margin-top: 60px;
-}
-
-.skill1{
-    display: block;
-}
-
-
-.skill1 .LfrontEnd{
-    display: block;
-    font-size: 20px;
-    font-weight: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    
-}
-
-.skill1 .LfrontEnd1{
-    display: block;
-    font-size: 20px;
-    font-weight: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-}
-
-
-.skill1 .LfrontEnd div {
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: inset 9.91px 9.91px 15px #D9E355,
-     inset -9.91px -9.91px 15px #FFFF65;
-     padding: 5px;
-}
-
-.skill1 .LfrontEnd1 div {
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: inset 9.91px 9.91px 15px #D9E355,
-     inset -9.91px -9.91px 15px #FFFF65;
-     padding: 5px;
-     
-}
-
-
-.skill1 .bar-container .bar{
-    width: 300px;
-    height: 38px;
-    border-radius: 20px;
-    margin: 10px;
-
-}
-
-.skill1 .bar-container{
-    float: left;
-}
-
-.bar-container .bar{
-    background-color: gainsboro;
-
-}
-
-.skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
-.skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
-    height: 38px;
-    background-color: rgb(83, 108, 219);
-    border-radius: 20px;
-
-}
-
-
-
-.skill1 .bar-container .bar .progesshtml{
-    width: 275px;
-    text-align: right;
-}
-.skill1 .bar-container .bar .progessCss{
-    width: 250px;
-    text-align: right;
-}
-.skill1 .bar-container .bar .progessJS{
-    width: 160px;
-    text-align: right;
-}
-.skill1 .bar-container .bar .progessresp{
-    width: 250px;
-    text-align: right;
-}
-
-/*second competences*/
-
-.skill2{
-    display: block;
-}
-.skill2 .Back-end{
-    display: block;
-    font-size: 20px;
-    font-weight: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right;
-    
-}
-
-.skill2 .Back-end2{
-    display: block;
-    font-size: 20px;
-    font-weight: 500px;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    
-}
-
-
-.skill2 .Back-end div {
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: inset 9.91px 9.91px 15px #D9E355,
-     inset -9.91px -9.91px 15px #FFFF65;
-     padding: 5px;
-}
-
-.skill2 .Back-end2 div {
-    margin: 10px;
-    border-radius: 15px;
-    box-shadow: inset 9.91px 9.91px 15px #D9E355,
-     inset -9.91px -9.91px 15px #FFFF65;
-     padding: 5px;
-}
-
-.skill2 .bar{
-    width: 300px;
-    height: 38px;
-    border-radius: 20px;
-    margin: 10px;
-
-}
-
-.skill2 .bar-container{
-    float: left;
-}
-
-.skill2 .bar-container .bar{
-    background-color: gainsboro;
-}
-.skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-.skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
-    height: 38px;
-    background-color: rgb(83, 108, 219);
-    border-radius: 20px;
-
-}
-
-.skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
-.skill2 .bar-container .bar .progessionDB3{
-    height: 38px;
-    background-color: rgb(83, 108, 219);
-    border-radius: 20px;
-
-}
-
-.skill2 .bar-container .bar .progessionNode{
-    width: 150px;
-    text-align: right;
-}
-
-.skill2 .bar-container .bar .progessionNode1{
-    width: 160px;
-    text-align: right;
-}
-
-.skill2 .bar-container .bar .progessionExpress{
-    width: 100px;
-    text-align: right;
-}
-
-.skill2 .bar-container .bar .progessionExpress2{
-    width: 100px;
-    text-align: right;
-}
-.skill2 .bar-container .bar .progessionDB{
-    width: 100px;
-    text-align: right;
-}
-
-.skill2 .bar-container .bar .progessionDB3{
-    width: 270px;
-    text-align: right;
-}
-
-
-.skill2 .bar-container .bar .progessionVC{
-    width: 200px;
-    text-align: right;
-}
-.skill2 .bar-container .bar .progessionPHP{
-    width: 250px;
-    text-align: right;
-}
-
-#fahigkeit{
-    display: none;
-}
-
-/* troisieme competence*/
-
-
-
-/* css responsive */
-
-
-@media only screen and (min-width: 768px){
-
-    .menuSlideDropDown {
-        display: none;
-        animation-name: displayMenu;
-        animation-duration: 300ms;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease-in-out;
-        flex-direction: row;
-        position: absolute;
-        left: 0px;
-        z-index: 3;
+    #header-nav {
+        background-color: #f6b319;
+        border-radius: 0;
+        border: 0;
         width: 100%;
-        height: 179px;
-        background-color: #F6B319;
-        margin-top: -20px;
-        border: 2px solid #61122F;
-        border-radius: 15px;
     }
 
-    .BtnFormMultiStep {
-        width: 151px;
-        height: 120px;
-        margin-top: 20px;
-        margin-left: 45px;
-        border: 1px solid #61122F;
-        border-radius: 15px;
-        box-shadow: #e793b2 10px 10px 15px;
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 20px;
+        background-color: #f6b319;
+    }
+   
+    .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
+        display: block;
     }
 
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        right: -12px;
+        top: -66px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    #section1{
+        width: 100%;
+        margin-top: -122px;
     
+    }
     .profil {
         display: flex;
-        margin-top: 80px;
-        flex-direction: row;
-        height: 535px;
+        margin-top: 122px;
+        flex-direction: column;
+        align-items: center;
+        height: 696px;
+        width: 100%;
     }
-   
     #photoProfil {
-        width: 40%;
+        width: 100%;
         animation-name: photoreveal;
         animation-duration: 300ms;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
         animation-delay: 300ms;
+        margin-top: 20px;
     }
-    .photos {
-        width: 81%;
-        position: relative;
-        left: -119px;
-    }
-
     #brevepresentation {
-        font-size: 24px;
-        width: 50%;
-        padding: 10px;
-        animation-name: presentationreveal;
-        animation-duration: 300ms;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-        animation-delay: 300ms;
+        width: 100%;
+        margin-top: 23px;
+        text-align: justify;
+        margin-left: 89px;
     }
+    
 
     #brevepresentation div {
-        position: relative;
-        top: 0px;
-        left: 150px;
-        text-align: justify;
+        width: 75%;
     }
 
     .socialMedia {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        position: relative;
-        top: 30px;
-        margin-top: 20px;
-    }
-   
-    .slideConterner {
-        width: 96%;
-        margin-left: 15px;
-        height: 663px;
-        margin-top: 30px;
-        background-color: transparent;
-    }
-
-    .slide {
-        width: 80%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        animation-name: fade;
-        animation-duration: 1.5s;
-        position: relative;
-        transform: translateX(130px);
-        margin-top: 20px;
-        margin-left: -42px;
-    }
-
-    .textSlide {
-        width: 70%;
-        font-size: 15px;
-        color: white;
-        padding: 8px 12px;
-        font-family: Verdana, sans-serif;
-        margin-top: 10px;
-    }
-   
-    .menuSecond{
-        display: none;
-    }
-    .menuSecond3{
-        display: block;
-    }
-    .menuSecond3 li {
-        list-style-type: none;
-        margin: 10px;
-        margin-right: 50px;
-       font-size: 24px;
-       text-align: center; 
-    }
-    .acte{
-        background: greenyellow;
-        padding: 10px;
-        border-radius: 60px;
-        display: flex;
-    }
-    .cv{
-        background-color: red;
-        padding: 10px;
-        border-radius:60px ;
-        display: flex;
-    } 
-    .appel{
-        background-color: aquamarine;
-        padding: 10px;
-        border-radius: 60px;
-        display: flex;
-    }
-
-    .FrontEndWebChallengeTitel {
-        width: 69%;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-        margin-top: 20px;
-        height: 80px;
-        text-align: center;
-        margin-left: 120px;
-    }
-    .multiSepForm, .homePage, .multiHomePage {
-        display: flex;
-        flex-direction: column;
-        height: 644px;
-        width: 24%;
-    }
-
-    a .multiSepFomTitel, a .homePageTitel, a .multiHomePageTitel {
-        height: 50px;
-        margin-top: 15px;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 16px;
-        text-decoration-line: none;
-    }
-    h3 {
-        font-size: 17px;
-    }
-.homePage {
-        display: flex;
-        flex-direction: column;
-        height: 610px;
-        width: 23%;
-    }
-    .FrontEndWebChallenge {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 805Px;
-    }
-
-    .qualitiesMySkill {
-        width: 69%;
-        border-top: 3px solid black;
-        border-bottom: 3px solid black;
-        margin-top: -65px;
-        height: 80px;
-        text-align: center;
-        margin-left: 120px;
-    }
-
-    .myAmbitions {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 20px;
-        margin-right: 13px;
-        margin-top: 30px;
-    }
-    .myWeaknesses {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 20px;
-        margin-top: 30px;
-    }
-    .myStrengths {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        margin-left: 14px;
-        margin-top: 30px;
-    }
-    #header-nav{
-        background-color: #f6b319;;
-        border-radius: 0;
-        border: 0;
-    }
-
-}
-
-
-/*@media all and (max-width: 750px){
-    .menuPrincipal{
-        margin-right: 40px;
-    }
-
-    .project, .competence, .contact{
-        display: block;
-        font-size: 12px;
-       
-    }
-    
-    .photos {
-    width: 300px;
-    position: relative;
-    top: -117px;
-    margin-left: 215px;
-    position: relative;
-}
-    .brevepresentation{
-        margin: auto;
-        font-size: 20px;
-        text-align: justify;
-        
-    }
-    .menuSecond{
-        display: none;
-    }
-    .menuSecond3{
-        display: block;
-    }
-    .menuSecond3 li {
-        list-style-type: none;
-        margin: 10px;
-        margin-right: 50px;
-       font-size: 17px;
-       text-align: center; 
-    }
-    .acte{
-        background: greenyellow;
-        padding: 10px;
-        border-radius: 60px;
-        display: flex;
-    }
-    .cv{
-        background-color: red;
-        padding: 10px;
-        border-radius:60px ;
-        display: flex;
-    } 
-    .appel{
-        background-color: aquamarine;
-        padding: 10px;
-        border-radius: 60px;
-        display: flex;
-    }
-    
-}
-
-#header-nav{
-    background-color: #f6b319;;
-    border-radius: 0;
-    border: 0;
-}
-
-#nav-list{
-    margin-top: 10px;
-}
-#nav-list a{
-    color: #951c49;
-    text-align: center;
-}
-#nav-list a:hover{
-    background-color: #E7E7E7;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon.bar{
-    border: 1px solid #61122f;
-}
-.navbar-header button.navbar-toggle{
-
-    clear: both;
-    margin-top: -30px;
-}*/
-
-
-
-/*small devices only */
-/*@media (min-width:768px) and (max-width:991px) {
-
-    
-    #photoProfil {
-        width: 100%;
-        margin-left: -166px;
-        margin-top: 25px;
-    }
-    
-    
-}*/
-
-/* extra small devices */
-/*@media (max-width:767px){
-  
-
-    .qualities {
-        display: flex;
-        flex-direction: column;
-        position: relative;
         justify-content: space-between;
-        height: 1555px;
-        margin-top: 20px;
+        margin-top: 40px;
+        margin-left: -11px;
     }
 
-    .myStrengths  {
-        display: flex;
-        flex-direction: column;
-        width: 84%;
-        margin-left: 30px;
+    .photos {
+        position: relative;
+        width: 80%;
+        border-radius: 45px;
+        left: 37px;
     }
 
-    .myWeaknesses {
-    display: flex;
-    flex-direction: column;
-    width: 84%;
-    margin-left: 35px;
-    margin-top: 26px;
-}
+    
 
-    .myAmbitions {
-    display: flex;
-    flex-direction: column;
-    width: 84%;
-    margin-left: 38px;
-    margin-right: 30px;
-    margin-top: 20px;
-}
-
-    #collapsable-nav a{
-        font-size: 1.2em;
+    .btnLinkedin {
+        font-size: 10px;
+        width: 100%;
+        border: 2px solid #e3e2db;
+        height: 40px;
+        border-radius: 15px;
+        background-color: rgb(84, 84, 218);
     }
+
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
+    }
+    .btnLink {
+        width: 100%;
+        color: white;
+        margin-left: 25px;
+    }
+    .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
+        height: 230px;
+    }
+    .imageSlide a .spaceHome{
+        height: 100px;
+    }
+    
     .panel-footer section {
         margin-bottom: 30px;
         text-align: center;
@@ -1220,7 +209,7 @@ video{
         background-color: gainsboro;
     }
     .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
         height: 30px;
         background-color: rgb(83, 108, 219);
         border-radius: 20px;
@@ -1260,7 +249,7 @@ video{
         background-color: gainsboro;
     }
     .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC {
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
         height: 30px;
         background-color: rgb(83, 108, 219);
         border-radius: 20px;
@@ -1279,34 +268,231 @@ video{
         width: 182px;
         text-align: right;
     }
+ 
 
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
     }
+
+    .FrontEndWebChallengeTitel {
+        width: 76%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 49px;
+        text-align: center;
+        margin-left: 43px;
+        padding-top: 10px;
+    }
+
+    .FrontProjets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 787px;
+        margin-top: 30px;
+    }
+    .multiSepFormImage {
+        
+        width: 100%;
+    }
+
+    .slideConterner {
+        width: 100%;
+        margin-left: 0px;
+        height: 663px;
+        margin-top: 14px;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        height: 638px;
+        width: 90%;
+        margin-left: 21px;
+        text-align: center;
+    }
     
-}*/
+    .imageSlide img{
+        height: 100px;
+    }
 
+    .textSlide{
+        margin-top: 15px;
+    }
 
+    .textSlide a{
+        color: white;
+    }
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 867Px;
+        margin-top: 15px;
+    }
+    .homePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 72%;
+        margin-left: 50px;
+        margin-top: 74px;
+    }
+    .qualitiesMySkill {
+        width: 71%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 50px;
+        text-align: center;
+        margin-left: 51px;
+        margin-top: -169px;
+        padding-top: 10px;
+    }
 
-/*@media (min-width: 768px) and (max-width: 1023px) {
-    /* Styles for screens between 768px and 1023px wide (typically tablets) 
+    .col-md-6 {
+        width: 99%;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+        font-size: 12px;
+    }
+    #collapsable-nav a {
+        font-size: 15px;
+    }
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
+}
+
+    .menuSlideDropDown {
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+        width: 100%;
+        height: 627px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .menuSlideDropDown div{
+        margin-left: -40px;
+    }
+
     
-  }*/
+    .qualities {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        height: 1555px;
+        margin-top: 20px;
+        width: 100%;
+    }
 
-/*@media (max-width:640px){
+    .myStrengths  {
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin-left: 30px;
+    }
 
-   
-}*/
+    .qualities .myStrengths .image img, .qualities .myWeaknesses .image img, .qualities .myAmbitions .image img{
+        max-width: 100%;
+        box-shadow: 0px 5px 5px 2px white;
+        border-radius: 45px;
+    }
+    .qualities .myStrengths .title, .qualities .myWeaknesses .title, .qualities .myAmbitions .title{
+        text-align: center;
+    }
+    .qualities .myStrengths .text, .qualities .myWeaknesses .text, .qualities .myAmbitions .text{
+        text-align: center;
+        list-style-type: none;
+        margin-right: 40px;
+    }
+    .qualities .myStrengths .text ul, .qualities .myWeaknesses .text ul, .qualities .myAmbitions .text ul{
+        list-style-type: none;
+        margin-top: 10px;
+    }
 
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
+}
 
-@media only screen and (max-width: 600px) {
-    /* Styles for screens up to 767px wide (typically mobile phones) */
+    .myAmbitions {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 38px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+       display: none;
+    }
     
+    .panel-footer {
+        margin-top: 139px;
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+    }
+
+  }
+
+  @media only screen and (min-width: 600px) {
+    .row{
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    
+    #collapsable-nav a {
+        font-size: 15px;
+    }
+    
+    body{
+        font-size: 16px;
+        color: #fff;
+        background-color: #61122f;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     #header-nav {
         background-color: #f6b319;
         border-radius: 0;
         border: 0;
         width: 100%;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 20px;
+        background-color: #f6b319;
+    }
+   
+    .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
+        display: block;
     }
 
     .navbar-toggle {
@@ -1324,63 +510,75 @@ video{
 
     #section1{
         width: 100%;
-        margin-top: -122px;
     
     }
     .profil {
         display: flex;
         margin-top: 122px;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
-        height: 1071px;
+        height: 696px;
         width: 100%;
+        margin-top: -30px;
+        margin-bottom: -371px;
     }
     #photoProfil {
-        width: 100%;
-        margin-top: 10px;
+        width: 50%;
+        animation-name: photoreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+        margin-top: -437px;
         margin-left: 0;
     }
     #brevepresentation {
-        width: 100%;
-        margin-top: -74px;
-        margin-left: 359px;
+        width: 50%;
         text-align: justify;
+        margin-top: -380px;
+        margin-right: 20px;
     }
     
 
     #brevepresentation div {
-        width: 75%;
+        width: 100%;
     }
 
     .socialMedia {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 40px;
-        margin-left: -25px;
+        margin-left: -11px;
     }
 
     .photos {
-        width: 75%;
         position: relative;
-        left: -109px;
+        width: 80%;
+        border-radius: 45px;
+        left: 37px;
     }
 
     
 
     .btnLinkedin {
         font-size: 15px;
-        width: 128%;
+        width: 100%;
         border: 2px solid #e3e2db;
-        height: 45px;
+        height: 40px;
         border-radius: 15px;
         background-color: rgb(84, 84, 218);
+    }
+
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
     }
     .btnLink {
         width: 100%;
         color: white;
-        margin-left: 23px;
+        margin-left: 11px;
     }
     .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
         height: 230px;
@@ -1542,9 +740,10 @@ video{
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         margin-top: 20px;
-        height: 80px;
+        height: 49px;
         text-align: center;
-        margin-left: 45px;
+        margin-left: 43px;
+        padding-top: 10px;
     }
 
     .FrontProjets {
@@ -1563,28 +762,35 @@ video{
         width: 100%;
         margin-left: 0px;
         height: 663px;
-        margin-top: 36px;
+        margin-top: 14px;
     }
-  
 
     .slide {
         display: flex;
         flex-direction: column;
-        height: 647px;
-        width: 155%;
-        margin-left: -226px;
+        height: 638px;
+        width: 90%;
+        margin-left: 21px;
+        text-align: center;
     }
-
+    
     .imageSlide img{
         height: 100px;
     }
 
+    .textSlide{
+        margin-top: 15px;
+    }
+
+    .textSlide a{
+        color: white;
+    }
     .FrontEndWebChallenge {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 867Px;
-        margin-top: 58px;
+        margin-top: 15px;
     }
     .homePage {
         display: flex;
@@ -1595,14 +801,14 @@ video{
         margin-top: 74px;
     }
     .qualitiesMySkill {
-        width: 71%;
+        width: 100%;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
-        margin-top: 96px;
-        height: 80px;
+        height: 50px;
         text-align: center;
-        margin-left: 51px;
-        margin-top: -30px;
+        margin-left: 0px;
+        margin-top: -325px;
+        padding-top: 10px;
     }
 
     .col-md-6 {
@@ -1620,16 +826,9 @@ video{
     display: flex;
     flex-direction: column;
     width: 84%;
-    margin-left: 35px;
+    margin-left: 8px;
     margin-top: 26px;
 }
-
-    .panel-footer {
-        margin-top: 276px;
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-    }
 
     .menuSlideDropDown {
         display: none;
@@ -1662,13 +861,964 @@ video{
         justify-content: space-between;
         height: 1555px;
         margin-top: 20px;
+        width: 100%;
+        margin-left: 45px;
     }
 
     .myStrengths  {
         display: flex;
         flex-direction: column;
         width: 84%;
+        margin-left: 7px;
+    }
+
+    .qualities .myStrengths .image img, .qualities .myWeaknesses .image img, .qualities .myAmbitions .image img{
+        max-width: 100%;
+        box-shadow: 0px 5px 5px 2px white;
+        border-radius: 45px;
+    }
+    .qualities .myStrengths .title, .qualities .myWeaknesses .title, .qualities .myAmbitions .title{
+        text-align: center;
+    }
+    .qualities .myStrengths .text, .qualities .myWeaknesses .text, .qualities .myAmbitions .text{
+        text-align: center;
+        list-style-type: none;
+        margin-right: 40px;
+    }
+    .qualities .myStrengths .text ul, .qualities .myWeaknesses .text ul, .qualities .myAmbitions .text ul{
+        list-style-type: none;
+        margin-top: 10px;
+    }
+
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 8px;
+    margin-top: 26px;
+}
+
+.myAmbitions {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 8px;
+    margin-right: 35px;
+    margin-top: 20px;
+}
+
+    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+       display: none;
+    }
+    
+    .panel-footer {
+        margin-top: 578px;
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+    }
+}
+
+
+/*tablet*/
+@media only screen  and (min-width: 601px) and (max-width: 768px){
+
+    #section1 {
+        width: 100%;
+    }
+
+    #collapsable-nav a {
+        font-size: 16px;
+    }
+
+    .menuSlideDropDown {
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: row;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+        width: 100%;
+        height: 179px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+    }
+
+    .BtnFormMultiStep {
+        width: 151px;
+        height: 120px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #61122F;
+        border-radius: 15px;
+        box-shadow: #e793b2 10px 10px 15px;
+    }
+
+    
+    .profil {
+        display: flex;
+        margin-top: 0px;
+        flex-direction: row;
+        height: 535px;
+    }
+   
+    #photoProfil {
+        width: 50%;
+        animation-name: photoreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+        position: relative;
+        top: 122px;
+        left: 0px;
+    }
+    .photos {
+        width: 86%;
+        position: relative;
+        left: 29px;
+    }
+
+    #brevepresentation {
+        font-size: 20px;
+        width: 50%;
+        padding: 10px;
+        animation-name: presentationreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+    }
+
+    #brevepresentation div {
+        position: relative;
+        top: 191px;
+        left: 3px;
+        text-align: justify;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 30px;
+        margin-top: 20px;
+    }
+   
+    .slideConterner {
+        width: 96%;
+        margin-left: 15px;
+        height: 663px;
+        margin-top: 0px;
+        background-color: transparent;
+    }
+
+    .slide {
+        width: 80%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        position: relative;
+        transform: translateX(130px);
+        margin-top: 20px;
+        margin-left: -42px;
+    }
+
+    .textSlide {
+        width: 70%;
+        font-size: 21px;
+        color: white;
+        padding: 8px 12px;
+        font-family: Verdana, sans-serif;
+        margin-top: 30px;
+    }
+   
+    .menuSecond{
+        display: none;
+    }
+    .menuSecond3{
+        display: block;
+    }
+    .menuSecond3 li {
+        list-style-type: none;
+        margin: 10px;
+        margin-right: 50px;
+       font-size: 24px;
+       text-align: center; 
+    }
+    .acte{
+        background: greenyellow;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+    .cv{
+        background-color: red;
+        padding: 10px;
+        border-radius:60px ;
+        display: flex;
+    } 
+    .appel{
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 60px;
+        display: flex;
+    }
+
+    .FrontEndWebChallengeTitel {
+        width: 69%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 80px;
+        text-align: center;
+        margin-left: 120px;
+    }
+    .multiSepForm, .homePage, .multiHomePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 24%;
+    }
+
+    a .multiSepFomTitel, a .homePageTitel, a .multiHomePageTitel {
+        height: 50px;
+        margin-top: 15px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-decoration-line: none;
+    }
+    h3 {
+        font-size: 17px;
+    }
+.homePage {
+        display: flex;
+        flex-direction: column;
+        height: 610px;
+        width: 23%;
+    }
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1116Px;
+        position: relative;
+        top: 356px;
+    }
+
+    .qualities {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        height: 1555px;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .qualitiesMySkill {
+        width: 69%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 191px;
+        height: 80px;
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    .myAmbitions {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 20px;
+        margin-right: 13px;
+        margin-top: 30px;
+    }
+    .myWeaknesses {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 21px;
+        margin-top: 30px;
+    }
+    .myStrengths {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 19px;
+        margin-top: 30px;
+    }
+    .myStrengths .image img, .myWeaknesses .image img, .myAmbitions .image img{
+        box-shadow: 0px 5px 5px 0px white;
+        border-radius: 45%;
+    }
+    #header-nav{
+        background-color: #f6b319;;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .panel-footer {
+        margin-top: 1058px;
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+    }
+
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    #photoProfil {
+        width: 50%;
+        animation-name: photoreveal;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 300ms;
+        position: relative;
+        top: 33px;
+        left: 0px;
+    }
+    #collapsable-nav a {
+        font-size: 16px;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        height: 638px;
+        width: 60%;
+        margin-left: 174px;
+        text-align: center;
+    }
+
+    .FrontEndWebChallengeTitel {
+        width: 69%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 80px;
+        text-align: center;
+        margin-left: 120px;
+        padding-top: 20px;
+    }
+
+    .qualities {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: space-between;
+        height: 697px;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .qualitiesMySkill {
+        width: 100%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 50px;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -164px;
+        padding-top: 10px;
+    }
+
+    .myStrengths {
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin-left: 7px;
+        margin-top: 26px;
+    }
+
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+    }
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
+    }
+
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+        margin-top: 0px;
+    }
+
+    .menuSlideDropDown{
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: row;
+        position: absolute;
+        left: 0px;
+        z-index: 3;
+        width: 100%;
+        height: 179px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+       }
+    
+       @keyframes displayMenu{
+        from{transform: scale(0, 0);}
+        to{transform: scale(74%, 179px);}
+       }
+    
+      
+       .BtnFormMultiStep{
+        width: 180px;
+        height: 131px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #61122F;
+        border-radius: 15px;
+        box-shadow: #e793b2 10px 10px 15px;
+    }
+    
+    .BtnFormMultiStep:hover{
+    cursor: pointer;
+    animation-name: aminationMenuItem;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    }
+    
+    @keyframes aminationMenuItem{
+        from{width: 218px;}
+        to{width: 228px;}
+        from{height: 131px;}
+        to{height: 141px;}
+       }
+
+}
+
+@media only screen and (min-width: 993px)  and (max-width: 1200px) {
+    .row{
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 16px;
+        color: #fff;
+        background-color: #61122f;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #header-nav {
+        background-color: #f6b319;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .name{
+        display: block;
+        color: black;
+    }
+    
+    .menu li{
+        list-style-type: none;
+        margin: 10px;
+       display: inline-block;
+       
+    }
+
+    .project, .competence, .contact, .paper, .webChallenge, .git{
+        font-size: 18px;
+        margin-left: 10px; 
+        height: 100px; 
+        }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 20px;
+        background-color: #f6b319;
+    }
+
+    .project:hover .dropdown-content{
+        display: block;
+    }
+    .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
+        display: block;
+    }
+    
+    @keyframes displayMenu{
+        from{transform: scale(0, 0);}
+        to{transform: scale(74%, 179px);}
+       }
+
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        right: -12px;
+        top: -66px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    #section1{
+        width: 100%;
+        margin-top: -122px;
+    
+    }
+    .profil {
+        display: flex;
+        margin-top: 122px;
+        flex-direction: row;
+        align-items: center;
+        height: 988px;
+        width: 90%;
+        margin-left: 151px;
+    }
+     #photoProfil {
+        position: relative;
+        width: 100%;
+        animation-name: photoreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+        top: 33px;
+        left: -600px
+    }
+    @keyframes photoreveal {
+        from{left: -660px;}
+        to{left: 0px}
+       }
+       
+       @keyframes presentationreveal {
+        from{margin-left: 750px;}
+        to{margin-left: -32px}
+       }
+    @keyframes photoProfil {
+        from{margin-left: -30px;}
+        to{margin-left: 100px}
+    }
+    #brevepresentation {
+        width: 100%;
+        margin-top: -45px;
+        text-align: justify;
+        margin-left: 750px;
+        position: relative;
+        font-size: 24px;
+        animation-name: presentationreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+    }
+
+    #brevepresentation div {
+        width: 75%;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: -11px;
+    }
+
+    .photos {
+        position: relative;
+        width: 80%;
+        border-radius: 45px;
+        left: 37px;
+        top: 90px
+    }
+
+    
+
+    .btnLinkedin {
+        font-size: 10px;
+        width: 100%;
+        border: 2px solid #e3e2db;
+        height: 40px;
+        border-radius: 15px;
+        background-color: rgb(84, 84, 218);
+    }
+
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
+    }
+    .btnLink {
+        width: 100%;
+        color: white;
+        margin-left: 25px;
+    }
+    .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
+        height: 230px;
+    }
+    .imageSlide a .spaceHome{
+        height: 100px;
+    }
+   
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    video{
+        width: 350px;
+        height: 250px;
+    }
+    .phdimage{
+        width: 340px;
+        height: 300px;
+    }
+
+    .skill1 .LfrontEnd{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill1 .bar-container .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+
+    .skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
+    .skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+
+
+    .skill1 .bar-container .bar .progesshtml{
+        width: 187px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessCss{
+        width: 142px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessJS{
+        width: 80px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessresp{
+        width: 112px;
+        text-align: right;
+    }
+
+    .skill2 .Back-end{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: left;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill1 .LfrontEnd1{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill2 .Back-end2{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: right;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
+    .skill2 .bar-container .bar .progessionDB3{
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+    .skill2 .bar-container .bar .progessionDB3{
+        width: 182px;
+        text-align: right;
+    }
+ 
+
+    .paper, .dropdown-content, .webChallenge{
+        font-size: 15px;
+    }
+
+    .FrontEndWebChallengeTitel {
+        width: 76%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 49px;
+        text-align: center;
+        margin-left: 43px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .FrontProjets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 787px;
+        margin-top: 30px;
+    }
+    .multiSepFormImage {
+        
+        width: 100%;
+    }
+
+    .slideConterner {
+        width: 100%;
+        margin-left: 0px;
+        height: 663px;
+        margin-top: 14px;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column;
+        height: 638px;
+        width: 60%;
+        margin-left: 218px;
+        text-align: center;
+    }
+    
+    .imageSlide img{
+        height: 100px;
+    }
+
+    .textSlide{
+        margin-top: 15px;
+    }
+
+    .textSlide a{
+        color: white;
+    }
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 867Px;
+        margin-top: 173px;
+        margin-left: 51px;
+    }
+    .homePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 72%;
+        margin-left: 50px;
+        margin-top: 74px;
+    }
+    .qualitiesMySkill {
+        width: 71%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 50px;
+        text-align: center;
+        margin-left: 184px;
+        margin-top: -273px;
+        padding-top: 10px;
+    }
+
+    .col-md-6 {
+        width: 99%;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+        font-size: 12px;
+    }
+    #collapsable-nav a {
+        font-size: 20px;
+    }
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
+}
+
+.menuSlideDropDown{
+    display: none;
+    animation-name: displayMenu;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    flex-direction: row;
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 179px;
+    background-color: #F6B319;
+    margin-top: -20px;
+    border: 2px solid #61122F;
+    border-radius: 15px;
+   }
+
+   @keyframes displayMenu{
+    from{transform: scale(0, 0);}
+    to{transform: scale(74%, 179px);}
+   }
+
+  
+   .BtnFormMultiStep{
+    width: 218px;
+    height: 131px;
+    margin-top: 20px;
+    margin-left: 45px;
+    border: 1px solid #61122F;
+    border-radius: 15px;
+    box-shadow: #e793b2 10px 10px 15px;
+}
+
+.BtnFormMultiStep:hover{
+cursor: pointer;
+animation-name: aminationMenuItem;
+animation-duration: 300ms;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+}
+
+@keyframes aminationMenuItem{
+    from{width: 218px;}
+    to{width: 228px;}
+    from{height: 131px;}
+    to{height: 141px;}
+   }
+    .menuSlideDropDown div{
+        margin-left: -40px;
+    }
+
+    
+    .qualities {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 720px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .myStrengths {
+        display: flex;
+        flex-direction: column;
+        width: 84%;
         margin-left: 30px;
+        margin-top: 26px;
+    }
+
+    .qualities .myStrengths .image img, .qualities .myWeaknesses .image img, .qualities .myAmbitions .image img{
+        max-width: 100%;
+    }
+    .qualities .myStrengths .title, .qualities .myWeaknesses .title, .qualities .myAmbitions .title{
+        text-align: center;
+    }
+    .qualities .myStrengths .text, .qualities .myWeaknesses .text, .qualities .myAmbitions .text{
+        text-align: center;
+        list-style-type: none;
+        margin-right: 40px;
+    }
+    .qualities .myStrengths .text ul, .qualities .myWeaknesses .text ul, .qualities .myAmbitions .text ul{
+        list-style-type: none;
+        margin-top: 10px;
     }
 
     .myWeaknesses {
@@ -1688,4 +1838,658 @@ video{
     margin-top: 20px;
 }
 
+    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+       display: none;
+    }
+    
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 1201px) {
+    .row{
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 16px;
+        color: #fff;
+        background-color: #61122f;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #header-nav {
+        background-color: #f6b319;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .name{
+        display: block;
+        color: black;
+    }
+    
+    .menu li{
+        list-style-type: none;
+        margin: 10px;
+       display: inline-block;
+       
+    }
+
+    .project, .competence, .contact, .paper, .webChallenge, .git{
+        font-size: 18px;
+        margin-left: 10px; 
+        height: 100px; 
+        }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size: 20px;
+        background-color: #f6b319;
+    }
+
+    .project:hover .dropdown-content{
+        display: block;
+    }
+    .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
+        display: block;
+    }
+    
+    @keyframes displayMenu{
+        from{transform: scale(0, 0);}
+        to{transform: scale(74%, 179px);}
+       }
+
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        right: -12px;
+        top: -66px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    
+    
+
+    #section1{
+        width: 100%;
+        margin-top: -122px;
+    
+    }
+    .profil {
+        display: flex;
+        margin-top: 78px;
+        flex-direction: row;
+        align-items: center;
+        height: 696px;
+        width: 100%;
+    }
+    #photoProfil {
+        position: relative;
+        width: 100%;
+        animation-name: photoreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+        top: 240px;
+        left: -600px
+    }
+    @keyframes photoreveal {
+        from{left: -660px;}
+        to{left: 290px}
+       }
+       
+       @keyframes presentationreveal {
+        from{left: 580px;}
+        to{left: -20px}
+       }
+    @keyframes photoProfil {
+        from{margin-left: -30px;}
+        to{margin-left: 100px}
+    }
+    #brevepresentation {
+        width: 100%;
+        margin-top: 23px;
+        text-align: justify;
+        left: 750px;
+        position: relative;
+        top: -45px;
+        font-size: 24px;
+        animation-name: presentationreveal;
+         animation-duration: 300ms;
+         animation-timing-function: ease-in-out;
+         animation-fill-mode: forwards;
+         animation-delay: 300ms;
+    }
+
+    #brevepresentation div {
+        width: 75%;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: -11px;
+    }
+
+    .photos {
+        position: relative;
+        width: 50%;
+        border-radius: 45px;
+        left: -30px;
+        top: -89px;
+        animation-name: photoProfil;
+        animation-duration: 0s;
+        animation-timing-function: ease;
+    }
+
+    .menuSecond{
+        float: right;
+        margin-right: 200px;
+        padding: 20px;
+        padding-left: 20px;
+        
+    }
+    .menuSecond li {
+        list-style-type: none;
+        margin: 10px;
+       display: inline-block;
+       font-size: 20px;
+       text-align: center;
+    }
+    
+    .menuSecond3{
+        display: none;
+    }
+
+    .menuSlideDropDown{
+        display: none;
+        animation-name: displayMenu;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        flex-direction: row;
+        position: absolute;
+        left: 368px;
+        z-index: 3;
+        width: 75%;
+        height: 179px;
+        background-color: #F6B319;
+        margin-top: -20px;
+        border: 2px solid #61122F;
+        border-radius: 15px;
+       }
+
+       @keyframes aminationMenuItem{
+        from{width: 218px;}
+        to{width: 228px;}
+        from{height: 131px;}
+        to{height: 141px;}
+       }
+
+
+    .BtnFormMultiStep{
+        width: 218px;
+        height: 131px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #61122F;
+        border-radius: 15px;
+        box-shadow: #e793b2 10px 10px 15px;
+    }
+    
+    .BtnFormMultiStep:hover{
+    cursor: pointer;
+    animation-name: aminationMenuItem;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    }
+
+    
+
+    .btnLinkedin {
+        font-size: 15px;
+        width: 100%;
+        border: 2px solid #e3e2db;
+        height: 40px;
+        border-radius: 15px;
+        background-color: rgb(84, 84, 218);
+    }
+
+    .btnLinkedin:hover{
+        color: rgb(84, 84, 218);
+        background-color: white;
+        border: 2px solid rgb(84, 84, 218); 
+    }
+    .btnLink {
+        width: 100%;
+        color: white;
+        margin-left: 25px;
+    }
+    .imageSlide a .imgMultistep, .imageSlide a .spaceweb, .imageSlide a .whereInTheWorld{
+        height: 230px;
+    }
+    .imageSlide a .spaceHome{
+        height: 100px;
+    }
+    
+
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    video{
+        width: 350px;
+        height: 250px;
+    }
+    .phdimage{
+        width: 340px;
+        height: 300px;
+    }
+
+    .skill1 .LfrontEnd{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill1 .bar-container .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+
+    .skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
+    .skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+
+
+    .skill1 .bar-container .bar .progesshtml{
+        width: 187px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessCss{
+        width: 142px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessJS{
+        width: 80px;
+        text-align: right;
+    }
+    .skill1 .bar-container .bar .progessresp{
+        width: 112px;
+        text-align: right;
+    }
+
+    .skill2 .Back-end{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: left;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill1 .LfrontEnd1{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        
+    }
+
+    .skill2 .Back-end2{
+        display: block;
+        font-size: 15px;
+        font-weight: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: right;
+    }
+    
+    .skill2 .bar{
+        width: 212px;
+        height: 30px;
+        border-radius: 20px;
+        margin: 10px;
+    
+    }
+    
+    .skill2 .bar-container{
+        float: right;
+    }
+    
+    .skill2 .bar-container .bar{
+        background-color: gainsboro;
+    }
+    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
+    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+    
+    }
+
+    .skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
+    .skill2 .bar-container .bar .progessionDB3{
+        height: 30px;
+        background-color: rgb(83, 108, 219);
+        border-radius: 20px;
+
+    }
+
+    .skill2 .bar-container .bar .progessionDB3{
+        width: 182px;
+        text-align: right;
+    }
+ 
+
+    .paper, .dropdown-content, .webChallenge{
+        font-size: 15px;
+    }
+    .FrontEndWebChallengeTitel {
+        width: 76%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        margin-top: 20px;
+        height: 49px;
+        text-align: center;
+        margin-left: 188px;
+        padding-top: 10px;
+    }
+
+    .FrontProjets {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 787px;
+        margin-top: 30px;
+    }
+    .multiSepFormImage {
+        
+        width: 100%;
+    }
+
+    .slideConterner {
+        width: 100%;
+        margin-left: 0px;
+        height: 663px;
+        margin-top: 14px;
+    }
+
+    .slide {
+        width: 80%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: 638px;
+        margin-left: 84px;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        transform: translateX(130px);
+    }
+    
+    .imageSlide img{
+        height: 100px;;
+        transition: 0.5s;
+    }
+
+    .imageSlide:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 1s all ease-in-out;
+    }
+
+    .textSlide{
+        margin-top: 20px;
+        width: 50%;
+        font-size: 15px;
+        color: white; 
+        padding: 8px 12px;
+        font-family: Verdana, sans-serif;
+    }
+
+    .textSlide a{
+        color: white;
+       text-decoration: none;
+        
+    }
+
+  
+    .active {
+        background-color: transparent;
+    }
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 867Px;
+        margin-top: 265px;
+        text-decoration: none;
+    }
+    .homePage {
+        display: flex;
+        flex-direction: column;
+        height: 644px;
+        width: 72%;
+        margin-left: 50px;
+        margin-top: 74px;
+    }
+    .qualitiesMySkill {
+        width: 71%;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 50px;
+        text-align: center;
+        margin-left: 203px;
+        margin-top: -273px;
+        padding-top: 10px;
+    }
+
+    .col-md-6 {
+        width: 99%;
+    }
+    .nav>li {
+        position: relative;
+        display: block;
+        font-size: 12px;
+    }
+    #collapsable-nav a {
+        font-size: 20px;
+    }
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
+}
+
+    .menuSlideDropDown div{
+        margin-left: -40px;
+    }
+
+    
+    .qualities {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 580px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        
+        transition: 1s all ease-in-out;
+    }
+    .reveal.active{
+        transform: translateY(0);
+       
+    }
+
+    .myStrengths  {
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin-left: 80px;
+        margin-top: 27px;
+    }
+
+    .qualities .myStrengths .image img, .qualities .myWeaknesses .image img, .qualities .myAmbitions .image img{
+        max-width: 100%;
+    }
+    .qualities .myStrengths .title, .qualities .myWeaknesses .title, .qualities .myAmbitions .title{
+        text-align: center;
+    }
+    .qualities .myStrengths .text, .qualities .myWeaknesses .text, .qualities .myAmbitions .text{
+        text-align: center;
+        list-style-type: none;
+        margin-right: 40px;
+    }
+    .qualities .myStrengths .text ul, .qualities .myWeaknesses .text ul, .qualities .myAmbitions .text ul{
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    .myStrengths .image:hover, .myWeaknesses .image:hover,.myAmbitions .image:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .myStrengths .image img, .myWeaknesses .image img, .myAmbitions .image img{
+        width: 80%;
+        border-radius: 45px;
+    }
+
+    @keyframes imageAnimation{
+        fom{width: 80%;}
+        to {width: 90%;}
+    }
+    
+    .myStrengths .image img:hover, .myWeaknesses .image img:hover, .myAmbitions .image img:hover{
+        width: 80%;
+        animation: imageAnimation; 
+        animation-duration: 0.5s;
+        animation-direction: normal;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        box-shadow: 0px 5px 5px 2px white;
+    }
+
+    .myWeaknesses {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 35px;
+    margin-top: 26px;
+}
+
+    .myAmbitions {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+    margin-left: 38px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.myStrengths .text, .myWeaknesses .text, .myAmbitions .text{
+    height: 270px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 100%;
+}
+
+.myStrengths .text ul, .myWeaknesses .text ul, .myAmbitions .text ul {
+    list-style-type: none;
+    margin-right: 50px;
   }
+
+  .myStrengths .text ul li, .myWeaknesses .text ul li, .myAmbitions .text ul li {
+    margin-top: -13px;
+  }
+  .myAmbitions .text ul li {
+    margin-right: 47px;
+  }
+  .myStrengths .title, .myWeaknesses .title, .myAmbitions .title{
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 67px
+}
+
+    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+       display: none;
+    }
+    
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
+        margin-top: 40px;
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
