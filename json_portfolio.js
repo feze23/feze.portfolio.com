@@ -20,8 +20,7 @@ var fahigkeit = document.getElementById('fahigkeit');
 
 var media = document.getElementById('media');
 
-
-/*tutorbot.addEventListener('click', function(e){
+tutorbot.addEventListener('click', function(e){
     //alert("bonjour");
     section4.style.display = "none";
     section1.style.display = "none";
@@ -85,7 +84,7 @@ formulaire.addEventListener('click', function(e){
     section4.style.display = "none";
     section5.style.display = "none";
     section6.style.display = "block";
-})*/
+})
 
 let slideIndex = 0;
     showSlides();
