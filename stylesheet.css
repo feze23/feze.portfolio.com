@@ -141,135 +141,281 @@
         height: 300px;
     }
 
-    .skill1 .LfrontEnd{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: left;
-        
+    /*////////////// CSS Skills section ////////////*/
+
+    .skills{
+        width: 98%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .skill1 .bar-container .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
+    .skills h2{
+        text-align: center;
+    }
+    .Backend{
+        margin-top: 15px;
+    }
+    .FrontendSkills, .BackendSkills{
+        display: flex;
+        flex-direction: row;
+    }
+    .FrontendSkillsName, .BackendSkillsName{
+        padding: 15px;
+        font-size: 17px;
+    }
+    .FrontendSkillsName div, .BackendSkillsName div{
+        margin-top: 10px;
+    }
+    .FrontendSkillsEvaluation, .BackendSkillsEvaluation{
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+    }
+    .FrontendSkillsEvaluation div,.BackendSkillsEvaluation div{
+        margin-top: 10px;
+    }
+    .FrontendSkillsEvaluation .bar, .BackendSkillsEvaluation .bar{
+        width: 100%;
+        height: 25px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+    }
+    .FrontendSkillsEvaluation .progesshtml{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationProgressionHtml;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+
+    .BackendSkillsEvaluation .progessionNode span{
+        position: relative;
+        left: 45%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionNode{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionNode;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes AnimationprogessionNode{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 45%;
+            left: 45%;}
+    }
+
+    .BackendSkillsEvaluation .progessionExpress span{
+        position: relative;
+        left: 30%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionExpress{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionExpress;
+        animation-duration: 1.5s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes AnimationprogessionExpress{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 30%;
+            left: 30%;}
+    }
+
+    .BackendSkillsEvaluation .progessionDB span{
+        position: relative;
+        left: 30%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionDB{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionDB;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    @keyframes AnimationprogessionDB{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 30%;
+            left: 30%;}
+    }
+
+    .FrontendSkillsEvaluation .progesshtml span{
+        position: relative;
+        left: 80%;
+        color: #61122F;
+    }
+    @keyframes AnimationProgressionHtml {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 80%;
+            left: 80%;}
+    }
+    .FrontendSkillsEvaluation .progessCss{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationProgessCss;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    .FrontendSkillsEvaluation .progessCss span{
+        position: relative;
+        left: 75%;
+        color: #61122F;
+    }
+    @keyframes AnimationProgessCss {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 75%;
+            left: 75%;}
+    }
+
+    .FrontendSkillsEvaluation .progessresp{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  Animationprogessresp;
+        animation-duration: 1.5s;
+        animation-delay: 3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    .FrontendSkillsEvaluation .progessresp span{
+        position: relative;
+        left: 70%;
+        color: #61122F;
+    }
+    @keyframes Animationprogessresp {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 70%;
+            left: 70%;}
+    }
+
+    .FrontendSkillsEvaluation .progessJS{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessJS;
+        animation-duration: 3.5s;
+        animation-delay: 4s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    .FrontendSkillsEvaluation .progessJS span{
+        position: relative;
+        left: 75%;
+        color: #61122F;
+    }
+    @keyframes AnimationprogessJS {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 75%;
+            left: 75%;}
+    }
+
+    .FrontendSkillsEvaluation .progessreact{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  Animationprogessreact;
+        animation-duration: 5s;
+        animation-delay: 4s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    .FrontendSkillsEvaluation .progessreact span{
+        position: relative;
+        left: 65%;
+        color: #61122F;
+    }
+    @keyframes Animationprogessreact {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 65%;
+            left: 65%;}
+    }
+
+    .FrontendSkillsEvaluation .progessfigma{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  Animationprogessfigma;
+        animation-duration: 5.5s;
+        animation-delay: 6s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+
+    }
+    .FrontendSkillsEvaluation .progessfigma span{
+        position: relative;
+        left: 85%;
+        color: #61122F;
+    }
+    @keyframes Animationprogessfigma {
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 85%;
+            left: 85%;}
+    }
+
     
-    }
-
-    .skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
-    .skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-
-    }
 
 
-
-    .skill1 .bar-container .bar .progesshtml{
-        width: 187px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessCss{
-        width: 142px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessJS{
-        width: 80px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessresp{
-        width: 112px;
-        text-align: right;
-    }
-
-    .skill2 .Back-end{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: right;
-    }
-    
-    .skill2 .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
-    
-    }
-    
-    .skill2 .bar-container{
-        float: left;
-    }
-    
-    .skill2 .bar-container .bar{
-        background-color: gainsboro;
-    }
-    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-    
-    }
-
-    .skill1 .LfrontEnd1{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: left;
-        
-    }
-
-    .skill2 .Back-end2{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: right;
-    }
-    
-    .skill2 .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
-    
-    }
-    
-    .skill2 .bar-container{
-        float: right;
-    }
-    
-    .skill2 .bar-container .bar{
-        background-color: gainsboro;
-    }
-    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-    
-    }
-
-    .skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
-    .skill2 .bar-container .bar .progessionDB3{
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-
-    }
-
-    .skill2 .bar-container .bar .progessionDB3{
-        width: 182px;
-        text-align: right;
-    }
  
-
+/*//////////////////////////////////////////////////*/
     .paper, .dropdown-content, .webChallenge{
         font-size: 15px;
     }
@@ -392,16 +538,16 @@
         margin-left: -40px;
     }
 
-    
     .qualities {
         display: flex;
         flex-direction: column;
         position: relative;
         justify-content: space-between;
-        height: 1555px;
+        height: 1681px;
         margin-top: 20px;
         width: 100%;
     }
+
 
     .myStrengths  {
         display: flex;
@@ -445,9 +591,19 @@
     margin-top: 20px;
 }
 
-    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+    #section2, #section3, #section4, #section5, #section6,#fahigkeit{
        display: none;
     }
+
+    .skills {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 44px;
+    }
+
+    
     
     .panel-footer {
         margin-top: 139px;
@@ -602,133 +758,280 @@
         height: 300px;
     }
 
-    .skill1 .LfrontEnd{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: left;
-        
-    }
+   
+/*//////////////////////Skill CSS////////////////*/
+.skills{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
 
-    .skill1 .bar-container .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
-    
-    }
+.skills h2{
+    text-align: center;
+}
+.Backend{
+    margin-top: 15px;
+}
+.FrontendSkills, .BackendSkills{
+    display: flex;
+    flex-direction: row;
+}
+.FrontendSkillsName, .BackendSkillsName{
+    padding: 15px;
+    font-size: 17px;
+    width: 50%;
+}
+.FrontendSkillsName div, .BackendSkillsName div{
+    margin-top: 10px;
+}
+.FrontendSkillsEvaluation, .BackendSkillsEvaluation{
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+}
+.FrontendSkillsEvaluation div,.BackendSkillsEvaluation div{
+    margin-top: 10px;
+}
+.FrontendSkillsEvaluation .bar, .BackendSkillsEvaluation .bar{
+    width: 100%;
+    height: 25px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+.FrontendSkillsEvaluation .progesshtml{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationProgressionHtml;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 
-    .skill1 .bar-container .bar .progesshtml, .skill1 .bar-container .bar .progessCss,
-    .skill1 .bar-container .bar .progessJS, .skill1 .bar-container .bar .progessresp {
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
+}
 
-    }
+.BackendSkillsEvaluation .progessionNode span{
+    position: relative;
+    left: 45%;
+    color: #61122F;
+}
+.BackendSkillsEvaluation .progessionNode{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationprogessionNode;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes AnimationprogessionNode{
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 45%;
+        left: 45%;}
+}
+
+.BackendSkillsEvaluation .progessionExpress span{
+    position: relative;
+    left: 30%;
+    color: #61122F;
+}
+.BackendSkillsEvaluation .progessionExpress{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationprogessionExpress;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes AnimationprogessionExpress{
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 30%;
+        left: 30%;}
+}
+
+.BackendSkillsEvaluation .progessionDB span{
+    position: relative;
+    left: 30%;
+    color: #61122F;
+}
+.BackendSkillsEvaluation .progessionDB{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationprogessionDB;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes AnimationprogessionDB{
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 30%;
+        left: 30%;}
+}
+
+.FrontendSkillsEvaluation .progesshtml span{
+    position: relative;
+    left: 80%;
+    color: #61122F;
+}
+@keyframes AnimationProgressionHtml {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 80%;
+        left: 80%;}
+}
+.FrontendSkillsEvaluation .progessCss{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationProgessCss;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.FrontendSkillsEvaluation .progessCss span{
+    position: relative;
+    left: 75%;
+    color: #61122F;
+}
+@keyframes AnimationProgessCss {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 75%;
+        left: 75%;}
+}
+
+.FrontendSkillsEvaluation .progessresp{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  Animationprogessresp;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.FrontendSkillsEvaluation .progessresp span{
+    position: relative;
+    left: 70%;
+    color: #61122F;
+}
+@keyframes Animationprogessresp {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 70%;
+        left: 70%;}
+}
+
+.FrontendSkillsEvaluation .progessJS{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  AnimationprogessJS;
+    animation-duration: 3.5s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.FrontendSkillsEvaluation .progessJS span{
+    position: relative;
+    left: 75%;
+    color: #61122F;
+}
+@keyframes AnimationprogessJS {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 75%;
+        left: 75%;}
+}
+
+.FrontendSkillsEvaluation .progessreact{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  Animationprogessreact;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.FrontendSkillsEvaluation .progessreact span{
+    position: relative;
+    left: 65%;
+    color: #61122F;
+}
+@keyframes Animationprogessreact {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 65%;
+        left: 65%;}
+}
+
+.FrontendSkillsEvaluation .progessfigma{
+    width: 0%;
+    height: 25px;
+    background-color: #F6B319;
+    border-radius: 15px;
+    padding-top: 2px;
+    animation-name:  Animationprogessfigma;
+    animation-duration: 5.5s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+.FrontendSkillsEvaluation .progessfigma span{
+    position: relative;
+    left: 85%;
+    color: #61122F;
+}
+@keyframes Animationprogessfigma {
+    from{width: 0%;;
+        left: 0%; }
+    to{width: 85%;
+        left: 85%;}
+}
 
 
 
-    .skill1 .bar-container .bar .progesshtml{
-        width: 187px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessCss{
-        width: 142px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessJS{
-        width: 80px;
-        text-align: right;
-    }
-    .skill1 .bar-container .bar .progessresp{
-        width: 112px;
-        text-align: right;
-    }
-
-    .skill2 .Back-end{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: right;
-    }
-    
-    .skill2 .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
-    
-    }
-    
-    .skill2 .bar-container{
-        float: left;
-    }
-    
-    .skill2 .bar-container .bar{
-        background-color: gainsboro;
-    }
-    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC, .skill2 .bar-container .bar .progessionPHP {
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-    
-    }
-
-    .skill1 .LfrontEnd1{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: left;
-        
-    }
-
-    .skill2 .Back-end2{
-        display: block;
-        font-size: 15px;
-        font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
-        float: right;
-    }
-    
-    .skill2 .bar{
-        width: 212px;
-        height: 30px;
-        border-radius: 20px;
-        margin: 10px;
-    
-    }
-    
-    .skill2 .bar-container{
-        float: right;
-    }
-    
-    .skill2 .bar-container .bar{
-        background-color: gainsboro;
-    }
-    .skill2 .bar-container .bar .progessionNode, .skill2 .bar-container .bar .progessionExpress,
-    .skill2 .bar-container .bar .progessionDB, .skill2 .bar-container .bar .progessionVC{
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-    
-    }
-
-    .skill2 .bar-container .bar .progessionNode1, .skill2 .bar-container .bar .progessionExpress2,
-    .skill2 .bar-container .bar .progessionDB3{
-        height: 30px;
-        background-color: rgb(83, 108, 219);
-        border-radius: 20px;
-
-    }
-
-    .skill2 .bar-container .bar .progessionDB3{
-        width: 182px;
-        text-align: right;
-    }
+/*/////////////////end/////////////////////////////////////*/
  
 
     .paper, .dropdown-content, .webChallenge{
@@ -907,12 +1210,20 @@
     margin-top: 20px;
 }
 
-    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+    #section2, #section3, #section4, #section5, #section6, #fahigkeit{
        display: none;
+    }
+
+    .skills {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 742px;
     }
     
     .panel-footer {
-        margin-top: 578px;
+        margin-top: 74px;
         padding-top: 35px;
         background-color: #222;
         border-top: 0;
@@ -1170,7 +1481,7 @@
     }
 
     .panel-footer {
-        margin-top: 1058px;
+        margin-top: 74px;
         padding-top: 35px;
         background-color: #222;
         border-top: 0;
@@ -1180,6 +1491,13 @@
         color: rgb(84, 84, 218);
         background-color: white;
         border: 2px solid rgb(84, 84, 218); 
+    }
+
+    .panel-footer {
+        margin-top: 752px;
+        padding-top: 35px;
+        background-color: #222;
+        border-top: 0;
     }
 
 }
@@ -1318,9 +1636,29 @@
         to{height: 141px;}
        }
 
+       .skills {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        top: -73px;
+        right: 29px;
+    }
+
+    .FrontendSkillsName, .BackendSkillsName {
+        padding: 15px;
+        font-size: 17px;
+        width: 50%;
+        padding-left: 112px;
+    }
 }
 
 @media only screen and (min-width: 993px)  and (max-width: 1200px) {
+    .FrontendSkillsName, .BackendSkillsName {
+        padding: 15px;
+        font-size: 17px;
+        width: 50%;
+        padding-left: 150px;
+    }
     .row{
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -1838,8 +2176,16 @@ animation-fill-mode: forwards;
     margin-top: 20px;
 }
 
-    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+    #section2, #section3, #section4, #section5, #section6, #fahigkeit{
        display: none;
+    }
+
+    .skills {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        top: -35px;
+        right: 29px;
     }
     
     .panel-footer {
@@ -1848,10 +2194,37 @@ animation-fill-mode: forwards;
         border-top: 0;
         margin-top: 0px;
     }
+    .FrontendSkillsName, .BackendSkillsName {
+        padding: 15px 15px 15px 150px;
+        font-size: 17px;
+        width: 50%;
+        padding-left: 376px;
+    }
+    .FrontendSkillsEvaluation, .BackendSkillsEvaluation {
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+        padding-right: 279px;
+    }
 
 }
 
 @media only screen and (min-width: 1201px) {
+
+    .FrontendSkillsName, .BackendSkillsName {
+        padding: 15px 15px 15px 150px;
+        font-size: 17px;
+        width: 50%;
+        padding-left: 376px;
+    }
+    .FrontendSkillsEvaluation, .BackendSkillsEvaluation {
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+        padding-right: 279px;
+    }
+
+    
     .row{
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -2006,6 +2379,7 @@ animation-fill-mode: forwards;
         
     }
 
+   
     .menuSecond{
         float: right;
         margin-right: 200px;
@@ -2098,10 +2472,10 @@ animation-fill-mode: forwards;
     }
     
 
-   /* .panel-footer section {
+    .panel-footer section {
         margin-bottom: 30px;
         text-align: center;
-    }*/
+    }
     video{
         width: 350px;
         height: 250px;
@@ -2281,7 +2655,7 @@ animation-fill-mode: forwards;
         height: 638px;
         margin-left: 84px;
         animation-name: fade;
-        animation-duration: 1.5s;
+        animation-duration: 0.5s;
         transform: translateX(130px);
     }
     
@@ -2294,6 +2668,7 @@ animation-fill-mode: forwards;
         cursor: pointer;
         transform: scale(1.05);
         transition: 1s all ease-in-out;
+        animation-duration: 0.5s;
     }
 
     .textSlide{
@@ -2343,7 +2718,7 @@ animation-fill-mode: forwards;
         height: 50px;
         text-align: center;
         margin-left: 203px;
-         margin-top: -228px;
+        margin-top: -273px;
         padding-top: 10px;
     }
 
@@ -2383,7 +2758,6 @@ animation-fill-mode: forwards;
     .reveal{
         position: relative;
         transform: translateY(150px);
-        
         transition: 1s all ease-in-out;
     }
     .reveal.active{
@@ -2480,10 +2854,124 @@ animation-fill-mode: forwards;
     margin-right: 67px
 }
 
-    #section2, #section3, #section4, #section5, #section6, #skill, #fahigkeit{
+    #section2, #section3, #section4, #section5, #section6, #fahigkeit{
        display: none;
     }
-    
+
+    .skills {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        right: 29px;
+        top: 20px;
+    }
+    .FrontendSkillsName .animate, .BackendSkillsName .animate{
+        position: relative;
+        left: -429px;
+        animation-name: FrontendSkillMove;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes FrontendSkillMove {
+        from{left: -429px;}
+        to{left: 0px;}
+    }
+
+    .FrontendSkillsEvaluation, .BackendSkillsEvaluation{
+        position: relative;
+        right: -929px;
+        animation-name: FrontendSkillsEvaluationMove;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+   
+    @keyframes FrontendSkillsEvaluationMove {
+        from{right: -929px;}
+        to{right: 0px;}
+    }
+
+    .BackendSkillsEvaluation .progessionNode span{
+        position: relative;
+        left: 45%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionNode{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionNode;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+   
+    @keyframes AnimationprogessionNode{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 45%;
+            left: 45%;}
+    }
+
+    .BackendSkillsEvaluation .progessionExpress span{
+        position: relative;
+        left: 30%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionExpress{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionExpress;
+        animation-duration: 1.5s;
+        animation-delay: 2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+   
+    @keyframes AnimationprogessionExpress{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 30%;
+            left: 30%;}
+    }
+
+    .BackendSkillsEvaluation .progessionDB span{
+        position: relative;
+        left: 30%;
+        color: #61122F;
+    }
+    .BackendSkillsEvaluation .progessionDB{
+        width: 0%;
+        height: 25px;
+        background-color: #F6B319;
+        border-radius: 15px;
+        padding-top: 2px;
+        animation-name:  AnimationprogessionDB;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+
+   
+    @keyframes AnimationprogessionDB{
+        from{width: 0%;;
+            left: 0%; }
+        to{width: 30%;
+            left: 30%;}
+    }
+
     .panel-footer {
         padding-top: 35px;
         background-color: #222;
