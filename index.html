@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="json_portfolio.js" defer></script>
     <link rel="stylesheet" href="fichierCSS.css" />
     <script src="formulaire.js" defer></script>
@@ -464,54 +465,49 @@
 
 
     <section id="skill">
-        <div  class="container-fluid" class="skill0">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="skill1">
-                        <div class="LfrontEnd">
+        <div class="skills">
+                <h2 data-aos="zoom-in" data-aos-duration="400">My Frontend Skills</h2>
+                    <div class="FrontendSkills">
+                        
+                        <div data-aos="fade-right" data-aos-duration="400" class="FrontendSkillsName">
                             <div>HTML</div>
                             <div>CSS</div>
                             <div>Bootstrap</div>
                             <div>JavaScript</div>
+                            <div>React</div>
+                            <div>Figma</div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="skill1">
-                        <div class="bar-container">
-                            <div class="bar"><div class="progesshtml">80%</div></div>
-                            <div class="bar"><div class="progessCss">75%</div></div>
-                            <div class="bar"><div class="progessJS">70%</div></div>
-                            <div class="bar"><div class="progessresp">75%</div></div>
+
+                        <div data-aos="fade-left" data-aos-duration="400" class="FrontendSkillsEvaluation">
+                            <div class="bar"><div class="progesshtml"><span>85%</span></div></div>
+                            <div class="bar"><div class="progessCss"><span>75%</span></div></div>
+                            <div class="bar"><div class="progessresp"><span>70%</span></div></div>
+                            <div class="bar"><div class="progessJS "><span>75%</span></div></div>
+                            <div class="bar"><div class="progessreact"><span>70%</span></div></div>
+                            <div class="bar"><div class="progessfigma"><span>85%</span></div></div>
                         </div>
+                    
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="skill2">
-                        <div class="Back-end">
+                    </br>
+                    </br>
+            
+                    <h2 data-aos="zoom-in" data-aos-duration="400">My Backend Skills</h2>
+                    <div class="BackendSkills">
+                       
+                        <div data-aos="fade-right" data-aos-duration="400" class="BackendSkillsName">
                             <div>Node JS</div>
                             <div>MongoDB</div>
                             <div>Express</div>
-                            <div>React</div>
-                            <div>PHP</div>
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="400" class="BackendSkillsEvaluation">
+                            <div class="bar"><div class="progessionNode"><span>45%</span></div></div>
+                            <div class="bar"><div class="progessionExpress"><span>30%</span></div></div>
+                            <div class="bar"><div class="progessionDB"><span>30%</span></div></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="skill2">
-                        <div class="bar-container">
-                            <div class="bar"><div class="progessionNode">45%</div></div>
-                            <div class="bar"><div class="progessionExpress">30%</div></div>
-                            <div class="bar"><div class="progessionDB">30%</div></div>
-                            <div class="bar"><div class="progessionVC">60%</div></div>
-                            <div class="bar"><div class="progessionPHP">75%</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
+                  
 
 
     <section id="fahigkeit">
@@ -606,6 +602,11 @@
 
                 setInterval(tick, 1000); 
         
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </script>
