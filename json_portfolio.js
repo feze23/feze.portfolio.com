@@ -21,6 +21,7 @@ const fahigkeit = document.getElementById('fahigkeit');
 const media = document.getElementById('media');
 
 
+
 /*tutorbot.addEventListener('click', function(e){
     //alert("bonjour");
     section4.style.display = "none";
@@ -46,7 +47,7 @@ const media = document.getElementById('media');
 
 
 
-competence.addEventListener('click', function(e){
+/*competence.addEventListener('click', function(e){
     section4.style.display = "none";
     section1.style.display="none";
     section2.style.display = "none";
@@ -54,7 +55,7 @@ competence.addEventListener('click', function(e){
     section5.style.display = "none";
     section6.style.display = "none";
     skill.style.display = "block";
-})
+})*/
 
 
 /*phdmenu.addEventListener('click', function(e){
@@ -121,6 +122,7 @@ function reveal(){
       }
     }
 
+
     window.addEventListener("scroll", reveal);   
 
     var menuSlideDropDown = document.getElementsByClassName("menuSlideDropDown")[0];
@@ -140,3 +142,131 @@ function reveal(){
  menuSlideDropDown.addEventListener('mouseout', function(e){
   menuSlideDropDown.style.display = "none"; 
  });
+
+
+
+ // Fonction pour vérifier si l'élément est dans la vue
+ function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function handleScroll() {
+    var frontendElement = document.querySelector('.FrontendSkillsEvaluation');
+    var backendElement = document.querySelector('.BackendSkillsEvaluation');
+
+    if (frontendElement && isElementInViewport(frontendElement)) {
+        frontendElement.classList.add('animate');
+        window.removeEventListener('scroll', handleScroll);
+    }
+
+    if (backendElement && isElementInViewport(backendElement)) {
+        backendElement.classList.add('animate');
+        window.removeEventListener('scroll', handleScroll);
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+
+const FrontendSkills = document.getElementsByClassName('FrontendSkills');
+const progesshtml = document.getElementsByClassName('progesshtml');
+const progessCss = document.getElementsByClassName('progessCss');
+const progessresp = document.getElementsByClassName('progessresp');
+const progessJS = document.getElementsByClassName('progessJS');
+const progessreact = document.getElementsByClassName('progessreact');
+const progessfigma = document.getElementsByClassName('progessfigma');
+
+// Loop through each element with the 'skills' class
+for (let i = 0; i < FrontendSkills.length; i++) {
+    FrontendSkills[i].addEventListener("mouseover", function(e) {
+        this.style.cursor = "pointer";
+        for (let i = 0; i < progesshtml.length; i++) {
+            progesshtml[i].style.animationPlayState = "paused";
+           
+            
+        }
+        for (let i = 0; i < progessCss.length; i++) {
+            progessCss[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessresp.length; i++) {
+            progessresp[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessJS.length; i++) {
+            progessJS[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessreact.length; i++) {
+            progessreact[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessfigma.length; i++) {
+            progessfigma[i].style.animationPlayState = "paused";
+        }
+    }, false);
+}
+
+for (let i = 0; i < FrontendSkills.length; i++) {
+    FrontendSkills[i].addEventListener("mouseout", function(e) {
+        this.style.cursor = "pointer"; 
+        for (let i = 0; i < progesshtml.length; i++) {
+            progesshtml[i].style.animationPlayState = "running";
+            
+        }
+        for (let i = 0; i < progessCss.length; i++) {
+            progessCss[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessresp.length; i++) {
+            progessresp[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessJS.length; i++) {
+            progessJS[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessreact.length; i++) {
+            progessreact[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessfigma.length; i++) {
+            progessfigma[i].style.animationPlayState = "running";
+        }
+    }, false);
+}
+const BackendSkills = document.getElementsByClassName("BackendSkills"); 
+const progessionNode = document.getElementsByClassName("progessionNode"); 
+const progessionExpress = document.getElementsByClassName("progessionExpress"); 
+const progessionDB= document.getElementsByClassName("progessionDB"); 
+
+
+for (let i = 0; i < BackendSkills.length; i++) {
+    BackendSkills[i].addEventListener("mouseover", function(e) {
+        this.style.cursor = "pointer"; 
+        for (let i = 0; i < progessionNode.length; i++) {
+            progessionNode[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessionExpress.length; i++) {
+            progessionExpress[i].style.animationPlayState = "paused";
+        }
+        for (let i = 0; i < progessionDB.length; i++) {
+            progessionDB[i].style.animationPlayState = "paused";
+        }
+        
+    }, false);
+}
+
+for (let i = 0; i < BackendSkills.length; i++) {
+    BackendSkills[i].addEventListener("mouseout", function(e) {
+        this.style.cursor = "pointer"; 
+        for (let i = 0; i < progessionNode.length; i++) {
+            progessionNode[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessionExpress.length; i++) {
+            progessionExpress[i].style.animationPlayState = "running";
+        }
+        for (let i = 0; i < progessionDB.length; i++) {
+            progessionDB[i].style.animationPlayState = "running";
+        }
+    }, false);
+    
+}
