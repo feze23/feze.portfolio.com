@@ -14,11 +14,11 @@
     body{
         font-size: 16px;
         color: #fff;
-        background-color: #61122f;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #4909a3;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     #header-nav {
-        background-color: #f6b319;
+        background-color: #AED2EF;
         border-radius: 0;
         border: 0;
         width: 100%;
@@ -31,7 +31,7 @@
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
         z-index: 1;
         font-size: 20px;
-        background-color: #f6b319;
+        background-color: #AED2EF;
     }
    
     .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
@@ -183,7 +183,7 @@
     .FrontendSkillsEvaluation .progesshtml{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationProgressionHtml;
@@ -198,12 +198,12 @@
     .BackendSkillsEvaluation .progessionNode span{
         position: relative;
         left: 45%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionNode{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionNode;
@@ -223,12 +223,12 @@
     .BackendSkillsEvaluation .progessionExpress span{
         position: relative;
         left: 30%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionExpress{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionExpress;
@@ -248,12 +248,12 @@
     .BackendSkillsEvaluation .progessionDB span{
         position: relative;
         left: 30%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionDB{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionDB;
@@ -273,7 +273,7 @@
     .FrontendSkillsEvaluation .progesshtml span{
         position: relative;
         left: 80%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes AnimationProgressionHtml {
         from{width: 0%;;
@@ -284,7 +284,7 @@
     .FrontendSkillsEvaluation .progessCss{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationProgessCss;
@@ -298,7 +298,7 @@
     .FrontendSkillsEvaluation .progessCss span{
         position: relative;
         left: 75%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes AnimationProgessCss {
         from{width: 0%;;
@@ -310,7 +310,7 @@
     .FrontendSkillsEvaluation .progessresp{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  Animationprogessresp;
@@ -324,7 +324,7 @@
     .FrontendSkillsEvaluation .progessresp span{
         position: relative;
         left: 70%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes Animationprogessresp {
         from{width: 0%;;
@@ -336,7 +336,7 @@
     .FrontendSkillsEvaluation .progessJS{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessJS;
@@ -350,7 +350,7 @@
     .FrontendSkillsEvaluation .progessJS span{
         position: relative;
         left: 75%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes AnimationprogessJS {
         from{width: 0%;;
@@ -362,7 +362,7 @@
     .FrontendSkillsEvaluation .progessreact{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  Animationprogessreact;
@@ -376,7 +376,7 @@
     .FrontendSkillsEvaluation .progessreact span{
         position: relative;
         left: 65%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes Animationprogessreact {
         from{width: 0%;;
@@ -388,7 +388,7 @@
     .FrontendSkillsEvaluation .progessfigma{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2EF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  Animationprogessfigma;
@@ -402,7 +402,7 @@
     .FrontendSkillsEvaluation .progessfigma span{
         position: relative;
         left: 85%;
-        color: #61122F;
+        color: #4909a3;
     }
     @keyframes Animationprogessfigma {
         from{width: 0%;;
@@ -475,7 +475,7 @@
         flex-direction: column;
         width: 100%;
         height: 867Px;
-        margin-top: 15px;
+        margin-top: 160px;
     }
     .homePage {
         display: flex;
@@ -526,10 +526,10 @@
         left: 0px;
         z-index: 3;
         width: 100%;
-        height: 627px;
-        background-color: #F6B319;
+        height: 693px;
+        background-color: #AED2EF;
         margin-top: -20px;
-        border: 2px solid #61122F;
+        border: 2px solid #4909a3;
         border-radius: 15px;
         text-align: center;
     }
@@ -606,10 +606,49 @@
     
     
     .panel-footer {
-        margin-top: 139px;
         padding-top: 35px;
-        background-color: #222;
+        background-color: #AED2EF;
         border-top: 0;
+        color: #605f5f;
+        position: relative;
+        top: 156px;
+    }
+
+    #adress{
+        background-color: whitesmoke;
+        border: 2px solid #4909a3;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
+    .contactInputEmail, .contactInputObject, .contactInputMessage{
+        width: 87%;
+        border-radius: 8px;
+        border: 2px solid #4909a3;
+    }
+   
+   
+    .contactInputEmail, .contactInputObject{
+        height: 30px;
+    }
+
+    .contactInputMessage{
+        height: 150px;
+    }
+    .contactForm button{
+        border-radius: 8px;
+        border-color: #4909a3;
+        background-color: #AED2EF;
+        transition: linear 0.3s ;
+        position: relative;
+        left: 82px;
+        top: -10px;
+    }
+    .contactForm button:hover{
+        border: 2px solid #AED2EF;
+        background-color: #4909a3;
+        color: whitesmoke;
     }
 
   }
@@ -627,11 +666,11 @@
     body{
         font-size: 16px;
         color: #fff;
-        background-color: #61122f;
+        background-color: #4909a3;
         font-family: Arial, Helvetica, sans-serif;
     }
     #header-nav {
-        background-color: #f6b319;
+        background-color: c;
         border-radius: 0;
         border: 0;
         width: 100%;
@@ -644,7 +683,7 @@
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
         z-index: 1;
         font-size: 20px;
-        background-color: #f6b319;
+        background-color: #4909a3;
     }
    
     .paper:hover .dropdown-content, .webChallenge:hover .dropdown-content{
@@ -689,6 +728,7 @@
         margin-left: 0;
     }
     #brevepresentation {
+        font-size: 14px;
         width: 50%;
         text-align: justify;
         margin-top: -380px;
@@ -801,7 +841,7 @@
 .FrontendSkillsEvaluation .progesshtml{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationProgressionHtml;
@@ -816,12 +856,12 @@
 .BackendSkillsEvaluation .progessionNode span{
     position: relative;
     left: 45%;
-    color: #61122F;
+    color: #4909a3;
 }
 .BackendSkillsEvaluation .progessionNode{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationprogessionNode;
@@ -841,12 +881,12 @@
 .BackendSkillsEvaluation .progessionExpress span{
     position: relative;
     left: 30%;
-    color: #61122F;
+    color: #4909a3;
 }
 .BackendSkillsEvaluation .progessionExpress{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationprogessionExpress;
@@ -866,12 +906,12 @@
 .BackendSkillsEvaluation .progessionDB span{
     position: relative;
     left: 30%;
-    color: #61122F;
+    color: #4909a3;
 }
 .BackendSkillsEvaluation .progessionDB{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationprogessionDB;
@@ -891,7 +931,7 @@
 .FrontendSkillsEvaluation .progesshtml span{
     position: relative;
     left: 80%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes AnimationProgressionHtml {
     from{width: 0%;;
@@ -902,7 +942,7 @@
 .FrontendSkillsEvaluation .progessCss{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationProgessCss;
@@ -916,7 +956,7 @@
 .FrontendSkillsEvaluation .progessCss span{
     position: relative;
     left: 75%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes AnimationProgessCss {
     from{width: 0%;;
@@ -928,7 +968,7 @@
 .FrontendSkillsEvaluation .progessresp{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  Animationprogessresp;
@@ -942,7 +982,7 @@
 .FrontendSkillsEvaluation .progessresp span{
     position: relative;
     left: 70%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes Animationprogessresp {
     from{width: 0%;;
@@ -954,7 +994,7 @@
 .FrontendSkillsEvaluation .progessJS{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  AnimationprogessJS;
@@ -968,7 +1008,7 @@
 .FrontendSkillsEvaluation .progessJS span{
     position: relative;
     left: 75%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes AnimationprogessJS {
     from{width: 0%;;
@@ -980,7 +1020,7 @@
 .FrontendSkillsEvaluation .progessreact{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  Animationprogessreact;
@@ -994,7 +1034,7 @@
 .FrontendSkillsEvaluation .progessreact span{
     position: relative;
     left: 65%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes Animationprogessreact {
     from{width: 0%;;
@@ -1006,7 +1046,7 @@
 .FrontendSkillsEvaluation .progessfigma{
     width: 0%;
     height: 25px;
-    background-color: #F6B319;
+    background-color: #AED2FF;
     border-radius: 15px;
     padding-top: 2px;
     animation-name:  Animationprogessfigma;
@@ -1020,7 +1060,7 @@
 .FrontendSkillsEvaluation .progessfigma span{
     position: relative;
     left: 85%;
-    color: #61122F;
+    color: #4909a3;
 }
 @keyframes Animationprogessfigma {
     from{width: 0%;;
@@ -1145,11 +1185,21 @@
         z-index: 3;
         width: 100%;
         height: 627px;
-        background-color: #F6B319;
+        background-color: #AED2FF;
         margin-top: -20px;
-        border: 2px solid #61122F;
+        border: 2px solid #4909a3;
         border-radius: 15px;
         text-align: center;
+    }
+
+    .BtnFormMultiStep {
+        width: 124px;
+        height: 107px;
+        margin-top: 20px;
+        margin-left: 45px;
+        border: 1px solid #4909a3;
+        border-radius: 15px;
+        box-shadow: #703db7 10px 10px 15px;
     }
 
     .menuSlideDropDown div{
@@ -1222,12 +1272,7 @@
         top: 742px;
     }
     
-    .panel-footer {
-        margin-top: 74px;
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-    }
+   
 }
 
 
@@ -1240,6 +1285,19 @@
 
     #collapsable-nav a {
         font-size: 16px;
+    }
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    #header-nav {
+        background-color: #AED2EF;
+        border-radius: 0;
+        border: 0;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+        width: 90%;
     }
 
     .menuSlideDropDown {
@@ -1254,30 +1312,30 @@
         z-index: 3;
         width: 100%;
         height: 179px;
-        background-color: #F6B319;
-        margin-top: -20px;
-        border: 2px solid #61122F;
+        background-color: #AED2FF;
+        margin-top: 112px;
+        border: 2px solid #4909a3;
         border-radius: 15px;
     }
 
     .BtnFormMultiStep {
-        width: 151px;
-        height: 120px;
+        width: 124px;
+        height: 107px;
         margin-top: 20px;
         margin-left: 45px;
-        border: 1px solid #61122F;
+        border: 1px solid #4909a3;
         border-radius: 15px;
-        box-shadow: #e793b2 10px 10px 15px;
+        box-shadow: #703db7 10px 10px 15px;
     }
 
     
     .profil {
         display: flex;
-        margin-top: 0px;
         flex-direction: row;
         height: 535px;
+        position: relative;
+        top: 168px;
     }
-   
     #photoProfil {
         width: 50%;
         animation-name: photoreveal;
@@ -1296,7 +1354,7 @@
     }
 
     #brevepresentation {
-        font-size: 20px;
+        font-size: 14px;
         width: 50%;
         padding: 10px;
         animation-name: presentationreveal;
@@ -1304,6 +1362,8 @@
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
         animation-delay: 300ms;
+        position: relative;
+        top: -39px;
     }
 
     #brevepresentation div {
@@ -1425,7 +1485,7 @@
         width: 100%;
         height: 1116Px;
         position: relative;
-        top: 356px;
+        top: 470px;
     }
 
     .qualities {
@@ -1438,6 +1498,7 @@
         width: 100%;
         margin-left: 0px;
     }
+
     .qualitiesMySkill {
         width: 69%;
         border-top: 3px solid black;
@@ -1474,18 +1535,7 @@
         box-shadow: 0px 5px 5px 0px white;
         border-radius: 45%;
     }
-    #header-nav{
-        background-color: #f6b319;;
-        border-radius: 0;
-        border: 0;
-    }
-
-    .panel-footer {
-        margin-top: 74px;
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-    }
+   
 
     .btnLinkedin:hover{
         color: rgb(84, 84, 218);
@@ -1494,15 +1544,80 @@
     }
 
     .panel-footer {
-        margin-top: 752px;
         padding-top: 35px;
-        background-color: #222;
+        background-color: #AED2EF;
         border-top: 0;
+        top: 710px;
+        color: #605f5f;
+        position: relative;
     }
 
+    #adress{
+        background-color: whitesmoke;
+        border: 2px solid #4909a3;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
+    .contactInputEmail, .contactInputObject, .contactInputMessage{
+        width: 87%;
+        border-radius: 8px;
+        border: 2px solid #4909a3;
+    }
+   
+   
+    .contactInputEmail, .contactInputObject{
+        height: 30px;
+    }
+
+    .contactInputMessage{
+        height: 150px;
+    }
+    .contactForm button{
+        border-radius: 8px;
+        border-color: #4909a3;
+        background-color: #AED2EF;
+        transition: linear 0.3s ;
+        position: relative;
+        left: 190px;
+        top: -10px;
+    }
+    .contactForm button:hover{
+        border: 2px solid #AED2EF;
+        background-color: #4909a3;
+        color: whitesmoke;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+    #header-nav {
+        background-color: #AED2FF;
+        border-radius: 0;
+        border: 0;
+        width: 100%;
+        position: fixed;
+        margin-top: 30px;
+        z-index: 3;
+        padding-right: 47px;
+    }
+    #nav-list{
+        list-style-type: none;
+        position: relative;
+        top: 15px;
+    }
+
+    .profil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 696px;
+        margin-top: -29px;
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        top: 151px;
+    }
 
     #photoProfil {
         width: 50%;
@@ -1514,6 +1629,20 @@
         position: relative;
         top: 33px;
         left: 0px;
+    }
+    .photos {
+        position: absolute;
+        width: 80%;
+        border-radius: 45px;
+        left: 37px;
+        top: -142px;
+    }
+    #brevepresentation {
+        width: 50%;
+        text-align: justify;
+        right: 10px;
+        position: absolute;
+        top: 412px;
     }
     #collapsable-nav a {
         font-size: 16px;
@@ -1549,6 +1678,9 @@
         width: 100%;
         margin-left: 0px;
     }
+    .qualities .image {
+        width: 214px;
+    }
 
     .qualitiesMySkill {
         width: 100%;
@@ -1569,22 +1701,10 @@
         margin-top: 26px;
     }
 
-    .panel-footer {
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-    }
     .btnLinkedin:hover{
         color: rgb(84, 84, 218);
         background-color: white;
         border: 2px solid rgb(84, 84, 218); 
-    }
-
-    .panel-footer {
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-        margin-top: 0px;
     }
 
     .menuSlideDropDown{
@@ -1599,9 +1719,9 @@
         z-index: 3;
         width: 100%;
         height: 179px;
-        background-color: #F6B319;
-        margin-top: -20px;
-        border: 2px solid #61122F;
+        background-color: #AED2FF;
+        margin-top: 120px;
+        border: 2px solid #4909a3;
         border-radius: 15px;
        }
     
@@ -1611,14 +1731,14 @@
        }
     
       
-       .BtnFormMultiStep{
-        width: 180px;
+       .BtnFormMultiStep {
+        width: 196px;
         height: 131px;
         margin-top: 20px;
         margin-left: 45px;
-        border: 1px solid #61122F;
+        border: 1px solid #4909a3;
         border-radius: 15px;
-        box-shadow: #e793b2 10px 10px 15px;
+        box-shadow: #5e3e8a 10px 10px 15px;
     }
     
     .BtnFormMultiStep:hover{
@@ -1650,6 +1770,59 @@
         width: 50%;
         padding-left: 112px;
     }
+
+    .FrontEndWebChallenge {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 867Px;
+        margin-top: -118px;
+    }
+
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #AED2EF;
+        border-top: 0;
+        margin-top: 40px;
+        color: #605f5f;
+    }
+
+    #adress{
+        background-color: whitesmoke;
+        border: 2px solid #4909a3;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
+    .contactInputEmail, .contactInputObject, .contactInputMessage{
+        width: 87%;
+        border-radius: 8px;
+        border: 2px solid #4909a3;
+    }
+   
+   
+    .contactInputEmail, .contactInputObject{
+        height: 30px;
+    }
+
+    .contactInputMessage{
+        height: 150px;
+    }
+    .contactForm button{
+        border-radius: 8px;
+        border-color: #4909a3;
+        background-color: #AED2EF;
+        transition: linear 0.3s ;
+        position: relative;
+        left: 30px;
+        top: -10px;
+    }
+    .contactForm button:hover{
+        border: 2px solid #AED2EF;
+        background-color: #4909a3;
+        color: whitesmoke;
+    }
 }
 
 @media only screen and (min-width: 993px)  and (max-width: 1200px) {
@@ -1667,14 +1840,24 @@
     body{
         font-size: 16px;
         color: #fff;
-        background-color: #61122f;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #4909a3;
+        font-family: 'Roboto Condensed', sans-serif;
     }
+
     #header-nav {
-        background-color: #f6b319;
+        background-color: #AED2FF;
         border-radius: 0;
         border: 0;
         width: 100%;
+        position: fixed;
+        margin-top: -100px;
+        z-index: 3;
+        padding-right: 47px;
+    }
+    #nav-list{
+        list-style-type: none;
+        position: relative;
+        top: 15px;
     }
 
     .name{
@@ -1702,7 +1885,7 @@
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
         z-index: 1;
         font-size: 20px;
-        background-color: #f6b319;
+        background-color: #AED2FF;
     }
 
     .project:hover .dropdown-content{
@@ -1737,7 +1920,7 @@
     }
     .profil {
         display: flex;
-        margin-top: 122px;
+        margin-top: 222px;
         flex-direction: row;
         align-items: center;
         height: 988px;
@@ -1755,6 +1938,15 @@
         top: 33px;
         left: -600px
     }
+    .photos {
+        position: relative;
+        width: 80%;
+        border-radius: 45px;
+        left: 37px;
+        top: 51px;
+        height: 550px;
+    }
+
     @keyframes photoreveal {
         from{left: -660px;}
         to{left: 0px}
@@ -1769,18 +1961,18 @@
         to{margin-left: 100px}
     }
     #brevepresentation {
-        width: 100%;
-        margin-top: -45px;
-        text-align: justify;
-        margin-left: 750px;
-        position: relative;
-        font-size: 24px;
-        animation-name: presentationreveal;
-         animation-duration: 300ms;
-         animation-timing-function: ease-in-out;
-         animation-fill-mode: forwards;
-         animation-delay: 300ms;
-    }
+    width: 100%;
+    text-align: justify;
+    margin-top: -193px;
+    margin-left: 750px;
+    position: relative;
+    font-size: 19px;
+    animation-name: presentationreveal;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+}
 
     #brevepresentation div {
         width: 75%;
@@ -1793,16 +1985,6 @@
         margin-top: 40px;
         margin-left: -11px;
     }
-
-    .photos {
-        position: relative;
-        width: 80%;
-        border-radius: 45px;
-        left: 37px;
-        top: 90px
-    }
-
-    
 
     .btnLinkedin {
         font-size: 10px;
@@ -1847,7 +2029,6 @@
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: left;
         
     }
@@ -1891,7 +2072,6 @@
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: right;
     }
     
@@ -1922,7 +2102,6 @@
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: left;
         
     }
@@ -1931,7 +2110,6 @@
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: right;
     }
     
@@ -2032,7 +2210,7 @@
         flex-direction: column;
         width: 100%;
         height: 867Px;
-        margin-top: 173px;
+        margin-top: 155px;
         margin-left: 51px;
     }
     .homePage {
@@ -2085,9 +2263,9 @@
     z-index: 3;
     width: 100%;
     height: 179px;
-    background-color: #F6B319;
-    margin-top: -20px;
-    border: 2px solid #61122F;
+    background-color: #AED2FF;
+    margin-top: 0px;
+    border: 2px solid #4909a3;
     border-radius: 15px;
    }
 
@@ -2102,9 +2280,9 @@
     height: 131px;
     margin-top: 20px;
     margin-left: 45px;
-    border: 1px solid #61122F;
+    border: 1px solid #4909a3;
     border-radius: 15px;
-    box-shadow: #e793b2 10px 10px 15px;
+    box-shadow: #5e3e8a 10px 10px 15px;
 }
 
 .BtnFormMultiStep:hover{
@@ -2188,12 +2366,6 @@ animation-fill-mode: forwards;
         right: 29px;
     }
     
-    .panel-footer {
-        padding-top: 35px;
-        background-color: #222;
-        border-top: 0;
-        margin-top: 0px;
-    }
     .FrontendSkillsName, .BackendSkillsName {
         padding: 15px 15px 15px 150px;
         font-size: 17px;
@@ -2205,6 +2377,51 @@ animation-fill-mode: forwards;
         padding: 15px;
         font-size: 17px;
         padding-right: 279px;
+    }
+
+    .panel-footer {
+        padding-top: 35px;
+        background-color: #AED2EF;
+        border-top: 0;
+        margin-top: 40px;
+        color: #605f5f;
+    }
+
+    #adress{
+        background-color: whitesmoke;
+        border: 2px solid #4909a3;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
+    .contactInputEmail, .contactInputObject, .contactInputMessage{
+        width: 87%;
+        border-radius: 8px;
+        border: 2px solid #4909a3;
+    }
+   
+   
+    .contactInputEmail, .contactInputObject{
+        height: 30px;
+    }
+
+    .contactInputMessage{
+        height: 150px;
+    }
+    .contactForm button{
+        border-radius: 8px;
+        border-color: #4909a3;
+        background-color: #AED2EF;
+        transition: linear 0.3s ;
+        position: relative;
+        left: 60px;
+        top: -10px;
+    }
+    .contactForm button:hover{
+        border: 2px solid #AED2EF;
+        background-color: #4909a3;
+        color: whitesmoke;
     }
 
 }
@@ -2233,15 +2450,26 @@ animation-fill-mode: forwards;
     body{
         font-size: 16px;
         color: #fff;
-        background-color: #61122f;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #4909a3;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     #header-nav {
-        background-color: #f6b319;
+        background-color: #AED2FF;
         border-radius: 0;
         border: 0;
         width: 100%;
+        position: fixed;
+        margin-top: -80px;
+        z-index: 3;
     }
+    #nav-list{
+        list-style-type: none;
+        position: relative;
+        top: 15px;
+    }
+  
+
+   
 
     .name{
         display: block;
@@ -2268,7 +2496,7 @@ animation-fill-mode: forwards;
         box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
         z-index: 1;
         font-size: 20px;
-        background-color: #f6b319;
+        background-color: #AED2FF;
     }
 
     .project:hover .dropdown-content{
@@ -2299,11 +2527,7 @@ animation-fill-mode: forwards;
     
     
 
-    #section1{
-        width: 100%;
-        margin-top: -122px;
     
-    }
     .profil {
         display: flex;
         margin-top: 78px;
@@ -2352,7 +2576,7 @@ animation-fill-mode: forwards;
     }
 
     #brevepresentation div {
-        width: 75%;
+        width: 100%;
     }
 
     .socialMedia {
@@ -2366,6 +2590,7 @@ animation-fill-mode: forwards;
     .photos {
         position: relative;
         width: 50%;
+        height: 400px;
         border-radius: 45px;
         left: -30px;
         top: -89px;
@@ -2407,13 +2632,14 @@ animation-fill-mode: forwards;
         animation-timing-function: ease-in-out;
         flex-direction: row;
         position: absolute;
-        left: 368px;
+        left: 68px;
         z-index: 3;
-        width: 75%;
+        width: 90%;
         height: 179px;
-        background-color: #F6B319;
-        margin-top: -20px;
-        border: 2px solid #61122F;
+        background-color: #AED2FF;
+        margin-top: 20px;
+        margin-left: -27px;
+        border: 2px solid #27005D;
         border-radius: 15px;
        }
 
@@ -2430,9 +2656,9 @@ animation-fill-mode: forwards;
         height: 131px;
         margin-top: 20px;
         margin-left: 45px;
-        border: 1px solid #61122F;
+        border: 1px solid #27005D;
         border-radius: 15px;
-        box-shadow: #e793b2 10px 10px 15px;
+        box-shadow: #8444df 10px 10px 15px;
     }
     
     .BtnFormMultiStep:hover{
@@ -2447,7 +2673,7 @@ animation-fill-mode: forwards;
 
     .btnLinkedin {
         font-size: 15px;
-        width: 100%;
+        width: 66%;
         border: 2px solid #e3e2db;
         height: 40px;
         border-radius: 15px;
@@ -2489,7 +2715,6 @@ animation-fill-mode: forwards;
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: left;
         
     }
@@ -2564,7 +2789,6 @@ animation-fill-mode: forwards;
         display: block;
         font-size: 15px;
         font-weight: 500px;
-        font-family: Arial, Helvetica, sans-serif;
         float: left;
         
     }
@@ -2674,10 +2898,9 @@ animation-fill-mode: forwards;
     .textSlide{
         margin-top: 20px;
         width: 50%;
-        font-size: 15px;
+        font-size: 20px;
         color: white; 
         padding: 8px 12px;
-        font-family: Verdana, sans-serif;
     }
 
     .textSlide a{
@@ -2896,12 +3119,12 @@ animation-fill-mode: forwards;
     .BackendSkillsEvaluation .progessionNode span{
         position: relative;
         left: 45%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionNode{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2FF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionNode;
@@ -2922,12 +3145,12 @@ animation-fill-mode: forwards;
     .BackendSkillsEvaluation .progessionExpress span{
         position: relative;
         left: 30%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionExpress{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2FF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionExpress;
@@ -2948,12 +3171,12 @@ animation-fill-mode: forwards;
     .BackendSkillsEvaluation .progessionDB span{
         position: relative;
         left: 30%;
-        color: #61122F;
+        color: #4909a3;
     }
     .BackendSkillsEvaluation .progessionDB{
         width: 0%;
         height: 25px;
-        background-color: #F6B319;
+        background-color: #AED2FF;
         border-radius: 15px;
         padding-top: 2px;
         animation-name:  AnimationprogessionDB;
@@ -2974,9 +3197,47 @@ animation-fill-mode: forwards;
 
     .panel-footer {
         padding-top: 35px;
-        background-color: #222;
+        background-color: #AED2EF;
         border-top: 0;
         margin-top: 40px;
+        color: #605f5f;
+    }
+
+    #adress{
+        background-color: whitesmoke;
+        border: 2px solid #4909a3;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    
+    .contactInputEmail, .contactInputObject, .contactInputMessage{
+        width: 87%;
+        border-radius: 8px;
+        border: 2px solid #4909a3;
+    }
+   
+   
+    .contactInputEmail, .contactInputObject{
+        height: 30px;
+    }
+
+    .contactInputMessage{
+        height: 150px;
+    }
+    .contactForm button{
+        border-radius: 8px;
+        border-color: #4909a3;
+        background-color: #AED2EF;
+        transition: linear 0.3s ;
+        position: relative;
+        left: 100px;
+        top: -10px;
+    }
+    .contactForm button:hover{
+        border: 2px solid #AED2EF;
+        background-color: #4909a3;
+        color: whitesmoke;
     }
     
   }
