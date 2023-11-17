@@ -2486,6 +2486,28 @@ animation-fill-mode: forwards;
         z-index: 0;
     }
    
+    .imageFond4{ 
+        left: 950px;
+    }
+    .imageFond5{ 
+        position: relative;
+        left: 1100px;
+        top: -450px;
+        z-index: 1;
+    }
+    .imageFond6{
+        position: relative;
+        left: 250px;
+        left:400px;
+        top: -450px;
+        z-index: 0;
+    }
+
+    .imageFond{
+        position: relative;
+        top:-1300px; 
+    }
+   
 
     .name{
         display: block;
@@ -2662,6 +2684,7 @@ animation-fill-mode: forwards;
         border: 2px solid #27005D;
         border-radius: 15px;
        }
+       
 
        @keyframes aminationMenuItem{
         from{width: 218px;}
@@ -2963,7 +2986,7 @@ animation-fill-mode: forwards;
         height: 69px;
         text-align: center;
         margin-left: 203px;
-        margin-top: -773px;
+        margin-top: -1673px;
         padding-top: 10px;
     }
     .qualitiesMySkill p {
