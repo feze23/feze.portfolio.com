@@ -2460,7 +2460,7 @@ animation-fill-mode: forwards;
         width: 100%;
         position: fixed;
         margin-top: -80px;
-        z-index: 3;
+        z-index: 4;
     }
     #nav-list{
         list-style-type: none;
@@ -2468,7 +2468,23 @@ animation-fill-mode: forwards;
         top: 15px;
     }
   
-
+    .imageFond1{
+        position: relative;
+        top:-250px; 
+        left: 950px;
+    }
+    .imageFond2{
+        position: relative;
+        top:-600px; 
+        left: 0px;
+        z-index: 1;
+    }
+    .imageFond3{
+        position: relative;
+        top:-650px; 
+        left: 250px;
+        z-index: 0;
+    }
    
 
     .name{
@@ -2535,6 +2551,7 @@ animation-fill-mode: forwards;
         align-items: center;
         height: 696px;
         width: 100%;
+
     }
     #photoProfil {
         position: relative;
@@ -2545,7 +2562,9 @@ animation-fill-mode: forwards;
          animation-fill-mode: forwards;
          animation-delay: 300ms;
         top: 240px;
-        left: -600px
+        left: -600px;
+        z-index: 3;
+        background-image: url('');
     }
     @keyframes photoreveal {
         from{left: -660px;}
@@ -2573,6 +2592,7 @@ animation-fill-mode: forwards;
          animation-timing-function: ease-in-out;
          animation-fill-mode: forwards;
          animation-delay: 300ms;
+         z-index: 3;
     }
 
     #brevepresentation div {
@@ -2846,10 +2866,11 @@ animation-fill-mode: forwards;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         margin-top: 20px;
-        height: 49px;
+        height: 69px;
         text-align: center;
         margin-left: 188px;
         padding-top: 10px;
+        font-size: 30px;
     }
 
     .FrontProjets {
@@ -2919,11 +2940,12 @@ animation-fill-mode: forwards;
         }
 
     .FrontEndWebChallenge {
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 867Px;
-        margin-top: 265px;
+        top: -600px;
         text-decoration: none;
     }
     .homePage {
@@ -2938,12 +2960,16 @@ animation-fill-mode: forwards;
         width: 71%;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
-        height: 50px;
+        height: 69px;
         text-align: center;
         margin-left: 203px;
-        margin-top: -173px;
+        margin-top: -773px;
         padding-top: 10px;
     }
+    .qualitiesMySkill p {
+        font-size: 30px;
+    }
+
 
     .col-md-6 {
         width: 99%;
@@ -3239,6 +3265,8 @@ animation-fill-mode: forwards;
         background-color: #4909a3;
         color: whitesmoke;
     }
+
+  
     
   }
   
