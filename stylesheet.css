@@ -2653,7 +2653,7 @@ animation-fill-mode: forwards;
         flex-direction: row;
         position: absolute;
         left: 68px;
-        z-index: 3;
+        z-index: 4;
         width: 90%;
         height: 179px;
         background-color: #AED2FF;
