@@ -2452,6 +2452,7 @@ animation-fill-mode: forwards;
         color: #fff;
         background-color: #4909a3;
         font-family: 'Roboto Condensed', sans-serif;
+        overflow-x: hidden;
     }
     #header-nav {
         background-color: #AED2FF;
