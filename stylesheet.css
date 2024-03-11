@@ -2478,45 +2478,7 @@ animation-fill-mode: forwards;
         top: 15px;
     }
   
-    .imageFond1{
-        position: relative;
-        top:-250px; 
-        left: 950px;
-    }
-    .imageFond2{
-        position: relative;
-        top:-600px; 
-        left: 0px;
-        z-index: 1;
-    }
-    .imageFond3{
-        position: relative;
-        top:-650px; 
-        left: 250px;
-        z-index: 0;
-    }
-   
-    .imageFond4{ 
-        left: 950px;
-    }
-    .imageFond5{ 
-        position: relative;
-        left: 1100px;
-        top: -450px;
-        z-index: 1;
-    }
-    .imageFond6{
-        position: relative;
-        left: 250px;
-        left:400px;
-        top: -450px;
-        z-index: 0;
-    }
-
-    .imageFond{
-        position: relative;
-        top:-1300px; 
-    }
+    
    
 
     .name{
