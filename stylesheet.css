@@ -658,9 +658,7 @@
   }
 
   @media only screen and (min-width: 600px) {
-      .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
-    display: none;
-   }
+   
     .row{
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -1286,9 +1284,7 @@
 /*tablet*/
 @media only screen  and (min-width: 601px) and (max-width: 768px){
     
-    .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
-    display: none;
-   }
+ 
 
     #section1 {
         width: 100%;
