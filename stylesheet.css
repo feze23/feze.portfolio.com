@@ -1602,9 +1602,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
-    display: none;
-   }
+   
     #header-nav {
         background-color: #AED2FF;
         border-radius: 0;
@@ -1840,9 +1838,7 @@
 }
 
 @media only screen and (min-width: 993px)  and (max-width: 1200px) {
-      .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
-    display: none;
-   }
+    
     .FrontendSkillsName, .BackendSkillsName {
         padding: 15px;
         font-size: 17px;
