@@ -2545,7 +2545,6 @@ animation-fill-mode: forwards;
         align-items: center;
         height: 696px;
         width: 100%;
-        position: absolute; 
     }
     #photoProfil {
         position: relative;
