@@ -651,14 +651,11 @@
         color: whitesmoke;
     }
 
-    .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
-    display: none;
-   }
 
   }
 
   @media only screen and (min-width: 600px) {
-   
+ 
     .row{
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -668,12 +665,14 @@
         font-size: 15px;
     }
     
+
     body{
         font-size: 16px;
         color: #fff;
         background-color: #4909a3;
         font-family: Arial, Helvetica, sans-serif;
     }
+    
     #header-nav {
         background-color: c;
         border-radius: 0;
@@ -1276,6 +1275,9 @@
         position: relative;
         top: 742px;
     }
+
+
+
     
    
 }
@@ -1283,8 +1285,6 @@
 
 /*tablet*/
 @media only screen  and (min-width: 601px) and (max-width: 768px){
-    
- 
 
     #section1 {
         width: 100%;
@@ -1598,7 +1598,6 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-   
     #header-nav {
         background-color: #AED2FF;
         border-radius: 0;
@@ -1834,7 +1833,6 @@
 }
 
 @media only screen and (min-width: 993px)  and (max-width: 1200px) {
-    
     .FrontendSkillsName, .BackendSkillsName {
         padding: 15px;
         font-size: 17px;
@@ -2455,13 +2453,16 @@ animation-fill-mode: forwards;
         margin-bottom: 15px;
         box-sizing: border-box;
     }
+    body {
+        overflow-x: hidden;
+    }
+    
     
     body{
         font-size: 16px;
         color: #fff;
         background-color: #4909a3;
         font-family: 'Roboto Condensed', sans-serif;
-        overflow-x: hidden;
     }
     #header-nav {
         background-color: #AED2FF;
@@ -2478,7 +2479,45 @@ animation-fill-mode: forwards;
         top: 15px;
     }
   
-    
+    .imageFond1{
+        position: relative;
+        top:-250px; 
+        left: 950px;
+    }
+    .imageFond2{
+        position: relative;
+        top:-600px; 
+        left: 0px;
+        z-index: 1;
+    }
+    .imageFond3{
+        position: relative;
+        top:-650px; 
+        left: 250px;
+        z-index: 0;
+    }
+   
+    .imageFond4{ 
+        left: 950px;
+    }
+    .imageFond5{ 
+        position: relative;
+        left: 1100px;
+        top: -450px;
+        z-index: 1;
+    }
+    .imageFond6{
+        position: relative;
+        left: 250px;
+        left:400px;
+        top: -450px;
+        z-index: 0;
+    }
+
+    .imageFond{
+        position: relative;
+        top:-1300px; 
+    }
    
 
     .name{
@@ -2545,6 +2584,7 @@ animation-fill-mode: forwards;
         align-items: center;
         height: 696px;
         width: 100%;
+
     }
     #photoProfil {
         position: relative;
