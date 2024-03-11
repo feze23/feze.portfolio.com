@@ -4,6 +4,9 @@
 
 
 @media only screen and (max-width: 600px) {
+    .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
+        display:none; 
+    }
     /* Styles for screens up to 767px wide (typically mobile phones) */
     .row{
         margin-bottom: 15px;
