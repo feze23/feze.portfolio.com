@@ -4,6 +4,9 @@
 
 
 @media only screen and (max-width: 600px) {
+    .imageFond1, .imageFond2, .imageFond3, .imageFond4, .imageFond5, .imageFond6{
+        display:none; 
+    }
     /* Styles for screens up to 767px wide (typically mobile phones) */
     .row{
         margin-bottom: 15px;
@@ -651,9 +654,11 @@
         color: whitesmoke;
     }
 
+
   }
 
   @media only screen and (min-width: 600px) {
+ 
     .row{
         margin-bottom: 15px;
         box-sizing: border-box;
@@ -663,12 +668,14 @@
         font-size: 15px;
     }
     
+
     body{
         font-size: 16px;
         color: #fff;
         background-color: #4909a3;
         font-family: Arial, Helvetica, sans-serif;
     }
+    
     #header-nav {
         background-color: c;
         border-radius: 0;
@@ -1271,6 +1278,9 @@
         position: relative;
         top: 742px;
     }
+
+
+
     
    
 }
@@ -2446,13 +2456,16 @@ animation-fill-mode: forwards;
         margin-bottom: 15px;
         box-sizing: border-box;
     }
+    body {
+        overflow-x: hidden;
+    }
+    
     
     body{
         font-size: 16px;
         color: #fff;
         background-color: #4909a3;
         font-family: 'Roboto Condensed', sans-serif;
-        overflow-x: hidden;
     }
     #header-nav {
         background-color: #AED2FF;
